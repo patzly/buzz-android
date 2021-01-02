@@ -13,11 +13,6 @@ import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
 
-/**
- * This is an extended BottomSheetDialogFragment class. The one overridden method fixes the
- * weird behavior of bottom sheets in landscape mode. All bottom sheets in this app should use this
- * extended class to apply the fix.
- */
 public class BaseBottomSheetDialogFragment extends BottomSheetDialogFragment {
 
     @Override

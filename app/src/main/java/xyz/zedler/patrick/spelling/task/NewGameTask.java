@@ -21,7 +21,7 @@ public class NewGameTask extends AsyncTask<Void, Integer, String[]> {
 
     private final WeakReference<MainActivity> activityRef;
     private final ArrayList<String> matches = new ArrayList<>();
-    private ArrayList<String> allWords = new ArrayList<>();
+    private final ArrayList<String> allWords = new ArrayList<>();
 
     public NewGameTask(MainActivity activity) {
         activityRef = new WeakReference<>(activity);

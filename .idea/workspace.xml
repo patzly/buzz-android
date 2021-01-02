@@ -16,7 +16,22 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7071ed4c-2bdc-419e-aae5-8027d1a88607" name="Default" comment="Prepare rollout" />
+    <list default="true" id="7071ed4c-2bdc-419e-aae5-8027d1a88607" name="Default" comment="Prepare rollout">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/all.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/fragment/BaseBottomSheetDialogFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/fragment/BaseBottomSheetDialogFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/task/NewGameTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/task/NewGameTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/task/SaveWordListTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/task/SaveWordListTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/util/IconUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/util/IconUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/util/ResUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/util/ResUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/util/VibratorUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/util/VibratorUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_umbrella.xml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,6 +93,7 @@
     <property name="ExportApk.SignV1" value="true" />
     <property name="ExportApk.SignV2" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android-custom-view/home/pzedler/Android/Sdk/sources/android-29/android/view/View.java_SELECTED" value="View" />
     <property name="android-custom-view/home/pzedler/AndroidStudioProjects/spelling-android/app/src/main/java/xyz/zedler/patrick/spelling/view/GraphView.java_SELECTED" value="GraphView" />
     <property name="android-custom-view/home/pzedler/AndroidStudioProjects/spellingbee-android/app/src/main/java/xyz/zedler/patrick/spelling/view/GraphView.java_SELECTED" value="GraphView" />
@@ -93,7 +109,7 @@
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="PsdUISettings">
     <option name="MODULE_TAB" value="Default Config" />
@@ -484,6 +500,14 @@
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
     <state x="3623" y="285" width="424" height="484" key="FileChooserDialogImpl/2560.0.2560.1080/0.0.2560.1055@2560.0.2560.1080" timestamp="1609628789672" />
+    <state x="3691" y="427" key="Github.ShareDialog" timestamp="1609630753359">
+      <screen x="2560" y="0" width="2560" height="1080" />
+    </state>
+    <state x="3691" y="427" key="Github.ShareDialog/2560.0.2560.1080/0.0.2560.1055@2560.0.2560.1080" timestamp="1609630753359" />
+    <state x="3554" y="229" width="562" height="596" key="Github.UntrackedFilesDialog" timestamp="1609630764509">
+      <screen x="2560" y="0" width="2560" height="1080" />
+    </state>
+    <state x="3554" y="229" width="562" height="596" key="Github.UntrackedFilesDialog/2560.0.2560.1080/0.0.2560.1055@2560.0.2560.1080" timestamp="1609630764509" />
     <state width="2518" height="280" key="GridCell.Tab.0.bottom" timestamp="1609628864277">
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
@@ -500,10 +524,10 @@
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
     <state width="2518" height="280" key="GridCell.Tab.0.right/2560.0.2560.1080/0.0.2560.1055@2560.0.2560.1080" timestamp="1609628864277" />
-    <state x="3344" y="162" key="SettingsEditor" timestamp="1609369240489">
+    <state x="3344" y="162" key="SettingsEditor" timestamp="1609630704317">
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
-    <state x="3344" y="162" key="SettingsEditor/2560.0.2560.1080/0.0.2560.1055@2560.0.2560.1080" timestamp="1609369240489" />
+    <state x="3344" y="162" key="SettingsEditor/2560.0.2560.1080/0.0.2560.1055@2560.0.2560.1080" timestamp="1609630704317" />
     <state x="3545" y="254" width="632" height="546" key="find.popup" timestamp="1609548465380">
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>

@@ -18,7 +18,7 @@ public class SaveWordListTask extends AsyncTask<ArrayList<String>, Integer, Stri
         );
         //noinspection ResultOfMethodCallIgnored
         appDirectory.mkdirs();
-        File saveFilePath = new File(appDirectory, "DeutschSpellingBee.txt");
+        File saveFilePath = new File(appDirectory, "processed.txt");
         try {
             FileOutputStream outputStream = new FileOutputStream(saveFilePath);
             OutputStreamWriter writer = new OutputStreamWriter(outputStream);

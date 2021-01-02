@@ -8,8 +8,6 @@ import android.os.Vibrator;
 
 public class VibratorUtil {
 
-    private final static long CLICK = 60;
-    private final static long HEAVY_CLICK = 120;
     private final static long TICK = 15;
 
     private Vibrator vibrator;
@@ -18,14 +16,6 @@ public class VibratorUtil {
         if(activity != null) {
             vibrator = (Vibrator) activity.getSystemService(Context.VIBRATOR_SERVICE);
         }
-    }
-
-    public void click() {
-        vibrate(CLICK);
-    }
-
-    public void heavyClick() {
-        vibrate(HEAVY_CLICK);
     }
 
     public void tick() {

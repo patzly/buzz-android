@@ -4,11 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="xyz.zedler.patrick.spelling">
 
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.VIBRATE" />
-    <uses-permission
-        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-        tools:ignore="ScopedStorage" />
 
     <application
         android:allowBackup="true"
@@ -16,10 +12,7 @@
         android:label="@string/app_name"
         android:supportsRtl="false"
         android:theme="@style/Theme.Spelling"
-        android:usesCleartextTraffic="true"
-        android:requestLegacyExternalStorage="true"
-        tools:ignore="AllowBackup"
-        tools:targetApi="m">
+        tools:ignore="AllowBackup">
 
         <activity android:name=".MainActivity">
             <intent-filter>

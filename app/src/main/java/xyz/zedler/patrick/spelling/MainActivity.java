@@ -39,7 +39,6 @@ import xyz.zedler.patrick.spelling.util.VibratorUtil;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private static final String TAG = MainActivity.class.getSimpleName();
-    private static final boolean DEBUG = false;
 
     private ActivityMainBinding binding;
     private SharedPreferences sharedPrefs;
