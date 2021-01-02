@@ -1,0 +1,6 @@
+Bilden Sie Wörter mit Buchstaben aus dem Bienenstock.
+
+• Wörter müssen mindestens 4 Buchstaben enthalten
+• Wörter müssen den mittleren Buchstaben enthalten
+• Buchstaben können mehr als einmal verwendet werden
+• Jedes Rätsel enthält mindestens ein "Pangramm", in dem jeder Buchstabe verwendet wird

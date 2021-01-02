@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:text="@string/title_found_words"
+        android:fontFamily="@font/roboto_mono_bold"
+        android:textAppearance="@style/TextAppearance.Spelling.BottomSheet.Title"/>
+
+    <View
+        style="@style/Theme.Spelling.Divider"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:scrollbarThumbVertical="@drawable/shape_scrollbar_rounded">
+
+        <TextView
+            android:id="@+id/text_found"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:fontFamily="@font/roboto_mono_regular"
+            android:textColor="@color/on_background"/>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

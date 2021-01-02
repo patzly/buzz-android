@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:text="@string/title_rules"
+        android:fontFamily="@font/roboto_mono_bold"
+        android:textAppearance="@style/TextAppearance.Spelling.BottomSheet.Title"/>
+
+    <View
+        style="@style/Theme.Spelling.Divider"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <TextView
+            android:id="@+id/text_rules"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textAlignment="viewStart"
+            android:textSize="15sp"
+            android:fontFamily="@font/roboto_mono_regular"
+            android:textColor="@color/on_background"/>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

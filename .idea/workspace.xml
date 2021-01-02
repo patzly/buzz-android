@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="onCreate:" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7071ed4c-2bdc-419e-aae5-8027d1a88607" name="Default" comment="Prepare rollout" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="layoutResourceFile_vertical" />
+        <option value="valueResourceFile" />
+        <option value="resourceFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="KEY_STORE_PATH" value="$USER_HOME$/Android/keystores/keystore.jks" />
+    <option name="KEY_ALIAS" value="key0" />
+    <option name="REMEMBER_PASSWORDS" value="true" />
+    <option name="BUILD_TARGET_KEY" value="apk" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1WCvw7uc6wM2o9jfW5jRn75hNlS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ApkExportedModule" value="app" />
+    <property name="ExportApk.ApkPath" value="$PROJECT_DIR$/app" />
+    <property name="ExportApk.BuildVariants" value="release" />
+    <property name="ExportApk.SignV1" value="true" />
+    <property name="ExportApk.SignV2" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="android-custom-view/home/pzedler/Android/Sdk/sources/android-29/android/view/View.java_SELECTED" value="View" />
+    <property name="android-custom-view/home/pzedler/AndroidStudioProjects/spelling-android/app/src/main/java/xyz/zedler/patrick/spelling/view/GraphView.java_SELECTED" value="GraphView" />
+    <property name="android-custom-view/home/pzedler/AndroidStudioProjects/spellingbee-android/app/src/main/java/xyz/zedler/patrick/spelling/view/GraphView.java_SELECTED" value="GraphView" />
+    <property name="android.project.structure.last.selected" value="Notifications" />
+    <property name="android.project.structure.proportion" value="0.15" />
+    <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
+    <property name="device.picker.selection" value="Google_Pixel_2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../stiefo-android" />
+    <property name="multi-representation-preview/home/pzedler/Android/Sdk/sources/android-29/android/view/View.java_selected" value="Custom views" />
+    <property name="multi-representation-preview/home/pzedler/AndroidStudioProjects/spelling-android/app/src/main/java/xyz/zedler/patrick/spelling/view/GraphView.java_selected" value="Custom views" />
+    <property name="multi-representation-preview/home/pzedler/AndroidStudioProjects/spellingbee-android/app/src/main/java/xyz/zedler/patrick/spelling/view/GraphView.java_selected" value="Custom views" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="PsdUISettings">
+    <option name="MODULE_TAB" value="Default Config" />
+    <option name="LAST_EDITED_SIGNING_CONFIG" value="debug" />
+    <option name="LAST_EDITED_BUILD_TYPE" value="release" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="xyz.patzly.rainy" />
+      <recent name="xyz.patzly.rainy.weather.model" />
+      <recent name="xyz.patzly.rainy.weather.domain" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="xyz.zedler.patrick.spelling.fragment" />
+      <recent name="xyz.zedler.patrick.spelling.util" />
+      <recent name="xyz.zedler.patrick.spelling.task" />
+      <recent name="xyz.zedler.patrick.rainy.fragment" />
+      <recent name="xyz.zedler.patrick.rainy.util" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable-night" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/values-land-v29" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/values-land-night-v29" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Android App.app">
+    <configuration name="&lt;template&gt;" type="JUnit" default="true" selected="false">
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+    </configuration>
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Rainy.app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="Rainy.app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="Spelling_Bee_Android.app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sampled (Java)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7071ed4c-2bdc-419e-aae5-8027d1a88607" name="Default" comment="" />
+      <created>1545508157311</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1545508157311</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1599664675038</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1599664675038</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add test data and improve debugging">
+      <created>1599666839708</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1599666839708</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Improve color scheme">
+      <created>1599666862981</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1599666862981</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Update test data">
+      <created>1599684850499</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1599684850499</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Improve umbrella icon">
+      <created>1599685006158</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1599685006158</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Clean up RainData">
+      <created>1599685786773</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1599685786773</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add version info">
+      <created>1599685887531</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1599685887531</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Improve location display">
+      <created>1599686033617</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1599686033617</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Implement auto updating of info text and umbrella icon">
+      <created>1599686068703</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1599686068703</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Prepare rollout">
+      <created>1599686134009</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1599686134009</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Prepare rollout">
+      <created>1599686594824</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1599686594824</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Hide location on start">
+      <created>1599761100000</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1599761100000</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Remove version display">
+      <created>1599761181034</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1599761181034</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Improve location display">
+      <created>1599764419143</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1599764419143</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Improve same location message">
+      <created>1599764877656</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1599764877656</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Update testdata">
+      <created>1599764888777</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1599764888777</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Improve layout">
+      <created>1599765211101</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1599765211101</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Prepare rollout">
+      <created>1599765252253</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1599765252253</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Turn off debugging">
+      <created>1599765287278</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1599765287278</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Cleanup project">
+      <created>1599765782882</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1599765782882</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Cleanup project">
+      <created>1599766728112</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1599766728112</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Improve location error handling">
+      <created>1599772345952</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1599772345952</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Prepare rollout">
+      <created>1599772405871</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1599772405871</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="Add test data and improve debugging" />
+    <MESSAGE value="Improve color scheme" />
+    <MESSAGE value="Update test data" />
+    <MESSAGE value="Improve umbrella icon" />
+    <MESSAGE value="Clean up RainData" />
+    <MESSAGE value="Add version info" />
+    <MESSAGE value="Implement auto updating of info text and umbrella icon" />
+    <MESSAGE value="Hide location on start" />
+    <MESSAGE value="Remove version display" />
+    <MESSAGE value="Improve location display" />
+    <MESSAGE value="Improve same location message" />
+    <MESSAGE value="Update testdata" />
+    <MESSAGE value="Improve layout" />
+    <MESSAGE value="Turn off debugging" />
+    <MESSAGE value="Cleanup project" />
+    <MESSAGE value="Improve location error handling" />
+    <MESSAGE value="Prepare rollout" />
+    <option name="LAST_COMMIT_MESSAGE" value="Prepare rollout" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="3360" y="262" width="950" height="530" key="#PSD" timestamp="1609364583976">
+      <screen x="2560" y="0" width="2560" height="1080" />
+    </state>
+    <state x="3360" y="262" width="950" height="530" key="#PSD/2560.0.2560.1080/0.0.2560.1055@2560.0.2560.1080" timestamp="1609364583976" />
+    <state x="3573" y="278" width="524" height="499" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1609467978691">
+      <screen x="2560" y="0" width="2560" height="1080" />
+    </state>
+    <state x="3573" y="278" width="524" height="499" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/2560.0.2560.1080/0.0.2560.1055@2560.0.2560.1080" timestamp="1609467978691" />
+    <state x="3423" y="285" width="824" height="484" key="AndroidCreateResourceDirectoryDialog" timestamp="1609626044958">
+      <screen x="2560" y="0" width="2560" height="1080" />
+    </state>
+    <state x="3423" y="285" width="824" height="484" key="AndroidCreateResourceDirectoryDialog/2560.0.2560.1080/0.0.2560.1055@2560.0.2560.1080" timestamp="1609626044958" />
+    <state x="3423" y="285" width="824" height="484" key="AndroidCreateResourceFileDialog" timestamp="1609437829187">
+      <screen x="2560" y="0" width="2560" height="1080" />
+    </state>
+    <state x="3423" y="285" width="824" height="484" key="AndroidCreateResourceFileDialog/2560.0.2560.1080/0.0.2560.1055@2560.0.2560.1080" timestamp="1609437829187" />
+    <state x="3623" y="285" width="424" height="484" key="FileChooserDialogImpl" timestamp="1609628789672">
+      <screen x="2560" y="0" width="2560" height="1080" />
+    </state>
+    <state x="3623" y="285" width="424" height="484" key="FileChooserDialogImpl/2560.0.2560.1080/0.0.2560.1055@2560.0.2560.1080" timestamp="1609628789672" />
+    <state width="2518" height="280" key="GridCell.Tab.0.bottom" timestamp="1609628864277">
+      <screen x="2560" y="0" width="2560" height="1080" />
+    </state>
+    <state width="2518" height="280" key="GridCell.Tab.0.bottom/2560.0.2560.1080/0.0.2560.1055@2560.0.2560.1080" timestamp="1609628864277" />
+    <state width="2518" height="280" key="GridCell.Tab.0.center" timestamp="1609628864277">
+      <screen x="2560" y="0" width="2560" height="1080" />
+    </state>
+    <state width="2518" height="280" key="GridCell.Tab.0.center/2560.0.2560.1080/0.0.2560.1055@2560.0.2560.1080" timestamp="1609628864277" />
+    <state width="2518" height="280" key="GridCell.Tab.0.left" timestamp="1609628864277">
+      <screen x="2560" y="0" width="2560" height="1080" />
+    </state>
+    <state width="2518" height="280" key="GridCell.Tab.0.left/2560.0.2560.1080/0.0.2560.1055@2560.0.2560.1080" timestamp="1609628864277" />
+    <state width="2518" height="280" key="GridCell.Tab.0.right" timestamp="1609628864277">
+      <screen x="2560" y="0" width="2560" height="1080" />
+    </state>
+    <state width="2518" height="280" key="GridCell.Tab.0.right/2560.0.2560.1080/0.0.2560.1055@2560.0.2560.1080" timestamp="1609628864277" />
+    <state x="3344" y="162" key="SettingsEditor" timestamp="1609369240489">
+      <screen x="2560" y="0" width="2560" height="1080" />
+    </state>
+    <state x="3344" y="162" key="SettingsEditor/2560.0.2560.1080/0.0.2560.1055@2560.0.2560.1080" timestamp="1609369240489" />
+    <state x="3545" y="254" width="632" height="546" key="find.popup" timestamp="1609548465380">
+      <screen x="2560" y="0" width="2560" height="1080" />
+    </state>
+    <state x="3545" y="254" width="632" height="546" key="find.popup/2560.0.2560.1080/0.0.2560.1055@2560.0.2560.1080" timestamp="1609548465380" />
+    <state x="3504" y="241" key="run.anything.popup" timestamp="1609458410760">
+      <screen x="2560" y="0" width="2560" height="1080" />
+    </state>
+    <state x="3504" y="241" key="run.anything.popup/2560.0.2560.1080/0.0.2560.1055@2560.0.2560.1080" timestamp="1609458410760" />
+    <state x="3503" y="232" width="672" height="678" key="search.everywhere.popup" timestamp="1609370243474">
+      <screen x="2560" y="0" width="2560" height="1080" />
+    </state>
+    <state x="3503" y="232" width="672" height="678" key="search.everywhere.popup/2560.0.2560.1080/0.0.2560.1055@2560.0.2560.1080" timestamp="1609370243474" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -1,0 +1,101 @@
+<animated-vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <aapt:attr name="android:drawable">
+        <vector
+            android:name="vector"
+            android:width="24dp"
+            android:height="24dp"
+            android:viewportWidth="24"
+            android:viewportHeight="24">
+            <path
+                android:name="body_lines"
+                android:pathData="M 10.5 9 C 9.712 9 8.965 9.167 8.289 9.463 C 8.284 9.465 8.279 9.468 8.273 9.471 C 8.075 9.558 7.884 9.658 7.699 9.768 C 7.662 9.789 7.626 9.813 7.59 9.836 C 7.402 9.953 7.219 10.079 7.047 10.217 C 6.865 10.363 6.695 10.521 6.533 10.689 C 6.516 10.707 6.499 10.726 6.482 10.744 C 6.343 10.893 6.214 11.049 6.092 11.213 C 6.071 11.241 6.05 11.268 6.029 11.297 C 5.77 11.658 5.555 12.055 5.389 12.475 C 5.368 12.528 5.348 12.582 5.328 12.637 C 5.265 12.812 5.211 12.991 5.166 13.174 C 5.156 13.213 5.146 13.251 5.137 13.291 C 5.086 13.52 5.047 13.753 5.025 13.992 C 5.025 13.995 5.024 13.997 5.023 14 L 3.5 14 C 3.223 14 3 14.223 3 14.5 C 3 14.777 3.223 15 3.5 15 L 5.023 15 C 5.024 15.002 5.025 15.004 5.025 15.006 C 5.056 15.339 5.119 15.662 5.205 15.975 C 5.212 15.998 5.216 16.023 5.223 16.047 C 5.309 16.343 5.422 16.627 5.555 16.9 C 5.572 16.937 5.589 16.974 5.607 17.01 C 5.743 17.275 5.9 17.527 6.076 17.766 C 6.098 17.796 6.12 17.826 6.143 17.855 C 6.323 18.09 6.523 18.31 6.738 18.512 C 6.768 18.539 6.798 18.567 6.828 18.594 C 7.048 18.791 7.282 18.969 7.531 19.129 C 7.563 19.149 7.596 19.17 7.629 19.189 C 7.884 19.345 8.151 19.482 8.432 19.596 C 8.464 19.609 8.497 19.62 8.529 19.633 C 8.819 19.744 9.12 19.834 9.432 19.895 C 9.516 19.911 9.602 19.921 9.688 19.934 C 9.779 19.947 9.87 19.966 9.963 19.975 C 10.139 19.992 10.319 20 10.5 20 L 14.5 20 C 14.69 20 14.879 19.991 15.064 19.973 C 17.845 19.692 20 17.357 20 14.5 C 20 14.242 19.977 13.99 19.943 13.742 C 19.937 13.692 19.928 13.643 19.92 13.594 C 19.88 13.35 19.829 13.11 19.758 12.879 C 19.688 12.65 19.6 12.43 19.502 12.215 C 19.477 12.161 19.45 12.108 19.424 12.055 C 19.321 11.847 19.21 11.645 19.082 11.453 C 18.945 11.248 18.793 11.054 18.631 10.869 C 18.609 10.844 18.585 10.82 18.563 10.795 C 18.399 10.617 18.228 10.447 18.043 10.291 C 17.852 10.13 17.648 9.983 17.436 9.85 C 17.412 9.835 17.389 9.821 17.365 9.807 C 17.16 9.681 16.947 9.567 16.725 9.469 C 16.72 9.467 16.715 9.465 16.711 9.463 C 16.035 9.167 15.288 9 14.5 9 L 10.5 9 Z M 10.5 10 L 12 10 L 12 19 L 10.5 19 C 10.328 19 10.166 18.968 10 18.949 L 10 10.051 C 10.166 10.032 10.328 10 10.5 10 Z M 13 10 L 14.5 10 C 16.993 10 19 12.007 19 14.5 C 19 15.038 18.891 15.546 18.719 16.023 C 17.901 16.206 17.312 16.108 16.924 15.965 C 16.511 15.812 16.354 15.646 16.354 15.646 C 16.304 15.597 16.245 15.559 16.181 15.533 C 16.116 15.508 16.046 15.497 15.977 15.5 C 15.852 15.506 15.734 15.558 15.646 15.646 C 15.553 15.74 15.5 15.867 15.5 16 C 15.5 16.133 15.553 16.26 15.646 16.354 C 15.646 16.354 15.989 16.688 16.576 16.904 C 16.976 17.052 17.517 17.146 18.162 17.107 C 17.348 18.251 16.017 19 14.5 19 L 13 19 L 13 10 Z M 9 10.275 L 9 18.725 C 7.253 18.107 6 16.463 6 14.5 C 6 12.537 7.253 10.893 9 10.275 Z M 16 12 C 15.735 12 15.48 12.105 15.293 12.293 C 15.105 12.48 15 12.735 15 13 C 15 13.265 15.105 13.52 15.293 13.707 C 15.48 13.895 15.735 14 16 14 C 16.265 14 16.52 13.895 16.707 13.707 C 16.895 13.52 17 13.265 17 13 C 17 12.735 16.895 12.48 16.707 12.293 C 16.52 12.105 16.265 12 16 12 Z"
+                android:fillColor="@color/icon"
+                android:strokeWidth="1"/>
+            <group
+                android:name="group_wing_back"
+                android:pivotX="12.5"
+                android:pivotY="9.5">
+                <path
+                    android:name="wing_back"
+                    android:pathData="M 15.051 4 C 16.688 4.028 18 5.363 18 7 C 18 8.657 16.657 10 15 10 L 12 10 L 12 7 C 12 5.343 13.343 4 15 4 C 15.017 4 15.034 4 15.051 4 Z M 15.049 5 C 15.033 5 15.016 5 15 5 C 13.895 5 13 5.895 13 7 L 13 9 L 15 9 C 16.105 9 17 8.105 17 7 C 17 5.914 16.134 5.027 15.049 5 Z"
+                    android:fillColor="@color/icon"
+                    android:strokeWidth="1"/>
+            </group>
+            <group
+                android:name="group_wing_front"
+                android:pivotX="12.5"
+                android:pivotY="9.5">
+                <path
+                    android:name="wing_front_bg"
+                    android:pathData="M 8 5 L 12 5 L 12 9 L 8 9 Z"
+                    android:fillColor="@color/background"
+                    android:strokeWidth="1"/>
+                <path
+                    android:name="wing_front"
+                    android:pathData="M 9.949 4 C 8.312 4.028 7 5.363 7 7 C 7 8.657 8.343 10 10 10 L 13 10 L 13 7 C 13 5.343 11.657 4 10 4 C 9.983 4 9.966 4 9.949 4 Z M 9.951 5 C 9.967 5 9.984 5 10 5 C 11.105 5 12 5.895 12 7 L 12 9 L 10 9 C 8.895 9 8 8.105 8 7 C 8 5.914 8.866 5.027 9.951 5 Z"
+                    android:fillColor="@color/icon"
+                    android:strokeWidth="1"/>
+            </group>
+        </vector>
+    </aapt:attr>
+    <target android:name="group_wing_back">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator
+                    android:propertyName="rotation"
+                    android:duration="200"
+                    android:valueFrom="0"
+                    android:valueTo="-90"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                <objectAnimator
+                    android:propertyName="rotation"
+                    android:startOffset="200"
+                    android:duration="200"
+                    android:valueFrom="-90"
+                    android:valueTo="0"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                <objectAnimator
+                    android:propertyName="rotation"
+                    android:startOffset="400"
+                    android:duration="200"
+                    android:valueFrom="0"
+                    android:valueTo="-90"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="group_wing_front">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator
+                    android:propertyName="rotation"
+                    android:duration="200"
+                    android:valueFrom="0"
+                    android:valueTo="90"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                <objectAnimator
+                    android:propertyName="rotation"
+                    android:startOffset="200"
+                    android:duration="200"
+                    android:valueFrom="90"
+                    android:valueTo="0"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                <objectAnimator
+                    android:propertyName="rotation"
+                    android:startOffset="400"
+                    android:duration="200"
+                    android:valueFrom="0"
+                    android:valueTo="90"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+            </set>
+        </aapt:attr>
+    </target>
+</animated-vector>
