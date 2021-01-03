@@ -16,19 +16,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7071ed4c-2bdc-419e-aae5-8027d1a88607" name="Default" comment="Optimize layout">
-      <change afterPath="$PROJECT_DIR$/app/release/SpellingBee" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/release/output-metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
+    <list default="true" id="7071ed4c-2bdc-419e-aae5-8027d1a88607" name="Default" comment="Improve app icon">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_foreground.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +93,7 @@
     <property name="multi-representation-preview/home/pzedler/Android/Sdk/sources/android-29/android/view/View.java_selected" value="Custom views" />
     <property name="multi-representation-preview/home/pzedler/AndroidStudioProjects/spelling-android/app/src/main/java/xyz/zedler/patrick/spelling/view/GraphView.java_selected" value="Custom views" />
     <property name="multi-representation-preview/home/pzedler/AndroidStudioProjects/spellingbee-android/app/src/main/java/xyz/zedler/patrick/spelling/view/GraphView.java_selected" value="Custom views" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -470,7 +460,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609633416395</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Improve app icon">
+      <created>1609694524292</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1609694524293</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -497,14 +494,15 @@
     <MESSAGE value="Prepare rollout" />
     <MESSAGE value="Cleanup project" />
     <MESSAGE value="Optimize layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="Optimize layout" />
+    <MESSAGE value="Improve app icon" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improve app icon" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="3360" y="262" width="950" height="530" key="#PSD" timestamp="1609364583976">
+    <state x="3360" y="262" width="950" height="530" key="#PSD" timestamp="1609694593782">
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
-    <state x="3360" y="262" width="950" height="530" key="#PSD/2560.0.2560.1080/0.0.2560.1055@2560.0.2560.1080" timestamp="1609364583976" />
+    <state x="3360" y="262" width="950" height="530" key="#PSD/2560.0.2560.1080/0.0.2560.1055@2560.0.2560.1080" timestamp="1609694593782" />
     <state x="3573" y="278" width="524" height="499" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1609467978691">
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
@@ -521,10 +519,10 @@
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
     <state x="3423" y="285" width="824" height="484" key="AndroidCreateResourceFileDialog/2560.0.2560.1080/0.0.2560.1055@2560.0.2560.1080" timestamp="1609437829187" />
-    <state x="3212" y="123" width="1166" height="818" key="CommitChangelistDialog2" timestamp="1609633416339">
+    <state x="3212" y="123" width="1166" height="818" key="CommitChangelistDialog2" timestamp="1609694547258">
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
-    <state x="3212" y="123" width="1166" height="818" key="CommitChangelistDialog2/2560.0.2560.1080/0.0.2560.1055@2560.0.2560.1080" timestamp="1609633416339" />
+    <state x="3212" y="123" width="1166" height="818" key="CommitChangelistDialog2/2560.0.2560.1080/0.0.2560.1055@2560.0.2560.1080" timestamp="1609694547258" />
     <state x="3623" y="285" width="424" height="484" key="FileChooserDialogImpl" timestamp="1609693799921">
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
