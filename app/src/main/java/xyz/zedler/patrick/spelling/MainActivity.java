@@ -233,6 +233,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (hints < Constants.HINTS_MAX) {
             ArrayList<String> notFound = getMissedWords();
             String hint = notFound.get(new Random().nextInt(notFound.size())).substring(0, 3);
+            hint = hint.replaceAll(center, getStyledCenter());
             binding.textInput.setText(Html.fromHtml(hint), TextView.BufferType.SPANNABLE);
             hints++;
             if (hints < Constants.HINTS_MAX) {
