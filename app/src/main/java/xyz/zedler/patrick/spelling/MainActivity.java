@@ -155,6 +155,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     ContextCompat.getColor(this, R.color.retro_green_fg_invert)
             ).setAction(getString(R.string.action_new_game), view -> {
                 Bundle bundle = new Bundle();
+                bundle.putString(Constants.BOTTOM_SHEET.LETTERS, TextUtils.join("", letters));
+                bundle.putString(Constants.BOTTOM_SHEET.CENTER, center);
                 bundle.putStringArrayList(Constants.BOTTOM_SHEET.MISSED_WORDS, getMissedWords());
                 bundle.putInt(Constants.BOTTOM_SHEET.HINTS_USED, hints);
                 DialogFragment fragment = new NewGameBottomSheetDialogFragment();

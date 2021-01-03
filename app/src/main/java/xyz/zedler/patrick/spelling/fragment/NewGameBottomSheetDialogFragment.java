@@ -1,10 +1,7 @@
 package xyz.zedler.patrick.spelling.fragment;
 
 import android.app.Dialog;
-import android.content.Context;
-import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.text.Html;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
@@ -50,20 +47,8 @@ public class NewGameBottomSheetDialogFragment extends BaseBottomSheetDialogFragm
 
 		setCancelable(false);
 
-		Context context = getContext();
 		Bundle bundle = getArguments();
-		assert context != null && bundle != null;
-
-		SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
-		String letters = sharedPrefs.getString(Constants.PREF.LETTERS, Constants.DEFAULT.LETTERS);
-		String center = sharedPrefs.getString(Constants.PREF.CENTER, Constants.DEFAULT.CENTER);
-		String all = "<font color='#deb853'>" + center + "</font>" + letters;
-		binding.textNewGameLetters.setText(Html.fromHtml(all), TextView.BufferType.SPANNABLE);
-
-		binding.buttonNewGame.setOnClickListener(v -> {
-			new NewGameTask((MainActivity) getActivity()).execute();
-			dismiss();
-		});
+		assert bundle != null;
 
 		binding.textNewGameHints.setText(
 				getString(
@@ -71,6 +56,18 @@ public class NewGameBottomSheetDialogFragment extends BaseBottomSheetDialogFragm
 						bundle.getInt(Constants.BOTTOM_SHEET.HINTS_USED, 0)
 				)
 		);
+
+		String letters = bundle.getString(
+				Constants.BOTTOM_SHEET.LETTERS, Constants.DEFAULT.LETTERS
+		);
+		String center = bundle.getString(Constants.BOTTOM_SHEET.CENTER, Constants.DEFAULT.CENTER);
+		String all = "<font color='#deb853'>" + center + "</font>" + letters;
+		binding.textNewGameLetters.setText(Html.fromHtml(all), TextView.BufferType.SPANNABLE);
+
+		binding.buttonNewGame.setOnClickListener(v -> {
+			new NewGameTask((MainActivity) getActivity()).execute();
+			dismiss();
+		});
 
 		ArrayList<String> missed = bundle.getStringArrayList(Constants.BOTTOM_SHEET.MISSED_WORDS);
 		if(missed != null) {

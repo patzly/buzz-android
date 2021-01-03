@@ -16,21 +16,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7071ed4c-2bdc-419e-aae5-8027d1a88607" name="Default" comment="Prepare rollout">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/all.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/Constants.java" afterDir="false" />
+    <list default="true" id="7071ed4c-2bdc-419e-aae5-8027d1a88607" name="Default" comment="Cleanup project">
       <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/fragment/BaseBottomSheetDialogFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/fragment/BaseBottomSheetDialogFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/task/NewGameTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/task/NewGameTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/task/SaveWordListTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/task/SaveWordListTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/util/IconUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/util/IconUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/util/ResUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/util/ResUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/util/VibratorUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/util/VibratorUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_umbrella.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/fragment/NewGameBottomSheetDialogFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/fragment/NewGameBottomSheetDialogFragment.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +28,7 @@
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[915dc88a]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -451,7 +439,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599772405871</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Cleanup project">
+      <created>1609631433561</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1609631433562</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -474,10 +469,11 @@
     <MESSAGE value="Update testdata" />
     <MESSAGE value="Improve layout" />
     <MESSAGE value="Turn off debugging" />
-    <MESSAGE value="Cleanup project" />
     <MESSAGE value="Improve location error handling" />
     <MESSAGE value="Prepare rollout" />
-    <option name="LAST_COMMIT_MESSAGE" value="Prepare rollout" />
+    <MESSAGE value="Cleanup project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleanup project" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="3360" y="262" width="950" height="530" key="#PSD" timestamp="1609364583976">
@@ -488,6 +484,10 @@
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
     <state x="3573" y="278" width="524" height="499" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/2560.0.2560.1080/0.0.2560.1055@2560.0.2560.1080" timestamp="1609467978691" />
+    <state x="3537" y="368" width="595" height="319" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1609631758634">
+      <screen x="2560" y="0" width="2560" height="1080" />
+    </state>
+    <state x="3537" y="368" width="595" height="319" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/2560.0.2560.1080/0.0.2560.1055@2560.0.2560.1080" timestamp="1609631758634" />
     <state x="3423" y="285" width="824" height="484" key="AndroidCreateResourceDirectoryDialog" timestamp="1609626044958">
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
@@ -496,6 +496,10 @@
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
     <state x="3423" y="285" width="824" height="484" key="AndroidCreateResourceFileDialog/2560.0.2560.1080/0.0.2560.1055@2560.0.2560.1080" timestamp="1609437829187" />
+    <state x="3212" y="123" width="1166" height="818" key="CommitChangelistDialog2" timestamp="1609631433396">
+      <screen x="2560" y="0" width="2560" height="1080" />
+    </state>
+    <state x="3212" y="123" width="1166" height="818" key="CommitChangelistDialog2/2560.0.2560.1080/0.0.2560.1055@2560.0.2560.1080" timestamp="1609631433396" />
     <state x="3623" y="285" width="424" height="484" key="FileChooserDialogImpl" timestamp="1609628789672">
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
@@ -528,6 +532,10 @@
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
     <state x="3344" y="162" key="SettingsEditor/2560.0.2560.1080/0.0.2560.1055@2560.0.2560.1080" timestamp="1609630704317" />
+    <state x="3435" y="263" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1609631434736">
+      <screen x="2560" y="0" width="2560" height="1080" />
+    </state>
+    <state x="3435" y="263" width="800" height="528" key="Vcs.Push.Dialog.v2/2560.0.2560.1080/0.0.2560.1055@2560.0.2560.1080" timestamp="1609631434736" />
     <state x="3545" y="254" width="632" height="546" key="find.popup" timestamp="1609548465380">
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>

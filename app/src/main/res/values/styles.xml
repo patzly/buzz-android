@@ -36,19 +36,6 @@
     </style>
 
     <style
-        name="Widget.Spelling.TextInputLayout.FilledBox"
-        parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="boxCornerRadiusTopStart">6dp</item>
-        <item name="boxCornerRadiusTopEnd">6dp</item>
-        <item name="boxBackgroundColor">@color/on_background_tertiary</item>
-        <item name="boxStrokeColor">@color/secondary</item>
-        <item name="hintTextColor">@color/secondary</item>
-        <item name="android:textColorHint">@color/on_background_secondary</item>
-    </style>
-
-    <style
         name="Widget.Spelling.Button.TextButton"
         parent="Widget.MaterialComponents.Button.TextButton">
         <item name="rippleColor">@color/highlight</item>
