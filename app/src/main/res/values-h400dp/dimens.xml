@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <dimen name="hex_width">70dp</dimen>
+    <dimen name="hex_width">78dp</dimen>
     <dimen name="hex_outline">6dp</dimen>
-    <dimen name="hex_translation">115dp</dimen>
+    <dimen name="hex_translation">127dp</dimen>
     <dimen name="hex_font_size">28sp</dimen>
 
 </resources>
