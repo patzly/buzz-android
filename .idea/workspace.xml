@@ -16,10 +16,19 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7071ed4c-2bdc-419e-aae5-8027d1a88607" name="Default" comment="Cleanup project">
+    <list default="true" id="7071ed4c-2bdc-419e-aae5-8027d1a88607" name="Default" comment="Optimize layout">
+      <change afterPath="$PROJECT_DIR$/app/release/SpellingBee" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/release/output-metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-h400dp/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-h400dp/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-h400dp/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-h400dp/dimens.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_foreground.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/ic_launcher_background.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +38,7 @@
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[915dc88a]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -76,7 +85,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="ApkExportedModule" value="app" />
+    <property name="ApkExportedModule" value="Spelling_Bee_Android.app" />
     <property name="ExportApk.ApkPath" value="$PROJECT_DIR$/app" />
     <property name="ExportApk.BuildVariants" value="release" />
     <property name="ExportApk.SignV1" value="true" />
@@ -454,7 +463,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609632012499</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Optimize layout">
+      <created>1609633416395</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1609633416395</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -480,7 +496,8 @@
     <MESSAGE value="Improve location error handling" />
     <MESSAGE value="Prepare rollout" />
     <MESSAGE value="Cleanup project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleanup project" />
+    <MESSAGE value="Optimize layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="Optimize layout" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -504,14 +521,14 @@
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
     <state x="3423" y="285" width="824" height="484" key="AndroidCreateResourceFileDialog/2560.0.2560.1080/0.0.2560.1055@2560.0.2560.1080" timestamp="1609437829187" />
-    <state x="3212" y="123" width="1166" height="818" key="CommitChangelistDialog2" timestamp="1609632012434">
+    <state x="3212" y="123" width="1166" height="818" key="CommitChangelistDialog2" timestamp="1609633416339">
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
-    <state x="3212" y="123" width="1166" height="818" key="CommitChangelistDialog2/2560.0.2560.1080/0.0.2560.1055@2560.0.2560.1080" timestamp="1609632012434" />
-    <state x="3623" y="285" width="424" height="484" key="FileChooserDialogImpl" timestamp="1609628789672">
+    <state x="3212" y="123" width="1166" height="818" key="CommitChangelistDialog2/2560.0.2560.1080/0.0.2560.1055@2560.0.2560.1080" timestamp="1609633416339" />
+    <state x="3623" y="285" width="424" height="484" key="FileChooserDialogImpl" timestamp="1609693799921">
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
-    <state x="3623" y="285" width="424" height="484" key="FileChooserDialogImpl/2560.0.2560.1080/0.0.2560.1055@2560.0.2560.1080" timestamp="1609628789672" />
+    <state x="3623" y="285" width="424" height="484" key="FileChooserDialogImpl/2560.0.2560.1080/0.0.2560.1055@2560.0.2560.1080" timestamp="1609693799921" />
     <state x="3691" y="427" key="Github.ShareDialog" timestamp="1609630753359">
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
@@ -540,10 +557,10 @@
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
     <state x="3344" y="162" key="SettingsEditor/2560.0.2560.1080/0.0.2560.1055@2560.0.2560.1080" timestamp="1609630704317" />
-    <state x="3435" y="263" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1609632013983">
+    <state x="3435" y="263" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1609633417714">
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
-    <state x="3435" y="263" width="800" height="528" key="Vcs.Push.Dialog.v2/2560.0.2560.1080/0.0.2560.1055@2560.0.2560.1080" timestamp="1609632013983" />
+    <state x="3435" y="263" width="800" height="528" key="Vcs.Push.Dialog.v2/2560.0.2560.1080/0.0.2560.1055@2560.0.2560.1080" timestamp="1609633417714" />
     <state x="3545" y="254" width="632" height="546" key="find.popup" timestamp="1609548465380">
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>

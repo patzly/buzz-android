@@ -134,7 +134,7 @@
                                       <entry key="generatePlayStoreIcon" value="false" />
                                       <entry key="generateRoundIcon" value="false" />
                                       <entry key="legacyIconShape" value="CIRCLE" />
-                                      <entry key="showSafeZone" value="false" />
+                                      <entry key="showGrid" value="true" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -302,7 +302,7 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="showSafeZone" value="false" />
+                                      <entry key="showGrid" value="true" />
                                     </map>
                                   </option>
                                 </PersistentState>
