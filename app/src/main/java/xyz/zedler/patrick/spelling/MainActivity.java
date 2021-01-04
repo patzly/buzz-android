@@ -228,6 +228,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 .putString(Constants.PREF.LETTERS, letters)
                 .putString(Constants.PREF.CENTER, center)
                 .putString(Constants.PREF.FOUND, null)
+                .putInt(Constants.PREF.HINTS, 0)
                 .apply();
         fillWithLetters(true, false);
         clearLetters();
