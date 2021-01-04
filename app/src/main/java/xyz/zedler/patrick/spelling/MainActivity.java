@@ -74,6 +74,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             if(clickUtil.isDisabled()) return false;
             int id = item.getItemId();
             if (id == R.id.action_hint) {
+                IconUtil.start(item.getIcon());
                 vibrator.tick();
                 newHint();
             } else if (id == R.id.action_help) {
@@ -102,6 +103,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         binding.cardMainClear.setOnLongClickListener(v -> {
             vibrator.tick();
+            IconUtil.start(binding.imageClear);
             clearLetters();
             return true;
         });
@@ -178,11 +180,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         } else if (id == R.id.frame_hex_center) {
             addLetter(center);
         } else if (id == R.id.card_main_clear) {
+            IconUtil.start(binding.imageClear);
             removeLastLetter();
         } else if (id == R.id.card_main_shuffle) {
+            IconUtil.start(binding.imageShuffle);
             vibrator.tick();
             shuffle();
         } else if (id == R.id.card_main_enter) {
+            IconUtil.start(binding.imageEnter);
             vibrator.tick();
             if(isValid()) processInput();
         } else if (id == R.id.frame_app_bar) {

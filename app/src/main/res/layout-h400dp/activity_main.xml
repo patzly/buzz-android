@@ -424,10 +424,11 @@
             android:layout_marginEnd="4dp">
 
             <ImageView
-                android:layout_width="24dp"
+                android:id="@+id/image_clear"
+                android:layout_width="34dp"
                 android:layout_height="24dp"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_backspace"
+                android:src="@drawable/ic_backspace_anim"
                 tools:ignore="ContentDescription" />
 
         </com.google.android.material.card.MaterialCardView>
@@ -440,10 +441,11 @@
             android:layout_marginEnd="4dp">
 
             <ImageView
+                android:id="@+id/image_shuffle"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_shuffle"
+                android:src="@drawable/ic_shuffle_anim"
                 tools:ignore="ContentDescription" />
 
         </com.google.android.material.card.MaterialCardView>
@@ -455,10 +457,11 @@
             android:layout_marginStart="4dp">
 
             <ImageView
+                android:id="@+id/image_enter"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_done"
+                android:src="@drawable/ic_done_anim"
                 tools:ignore="ContentDescription" />
 
         </com.google.android.material.card.MaterialCardView>

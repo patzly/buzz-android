@@ -7,7 +7,7 @@
     <item
         android:id="@+id/action_hint"
         android:title="@string/action_hint"
-        android:icon="@drawable/ic_local_play"
+        android:icon="@drawable/ic_local_play_anim"
         app:showAsAction="always"
         tools:ignore="AlwaysShowAction" />
 

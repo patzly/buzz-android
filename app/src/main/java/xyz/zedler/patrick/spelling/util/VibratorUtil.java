@@ -8,7 +8,7 @@ import android.os.Vibrator;
 
 public class VibratorUtil {
 
-    private final static long TICK = 15;
+    private final static long TICK = 20;
 
     private Vibrator vibrator;
 

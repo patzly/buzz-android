@@ -408,23 +408,26 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="88dp"
         android:layout_gravity="bottom"
         android:orientation="horizontal"
-        android:padding="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
         android:clipToPadding="false">
 
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/card_main_clear"
             style="@style/Widget.Spelling.Card"
-            android:layout_marginEnd="4dp"
-            app:contentPadding="32dp">
+            android:layout_height="match_parent"
+            android:layout_marginEnd="4dp">
 
             <ImageView
-                android:layout_width="24dp"
+                android:id="@+id/image_clear"
+                android:layout_width="34dp"
                 android:layout_height="24dp"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_backspace"
+                android:src="@drawable/ic_backspace_anim"
                 tools:ignore="ContentDescription" />
 
         </com.google.android.material.card.MaterialCardView>
@@ -432,15 +435,16 @@
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/card_main_shuffle"
             style="@style/Widget.Spelling.Card"
+            android:layout_height="match_parent"
             android:layout_marginStart="4dp"
-            android:layout_marginEnd="4dp"
-            app:contentPadding="32dp">
+            android:layout_marginEnd="4dp">
 
             <ImageView
+                android:id="@+id/image_shuffle"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_shuffle"
+                android:src="@drawable/ic_shuffle_anim"
                 tools:ignore="ContentDescription" />
 
         </com.google.android.material.card.MaterialCardView>
@@ -448,14 +452,15 @@
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/card_main_enter"
             style="@style/Widget.Spelling.Card"
-            android:layout_marginStart="4dp"
-            app:contentPadding="32dp">
+            android:layout_height="match_parent"
+            android:layout_marginStart="4dp">
 
             <ImageView
+                android:id="@+id/image_enter"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_done"
+                android:src="@drawable/ic_done_anim"
                 tools:ignore="ContentDescription" />
 
         </com.google.android.material.card.MaterialCardView>
