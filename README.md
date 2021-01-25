@@ -2,7 +2,7 @@
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) [![Release](https://img.shields.io/github/v/release/patzly/spelling-android?label=Release&logo=github)](https://github.com/patzly/spelling-android/releases)  [![APK Downloads](https://img.shields.io/github/downloads/patzly/spelling-android/total.svg?label=APK%20Downloads&logo=github)](https://github.com/patzly/spelling-android/releases)
 
-Spelling Bee Android is an unofficial open-source Android game based on the official Spelling Bee by The New York Times. 
+Spelling Bee Android is an unofficial open-source Android game based on the official Spelling Bee by The New York Times.  
 It currently only supports German.
 
 ## Download
