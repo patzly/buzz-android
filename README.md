@@ -12,6 +12,7 @@ It currently only supports German.
 ## Features
 
 * Clean design
+* German word list from [www.netzmafia.de](http://www.netzmafia.de/software/wordlists/deutsch.txt)
 * System dependent dark mode
 * No ads and no analytics
 * Tiny download size
