@@ -18,7 +18,7 @@ It currently only supports German.
 
 ## Compatibility
 
-Doodle Android requires at least Android 5.0 Lollipop on your device.
+Spelling Bee Android requires at least Android 5.0 Lollipop on your device.
 
 ## License
 
