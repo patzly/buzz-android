@@ -1,9 +1,13 @@
 package xyz.zedler.patrick.spelling.fragment;
 
 import android.app.Activity;
+import android.graphics.Insets;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.View;
+import android.view.WindowInsets;
+import android.view.WindowMetrics;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -26,12 +30,24 @@ public class BaseBottomSheetDialogFragment extends BottomSheetDialogFragment {
             View sheet = dialog.findViewById(com.google.android.material.R.id.design_bottom_sheet);
             if(sheet == null) return;
 
-            DisplayMetrics metrics = new DisplayMetrics();
-            ((Activity) requireContext()).getWindowManager()
-                    .getDefaultDisplay()
-                    .getMetrics(metrics);
+            Activity activity = getActivity();
+            if(activity == null) return;
 
-            BottomSheetBehavior.from(sheet).setPeekHeight(metrics.heightPixels / 2);
+            BottomSheetBehavior.from(sheet).setPeekHeight(getHalfHeight(activity));
         });
+    }
+
+    private static int getHalfHeight(Activity activity) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+            WindowMetrics windowMetrics = activity.getWindowManager().getCurrentWindowMetrics();
+            Insets insets = windowMetrics.getWindowInsets().getInsetsIgnoringVisibility(
+                    WindowInsets.Type.systemBars()
+            );
+            return (windowMetrics.getBounds().height() - insets.top - insets.bottom) / 2;
+        } else {
+            DisplayMetrics displayMetrics = new DisplayMetrics();
+            activity.getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
+            return displayMetrics.heightPixels / 2;
+        }
     }
 }

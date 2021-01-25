@@ -4,6 +4,7 @@ import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Looper;
 import android.preference.PreferenceManager;
 import android.text.Html;
 import android.text.TextUtils;
@@ -289,7 +290,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         );
 
         if(animated) animateLetters(0, true);
-        new Handler().postDelayed(() -> {
+        new Handler(Looper.getMainLooper()).postDelayed(() -> {
             binding.textHex1.setText(letters.get(0));
             binding.textHex2.setText(letters.get(1));
             binding.textHex3.setText(letters.get(2));
@@ -298,7 +299,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             binding.textHex6.setText(letters.get(5));
             if(animated) animateLetters(1, true);
         }, animated ? Constants.ANIMATION : 0);
-        new Handler().postDelayed(
+        new Handler(Looper.getMainLooper()).postDelayed(
                 () -> binding.textHexCenter.setText(center),
                 animated ? Constants.ANIMATION : 0
         );
@@ -307,7 +308,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void shuffle() {
         letters = getLetters();
         animateLetters(0, false);
-        new Handler().postDelayed(() -> {
+        new Handler(Looper.getMainLooper()).postDelayed(() -> {
             binding.textHex1.setText(letters.get(0));
             binding.textHex2.setText(letters.get(1));
             binding.textHex3.setText(letters.get(2));
@@ -387,7 +388,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             found.add(input);
             changeFoundCount(found.size());
             ConfettiUtil.explode(binding.frameContainer, binding.cardMainShuffle);
-            new Handler().postDelayed(this::clearLetters, 200);
+            new Handler(Looper.getMainLooper()).postDelayed(this::clearLetters, 200);
         } else if (found.contains(input)) {
             showMessage(R.string.msg_already_found);
             invalidInput();
@@ -407,7 +408,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void invalidInput() {
         binding.textInput.startAnimation(AnimationUtils.loadAnimation(this,R.anim.shake));
-        new Handler().postDelayed(this::clearLetters, 700);
+        new Handler(Looper.getMainLooper()).postDelayed(this::clearLetters, 700);
     }
 
     public void setRiddleProgress(int progress) {
