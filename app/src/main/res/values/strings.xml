@@ -1,25 +1,44 @@
+<!--
+  ~ This file is part of Spelling Bee Android.
+  ~
+  ~ Spelling Bee Android is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ Spelling Bee Android is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with Spelling Bee Android. If not, see <http://www.gnu.org/licenses/>.
+  ~
+  ~ Copyright (c) 2020-2021 by Patrick Zedler
+  -->
+
 <resources>
 
-    <string name="app_name">Summm</string>
+  <string name="app_name">Summm</string>
 
-    <string name="title_missed_words">Entgangene Wörter</string>
-    <string name="title_found_words">Gefundene Wörter</string>
-    <string name="title_rules">Spielregeln</string>
+  <string name="title_missed_words">Entgangene Wörter</string>
+  <string name="title_found_words">Gefundene Wörter</string>
+  <string name="title_rules">Spielregeln</string>
 
-    <string name="action_hint">Hinweis</string>
-    <string name="action_help">Spielregeln</string>
-    <string name="action_new_game">Neues Spiel</string>
-    <string name="action_found">Gefunden</string>
+  <string name="action_hint">Hinweis</string>
+  <string name="action_help">Spielregeln</string>
+  <string name="action_new_game">Neues Spiel</string>
+  <string name="action_found">Gefunden</string>
 
-    <string name="msg_new_game">Runde beenden?</string>
-    <string name="msg_too_long">Eingabe zu lang!</string>
-    <string name="msg_too_short">Eingabe zu kurz!</string>
-    <string name="msg_not_on_word_list">Nicht auf Wortliste!</string>
-    <string name="msg_missing_center_letter">Mittlerer Buchstabe fehlt!</string>
-    <string name="msg_already_found">Schon gefunden!</string>
-    <string name="msg_not_found_any">Noch nichts gefunden!</string>
-    <string name="msg_all_hints_used">Alle Hinweise aufgebraucht!</string>
-    <string name="msg_hints">Noch %1$d Hinweise verfügbar!</string>
-    <string name="msg_hints_used">%1$d Hinweise genutzt</string>
+  <string name="msg_new_game">Runde beenden?</string>
+  <string name="msg_too_long">Eingabe zu lang!</string>
+  <string name="msg_too_short">Eingabe zu kurz!</string>
+  <string name="msg_not_on_word_list">Nicht auf Wortliste!</string>
+  <string name="msg_missing_center_letter">Mittlerer Buchstabe fehlt!</string>
+  <string name="msg_already_found">Schon gefunden!</string>
+  <string name="msg_not_found_any">Noch nichts gefunden!</string>
+  <string name="msg_all_hints_used">Alle Hinweise aufgebraucht!</string>
+  <string name="msg_hints">Noch %1$d Hinweise verfügbar!</string>
+  <string name="msg_hints_used">%1$d Hinweise genutzt</string>
 
 </resources>

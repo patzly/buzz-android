@@ -1,48 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of Spelling Bee Android.
+  ~
+  ~ Spelling Bee Android is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ Spelling Bee Android is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with Spelling Bee Android. If not, see <http://www.gnu.org/licenses/>.
+  ~
+  ~ Copyright (c) 2020-2021 by Patrick Zedler
+  -->
+
 <set
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:interpolator="@android:anim/overshoot_interpolator"
-    android:fillAfter="true">
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:interpolator="@android:anim/overshoot_interpolator"
+  android:fillAfter="true">
 
-    <translate
-        android:fromXDelta="0%"
-        android:toXDelta="2.5%"
-        android:duration="100" />
+  <translate
+    android:fromXDelta="0%"
+    android:toXDelta="2.5%"
+    android:duration="100" />
 
-    <translate
-        android:startOffset="100"
-        android:fromXDelta="0%"
-        android:toXDelta="-5%"
-        android:duration="100" />
+  <translate
+    android:startOffset="100"
+    android:fromXDelta="0%"
+    android:toXDelta="-5%"
+    android:duration="100" />
 
-    <translate
-        android:startOffset="200"
-        android:fromXDelta="0%"
-        android:toXDelta="7.5%"
-        android:duration="100" />
+  <translate
+    android:startOffset="200"
+    android:fromXDelta="0%"
+    android:toXDelta="7.5%"
+    android:duration="100" />
 
-    <translate
-        android:startOffset="300"
-        android:fromXDelta="0%"
-        android:toXDelta="-7.5%"
-        android:duration="100" />
+  <translate
+    android:startOffset="300"
+    android:fromXDelta="0%"
+    android:toXDelta="-7.5%"
+    android:duration="100" />
 
-    <translate
-        android:startOffset="400"
-        android:fromXDelta="0%"
-        android:toXDelta="5%"
-        android:duration="100" />
+  <translate
+    android:startOffset="400"
+    android:fromXDelta="0%"
+    android:toXDelta="5%"
+    android:duration="100" />
 
-    <translate
-        android:startOffset="500"
-        android:fromXDelta="0%"
-        android:toXDelta="-5%"
-        android:duration="100" />
+  <translate
+    android:startOffset="500"
+    android:fromXDelta="0%"
+    android:toXDelta="-5%"
+    android:duration="100" />
 
-    <translate
-        android:startOffset="600"
-        android:fromXDelta="0%"
-        android:toXDelta="2.5%"
-        android:duration="100" />
+  <translate
+    android:startOffset="600"
+    android:fromXDelta="0%"
+    android:toXDelta="2.5%"
+    android:duration="100" />
 
 </set>

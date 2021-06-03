@@ -1,61 +1,86 @@
+/*
+ * This file is part of Spelling Bee Android.
+ *
+ * Spelling Bee Android is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Spelling Bee Android is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with Spelling Bee Android. If not, see <http://www.gnu.org/licenses/>.
+ *
+ * Copyright (c) 2020-2021 by Patrick Zedler
+ */
+
 package xyz.zedler.patrick.spelling.task;
 
 import android.os.AsyncTask;
 import android.util.Log;
-
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
-
 import xyz.zedler.patrick.spelling.MainActivity;
 import xyz.zedler.patrick.spelling.util.SpellingUtil;
 
 public class MatchingWordsTask extends AsyncTask<String[], Integer, ArrayList<String>> {
 
-    private final static String TAG = MatchingWordsTask.class.getSimpleName();
-    private final static boolean DEBUG = false;
+  private final static String TAG = MatchingWordsTask.class.getSimpleName();
+  private final static boolean DEBUG = false;
 
-    private final WeakReference<MainActivity> activityRef;
+  private final WeakReference<MainActivity> activityRef;
 
-    public MatchingWordsTask(MainActivity activity) {
-        activityRef = new WeakReference<>(activity);
-    }
+  public MatchingWordsTask(MainActivity activity) {
+    activityRef = new WeakReference<>(activity);
+  }
 
-    @Override
-    protected final ArrayList<String> doInBackground(String[]... params) {
-        MainActivity activity = activityRef.get();
-        if(activity == null) return null;
+  @Override
+  protected final ArrayList<String> doInBackground(String[]... params) {
+    MainActivity activity = activityRef.get();
+      if (activity == null) {
+          return null;
+      }
 
-        ArrayList<String> matches = new ArrayList<>();
-        try {
-            InputStream inputStream = activity.getAssets().open("filtered.txt");
-            InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
-            BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
-            for (String line; (line = bufferedReader.readLine()) != null;) {
-                if (line.toUpperCase().contains(params[0][1]) // center
-                        && SpellingUtil.containsNoOtherLetter(line, params[0][0]) // pangram
-                        && !matches.contains(line.toUpperCase())
-                ) {
-                    matches.add(line.toUpperCase());
-                }
-            }
-            inputStream.close();
-        } catch (FileNotFoundException e) {
-            if (DEBUG) Log.e(TAG, "readFromFile: file not found!");
-        } catch (Exception e) {
-            if (DEBUG) Log.e(TAG, "readFromFile: " + e.toString());
+    ArrayList<String> matches = new ArrayList<>();
+    try {
+      InputStream inputStream = activity.getAssets().open("filtered.txt");
+      InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
+      BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+      for (String line; (line = bufferedReader.readLine()) != null; ) {
+        if (line.toUpperCase().contains(params[0][1]) // center
+            && SpellingUtil.containsNoOtherLetter(line, params[0][0]) // pangram
+            && !matches.contains(line.toUpperCase())
+        ) {
+          matches.add(line.toUpperCase());
         }
-
-        return matches;
+      }
+      inputStream.close();
+    } catch (FileNotFoundException e) {
+        if (DEBUG) {
+            Log.e(TAG, "readFromFile: file not found!");
+        }
+    } catch (Exception e) {
+        if (DEBUG) {
+            Log.e(TAG, "readFromFile: " + e.toString());
+        }
     }
 
-    @Override
-    protected void onPostExecute(ArrayList<String> strings) {
-        MainActivity activity = activityRef.get();
-        if(activity == null) return;
-        activity.processMatches(strings, false);
-    }
+    return matches;
+  }
+
+  @Override
+  protected void onPostExecute(ArrayList<String> strings) {
+    MainActivity activity = activityRef.get();
+      if (activity == null) {
+          return;
+      }
+    activity.processMatches(strings, false);
+  }
 }

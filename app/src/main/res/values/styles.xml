@@ -1,80 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of Spelling Bee Android.
+  ~
+  ~ Spelling Bee Android is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ Spelling Bee Android is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with Spelling Bee Android. If not, see <http://www.gnu.org/licenses/>.
+  ~
+  ~ Copyright (c) 2020-2021 by Patrick Zedler
+  -->
+
 <resources>
 
-    <style name="Widget.Spelling.Card" parent="Widget.MaterialComponents.CardView">
-        <item name="android:layout_width">0dp</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_weight">1</item>
-        <item name="cardBackgroundColor">@color/background</item>
-        <item name="cardElevation">0dp</item>
-        <item name="cardCornerRadius">12dp</item>
-        <item name="strokeColor">@color/stroke_secondary</item>
-        <item name="strokeWidth">1dp</item>
-        <item name="android:stateListAnimator">@animator/card_elevation</item>
-        <item name="android:clickable">true</item>
-        <item name="android:focusable">true</item>
-        <item name="rippleColor">@color/highlight_secondary</item>
-    </style>
+  <style name="Widget.Spelling.Card" parent="Widget.MaterialComponents.CardView">
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_weight">1</item>
+    <item name="cardBackgroundColor">@color/background</item>
+    <item name="cardElevation">0dp</item>
+    <item name="cardCornerRadius">12dp</item>
+    <item name="strokeColor">@color/stroke_secondary</item>
+    <item name="strokeWidth">1dp</item>
+    <item name="android:stateListAnimator">@animator/card_elevation</item>
+    <item name="android:clickable">true</item>
+    <item name="android:focusable">true</item>
+    <item name="rippleColor">@color/highlight_secondary</item>
+  </style>
 
-    <style
-        name="Widget.Spelling.Button.TextButton.Snackbar"
-        parent="Widget.MaterialComponents.Button.TextButton.Snackbar">
-        <item name="android:fontFamily">@font/roboto_mono_bold</item>
-        <item name="cornerRadius">6dp</item>
-    </style>
+  <style name="Widget.Spelling.Button.TextButton.Snackbar" parent="Widget.MaterialComponents.Button.TextButton.Snackbar">
+    <item name="android:fontFamily">@font/roboto_mono_bold</item>
+    <item name="cornerRadius">6dp</item>
+  </style>
 
-    <style name="Shape.Spelling.BottomSheet" parent="">
-        <item name="android:background">@drawable/shape_bottom_sheet_background</item>
-    </style>
+  <style name="Shape.Spelling.BottomSheet" parent="">
+    <item name="android:background">@drawable/shape_bottom_sheet_background</item>
+  </style>
 
-    <style name="Theme.Spelling.Divider" parent="">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">1dp</item>
-        <item name="android:layout_marginTop">8dp</item>
-        <item name="android:layout_marginBottom">8dp</item>
-        <item name="android:background">@color/stroke_secondary</item>
-    </style>
+  <style name="Theme.Spelling.Divider" parent="">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">1dp</item>
+    <item name="android:layout_marginTop">8dp</item>
+    <item name="android:layout_marginBottom">8dp</item>
+    <item name="android:background">@color/stroke_secondary</item>
+  </style>
 
-    <style
-        name="Widget.Spelling.Button.TextButton"
-        parent="Widget.MaterialComponents.Button.TextButton">
-        <item name="rippleColor">@color/highlight</item>
-        <item name="android:textColor">@color/on_background_secondary</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:fontFamily">@font/roboto_mono_bold</item>
-        <item name="cornerRadius">6dp</item>
-    </style>
+  <style name="Widget.Spelling.Button.TextButton" parent="Widget.MaterialComponents.Button.TextButton">
+    <item name="rippleColor">@color/highlight</item>
+    <item name="android:textColor">@color/on_background_secondary</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:fontFamily">@font/roboto_mono_bold</item>
+    <item name="cornerRadius">6dp</item>
+  </style>
 
-    <style
-        name="Widget.Spelling.Button.OutlinedButton"
-        parent="Widget.MaterialComponents.Button.OutlinedButton">
-        <item name="rippleColor">@color/secondary_translucent</item>
-        <item name="iconTint">@color/icon</item>
-        <item name="android:textColor">@color/secondary</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:fontFamily">@font/roboto_mono_bold</item>
-        <item name="strokeColor">@color/stroke_secondary</item>
-        <item name="strokeWidth">1dp</item>
-        <item name="cornerRadius">6dp</item>
-    </style>
+  <style name="Widget.Spelling.Button.OutlinedButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+    <item name="rippleColor">@color/secondary_translucent</item>
+    <item name="iconTint">@color/icon</item>
+    <item name="android:textColor">@color/secondary</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:fontFamily">@font/roboto_mono_bold</item>
+    <item name="strokeColor">@color/stroke_secondary</item>
+    <item name="strokeWidth">1dp</item>
+    <item name="cornerRadius">6dp</item>
+  </style>
 
-    <style
-        name="Widget.Spelling.Button.UnelevatedButton"
-        parent="Widget.MaterialComponents.Button.UnelevatedButton">
-        <item name="rippleColor">@color/highlight_on_secondary</item>
-        <item name="android:textColor">@color/on_secondary</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:fontFamily">@font/roboto_mono_bold</item>
-        <item name="backgroundTint">@color/retro_green_bg_white</item>
-        <item name="cornerRadius">6dp</item>
-    </style>
+  <style name="Widget.Spelling.Button.UnelevatedButton" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+    <item name="rippleColor">@color/highlight_on_secondary</item>
+    <item name="android:textColor">@color/on_secondary</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:fontFamily">@font/roboto_mono_bold</item>
+    <item name="backgroundTint">@color/retro_green_bg_white</item>
+    <item name="cornerRadius">6dp</item>
+  </style>
 
-    <style
-        name="TextAppearance.Spelling.BottomSheet.Title"
-        parent="TextAppearance.MaterialComponents.Body2">
-        <item name="android:textColor">@color/on_background</item>
-        <item name="android:textSize">20sp</item>
-        <item name="android:textAlignment">viewStart</item>
-    </style>
+  <style name="TextAppearance.Spelling.BottomSheet.Title" parent="TextAppearance.MaterialComponents.Body2">
+    <item name="android:textColor">@color/on_background</item>
+    <item name="android:textSize">20sp</item>
+    <item name="android:textAlignment">viewStart</item>
+  </style>
 
 </resources>

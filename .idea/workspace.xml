@@ -22,11 +22,82 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7071ed4c-2bdc-419e-aae5-8027d1a88607" name="Default" comment="Update dependencies and include leonids lib">
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/wikipedia_de_lowercase_replaced_äöüß.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout-land/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="7071ed4c-2bdc-419e-aae5-8027d1a88607" name="Default" comment="Add landscape layout">
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/ParticleField.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/ParticleField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/initializers/RotationSpeedInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/initializers/RotationSpeedInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/initializers/ScaleInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/initializers/ScaleInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/fragment/BaseBottomSheetDialogFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/fragment/BaseBottomSheetDialogFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/fragment/FoundBottomSheetDialogFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/fragment/FoundBottomSheetDialogFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/fragment/NewGameBottomSheetDialogFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/fragment/NewGameBottomSheetDialogFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/fragment/RulesBottomSheetDialogFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/fragment/RulesBottomSheetDialogFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/task/MatchingWordsTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/task/MatchingWordsTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/task/NewGameTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/task/NewGameTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/task/SaveWordListTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/task/SaveWordListTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/util/ClickUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/util/ClickUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/util/ConfettiUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/util/ConfettiUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/util/IconUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/util/IconUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/util/ResUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/util/ResUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/util/SpellingUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/util/SpellingUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/util/VibratorUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/util/VibratorUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/anim/shake.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/anim/shake.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/animator/card_elevation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/animator/card_elevation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-night/ic_spelling_bee_anim.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-night/ic_spelling_bee_anim.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_backspace_anim.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_backspace_anim.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_done_anim.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_done_anim.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_help_outline.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_help_outline.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_foreground.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_local_play_anim.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_local_play_anim.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_shuffle_anim.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_shuffle_anim.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_spelling_bee_anim.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_spelling_bee_anim.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_spelling_bee_outline.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_spelling_bee_outline.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/progress_bar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/progress_bar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ripple_hexagon_grey.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ripple_hexagon_grey.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ripple_hexagon_yellow.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ripple_hexagon_yellow.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/shape_bottom_sheet_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/shape_bottom_sheet_background.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/shape_hexagon.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/shape_hexagon.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/shape_hexagon_grey.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/shape_hexagon_grey.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/shape_hexagon_yellow.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/shape_hexagon_yellow.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/shape_pill.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/shape_pill.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/shape_scrollbar_rounded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/shape_scrollbar_rounded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/splash.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/splash.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-h400dp/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-h400dp/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-h700dp/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-h700dp/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_bottomsheet_found.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_bottomsheet_found.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_bottomsheet_new_game.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_bottomsheet_new_game.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_bottomsheet_rules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_bottomsheet_rules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-h400dp/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-h400dp/dimens.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-h700dp/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-h700dp/dimens.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-land-night-v23/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-land-night-v23/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-land-night-v26/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-land-night-v26/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-land-night-v27/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-land-night-v27/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-land-night-v29/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-land-night-v29/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-land-night/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-land-night/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-land-v23/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-land-v23/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-land-v26/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-land-v26/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-land-v27/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-land-v27/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-land-v29/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-land-v29/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-land/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-land/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-night-v23/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-night-v23/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-night-v26/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-night-v26/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-night-v27/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-night-v27/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-night-v28/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-night-v28/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-night/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-night/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-night/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-v23/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-v23/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-v26/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-v26/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-v27/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-v27/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-v28/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-v28/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +178,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recommended.upgrade.last.time.stamp" value="1611600976157" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="copyright" />
   </component>
   <component name="PsdUISettings">
     <option name="MODULE_TAB" value="Default Config" />
@@ -535,7 +606,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622680781861</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Add landscape layout">
+      <created>1622685799477</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1622685799477</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -543,7 +621,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Update test data" />
     <MESSAGE value="Improve umbrella icon" />
     <MESSAGE value="Clean up RainData" />
     <MESSAGE value="Add version info" />
@@ -568,7 +645,8 @@
     <MESSAGE value="Fix card shadow" />
     <MESSAGE value="Update targetSdkVersion and compileSdkVersion to 30" />
     <MESSAGE value="Update dependencies and include leonids lib" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update dependencies and include leonids lib" />
+    <MESSAGE value="Add landscape layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add landscape layout" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -576,33 +654,21 @@
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
     <state x="3360" y="261" width="950" height="535" key="#PSD/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622680305933" />
-    <state x="3354" y="38" width="961" height="981" key="CommitChangelistDialog2" timestamp="1622680781702">
+    <state x="3354" y="38" width="961" height="981" key="CommitChangelistDialog2" timestamp="1622685932295">
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
-    <state x="3354" y="38" width="961" height="981" key="CommitChangelistDialog2/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622680781702" />
+    <state x="3354" y="38" width="961" height="981" key="CommitChangelistDialog2/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622685932295" />
     <state x="3623" y="284" width="424" height="489" key="FileChooserDialogImpl" timestamp="1622680425314">
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
     <state x="3623" y="284" width="424" height="489" key="FileChooserDialogImpl/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622680425314" />
-    <state x="3435" y="261" width="800" height="536" key="Vcs.Push.Dialog.v2" timestamp="1622680783406">
+    <state x="3336" y="161" width="1007" height="735" key="SettingsEditor" timestamp="1622686195955">
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
-    <state x="3435" y="261" width="800" height="536" key="Vcs.Push.Dialog.v2/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622680783406" />
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <state x="3336" y="161" width="1007" height="735" key="SettingsEditor/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622686195955" />
+    <state x="3435" y="261" width="800" height="536" key="Vcs.Push.Dialog.v2" timestamp="1622685800830">
+      <screen x="2560" y="0" width="2560" height="1080" />
+    </state>
+    <state x="3435" y="261" width="800" height="536" key="Vcs.Push.Dialog.v2/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622685800830" />
   </component>
 </project>

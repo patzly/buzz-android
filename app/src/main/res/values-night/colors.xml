@@ -1,41 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of Spelling Bee Android.
+  ~
+  ~ Spelling Bee Android is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ Spelling Bee Android is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with Spelling Bee Android. If not, see <http://www.gnu.org/licenses/>.
+  ~
+  ~ Copyright (c) 2020-2021 by Patrick Zedler
+  -->
+
 <resources>
 
-    <color name="retro_red_fg">@color/retro_red_bg_black</color>
-    <color name="retro_yellow_fg">@color/retro_yellow_bg</color>
-    <color name="retro_green_fg">@color/retro_green</color>
-    <color name="retro_green_fg_invert">#60837a</color>
-    <color name="retro_dirt_fg">@color/retro_dirt_bg</color>
+  <color name="retro_red_fg">@color/retro_red_bg_black</color>
+  <color name="retro_yellow_fg">@color/retro_yellow_bg</color>
+  <color name="retro_green_fg">@color/retro_green</color>
+  <color name="retro_green_fg_invert">#60837a</color>
+  <color name="retro_dirt_fg">@color/retro_dirt_bg</color>
 
-    <!-- PRIMARY -->
+  <!-- PRIMARY -->
 
-    <color name="primary">#313235</color>
-    <color name="on_primary">#ddd</color>
+  <color name="primary">#313235</color>
+  <color name="on_primary">#ddd</color>
 
-    <!-- BACKGROUND -->
+  <!-- BACKGROUND -->
 
-    <color name="background">#1e1f22</color>
-    <color name="on_background">@color/grey200</color>
-    <color name="on_background_secondary">@color/grey600</color>
-    <color name="on_background_tertiary">@color/grey800</color>
+  <color name="background">#1e1f22</color>
+  <color name="on_background">@color/grey200</color>
+  <color name="on_background_secondary">@color/grey600</color>
+  <color name="on_background_tertiary">@color/grey800</color>
 
-    <!-- SURFACE -->
+  <!-- SURFACE -->
 
-    <color name="surface">#303030</color>
-    <color name="on_surface">#fff</color>
+  <color name="surface">#303030</color>
+  <color name="on_surface">#fff</color>
 
-    <!-- HIGHLIGHT -->
+  <!-- HIGHLIGHT -->
 
-    <color name="highlight">#11bdbdbd</color>
-    <color name="highlight_secondary">#11bdbdbd</color>
+  <color name="highlight">#11bdbdbd</color>
+  <color name="highlight_secondary">#11bdbdbd</color>
 
-    <!-- STROKES -->
+  <!-- STROKES -->
 
-    <color name="stroke_primary">@color/grey600</color>
-    <color name="stroke_secondary">#3a3b3e</color>
+  <color name="stroke_primary">@color/grey600</color>
+  <color name="stroke_secondary">#3a3b3e</color>
 
-    <!-- ICONS -->
+  <!-- ICONS -->
 
-    <color name="icon">@color/grey400</color>
+  <color name="icon">@color/grey400</color>
 
 </resources>
