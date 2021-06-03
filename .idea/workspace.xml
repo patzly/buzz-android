@@ -9,12 +9,12 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="onCreate:" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="doInBackground:" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
+    <option name="autoReloadType" value="NONE" />
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -23,7 +23,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7071ed4c-2bdc-419e-aae5-8027d1a88607" name="Default" comment="Replace font">
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/words_english_pangrams.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/words_english_valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/words_german_pangrams.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/words_german_valid.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/pzedler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/pzedler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/fragment/FoundBottomSheetDialogFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/fragment/FoundBottomSheetDialogFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/fragment/NewGameBottomSheetDialogFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/fragment/NewGameBottomSheetDialogFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/fragment/RulesBottomSheetDialogFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/fragment/RulesBottomSheetDialogFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/task/MatchingWordsTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/task/MatchingWordsTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/task/NewGameTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/task/NewGameTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/task/SaveWordListTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/util/ResUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/util/ResUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/util/SpellingUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/util/SpellingUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-h400dp/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-h400dp/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-h700dp/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-h700dp/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-land/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-land/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -276,6 +298,7 @@
       </method>
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -560,7 +583,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622687176475</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Fix code style">
+      <created>1622687984187</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1622687984187</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -568,7 +598,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Implement auto updating of info text and umbrella icon" />
     <MESSAGE value="Hide location on start" />
     <MESSAGE value="Remove version display" />
     <MESSAGE value="Improve location display" />
@@ -593,7 +622,8 @@
     <MESSAGE value="Apply Google code style and copyright header, closes #4" />
     <MESSAGE value="Remove local properties" />
     <MESSAGE value="Replace font" />
-    <option name="LAST_COMMIT_MESSAGE" value="Replace font" />
+    <MESSAGE value="Fix code style" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix code style" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -601,25 +631,45 @@
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
     <state x="3360" y="261" width="950" height="535" key="#PSD/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622680305933" />
+    <state x="3573" y="273" width="524" height="512" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1622757659890">
+      <screen x="2560" y="0" width="2560" height="1080" />
+    </state>
+    <state x="3573" y="273" width="524" height="512" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622757659890" />
     <state x="3527" y="349" width="615" height="359" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1622686210878">
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
     <state x="3527" y="349" width="615" height="359" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622686210878" />
-    <state x="3354" y="38" width="961" height="981" key="CommitChangelistDialog2" timestamp="1622687176395">
+    <state x="3354" y="38" width="961" height="981" key="CommitChangelistDialog2" timestamp="1622687983858">
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
-    <state x="3354" y="38" width="961" height="981" key="CommitChangelistDialog2/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622687176395" />
-    <state x="3623" y="284" width="424" height="489" key="FileChooserDialogImpl" timestamp="1622680425314">
+    <state x="3354" y="38" width="961" height="981" key="CommitChangelistDialog2/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622687983858" />
+    <state x="3623" y="284" width="424" height="489" key="FileChooserDialogImpl" timestamp="1622762493509">
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
-    <state x="3623" y="284" width="424" height="489" key="FileChooserDialogImpl/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622680425314" />
+    <state x="3623" y="284" width="424" height="489" key="FileChooserDialogImpl/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622762493509" />
+    <state width="2508" height="434" key="GridCell.Tab.0.bottom" timestamp="1622761619554">
+      <screen x="2560" y="0" width="2560" height="1080" />
+    </state>
+    <state width="2508" height="434" key="GridCell.Tab.0.bottom/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622761619554" />
+    <state width="2508" height="434" key="GridCell.Tab.0.center" timestamp="1622761619554">
+      <screen x="2560" y="0" width="2560" height="1080" />
+    </state>
+    <state width="2508" height="434" key="GridCell.Tab.0.center/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622761619554" />
+    <state width="2508" height="434" key="GridCell.Tab.0.left" timestamp="1622761619554">
+      <screen x="2560" y="0" width="2560" height="1080" />
+    </state>
+    <state width="2508" height="434" key="GridCell.Tab.0.left/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622761619554" />
+    <state width="2508" height="434" key="GridCell.Tab.0.right" timestamp="1622761619554">
+      <screen x="2560" y="0" width="2560" height="1080" />
+    </state>
+    <state width="2508" height="434" key="GridCell.Tab.0.right/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622761619554" />
     <state x="3336" y="161" width="1007" height="735" key="SettingsEditor" timestamp="1622686195955">
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
     <state x="3336" y="161" width="1007" height="735" key="SettingsEditor/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622686195955" />
-    <state x="3435" y="261" width="800" height="536" key="Vcs.Push.Dialog.v2" timestamp="1622687177564">
+    <state x="3435" y="261" width="800" height="536" key="Vcs.Push.Dialog.v2" timestamp="1622687985394">
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
-    <state x="3435" y="261" width="800" height="536" key="Vcs.Push.Dialog.v2/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622687177564" />
+    <state x="3435" y="261" width="800" height="536" key="Vcs.Push.Dialog.v2/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622687985394" />
   </component>
 </project>

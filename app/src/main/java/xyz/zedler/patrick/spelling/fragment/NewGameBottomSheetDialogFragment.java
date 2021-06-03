@@ -40,7 +40,6 @@ import xyz.zedler.patrick.spelling.task.NewGameTask;
 public class NewGameBottomSheetDialogFragment extends BaseBottomSheetDialogFragment {
 
   private final static String TAG = "NewGameBottomSheet";
-  private final static boolean DEBUG = false;
 
   private FragmentBottomsheetNewGameBinding binding;
 
@@ -77,7 +76,9 @@ public class NewGameBottomSheetDialogFragment extends BaseBottomSheetDialogFragm
     );
     String center = bundle.getString(Constants.BOTTOM_SHEET.CENTER, Constants.DEFAULT.CENTER);
     String all = "<font color='#deb853'>" + center + "</font>" + letters;
-    binding.textNewGameLetters.setText(Html.fromHtml(all), TextView.BufferType.SPANNABLE);
+    binding.textNewGameLetters.setText(
+        Html.fromHtml(all.toUpperCase()), TextView.BufferType.SPANNABLE
+    );
 
     binding.buttonNewGame.setOnClickListener(v -> {
       new NewGameTask((MainActivity) getActivity()).execute();
@@ -86,7 +87,10 @@ public class NewGameBottomSheetDialogFragment extends BaseBottomSheetDialogFragm
 
     ArrayList<String> missed = bundle.getStringArrayList(Constants.BOTTOM_SHEET.MISSED_WORDS);
     if (missed != null) {
-      Collections.sort(missed, String.CASE_INSENSITIVE_ORDER);
+      Collections.sort(missed);
+      for (int i = 0; i < missed.size(); i++) {
+        missed.set(i, missed.get(i).toUpperCase());
+      }
       binding.textNewGameMissed.setText(TextUtils.join("\n", missed));
     }
 

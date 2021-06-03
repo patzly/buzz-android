@@ -22,7 +22,6 @@ package xyz.zedler.patrick.spelling.task;
 import android.os.AsyncTask;
 import android.util.Log;
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.lang.ref.WeakReference;
@@ -34,11 +33,9 @@ import xyz.zedler.patrick.spelling.util.SpellingUtil;
 public class NewGameTask extends AsyncTask<Void, Integer, String[]> {
 
   private final static String TAG = NewGameTask.class.getSimpleName();
-  private final static boolean DEBUG = false;
 
   private final WeakReference<MainActivity> activityRef;
   private final ArrayList<String> matches = new ArrayList<>();
-  private final ArrayList<String> allWords = new ArrayList<>();
 
   public NewGameTask(MainActivity activity) {
     activityRef = new WeakReference<>(activity);
@@ -46,69 +43,49 @@ public class NewGameTask extends AsyncTask<Void, Integer, String[]> {
 
   @Override
   protected final String[] doInBackground(Void... params) {
-    ArrayList<String> pangrams = new ArrayList<>();
     MainActivity activity = activityRef.get();
     if (activity == null) {
       return null;
     }
+    ArrayList<String> pangrams = new ArrayList<>();
     try {
-      InputStream inputStream = activity.getAssets().open("filtered.txt");
+      InputStream inputStream = activity.getAssets().open("words_german_pangrams.txt");
       InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
       BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
       for (String line; (line = bufferedReader.readLine()) != null; ) {
-        if (SpellingUtil.containsExactly7Different(line.toUpperCase())
-            && !pangrams.contains(line.toUpperCase())
-        ) {
-          pangrams.add(line.toUpperCase());
-        }
-        allWords.add(line);
-        if (allWords.size() % 100 == 0) {
-          publishProgress(allWords.size() / 100);
-        }
+        pangrams.add(line);
       }
       inputStream.close();
-    } catch (FileNotFoundException e) {
-      if (DEBUG) {
-        Log.e(TAG, "readFromFile: file not found!");
-      }
     } catch (Exception e) {
-      if (DEBUG) {
-        Log.e(TAG, "readFromFile: " + e.toString());
-      }
+      Log.e(TAG, "readFromFile: ", e);
     }
 
     Random random = new Random();
-    String pangram = pangrams.get(random.nextInt(pangrams.size())).toUpperCase();
+    String pangram = pangrams.get(random.nextInt(pangrams.size()));
 
     int randomLetter = random.nextInt(pangram.length());
-    String center = pangram.substring(randomLetter, randomLetter + 1).toUpperCase();
+    String center = pangram.substring(randomLetter, randomLetter + 1);
 
     try {
-      InputStream inputStream = activity.getAssets().open("filtered.txt");
+      InputStream inputStream = activity.getAssets().open("words_german_valid.txt");
       InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
       BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
       for (String line; (line = bufferedReader.readLine()) != null; ) {
-        if (line.toUpperCase().contains(center)
+        if (line.contains(center)
             && SpellingUtil.containsNoOtherLetter(line, pangram)
-            && !matches.contains(line.toUpperCase())
+            && !matches.contains(line)
         ) {
-          matches.add(line.toUpperCase());
+          matches.add(line);
         }
       }
       inputStream.close();
-    } catch (FileNotFoundException e) {
-      if (DEBUG) {
-        Log.e(TAG, "readFromFile: file not found!");
-      }
     } catch (Exception e) {
-      if (DEBUG) {
-        Log.e(TAG, "readFromFile: " + e.toString());
-      }
+      Log.e(TAG, "readFromFile: ", e);
     }
 
     StringBuilder letters = new StringBuilder();
     for (int i = 0; i < pangram.length(); i++) {
-      String character = pangram.substring(i, i + 1).toUpperCase();
+      String character = pangram.substring(i, i + 1);
       if (!letters.toString().contains(character) && !character.equals(center)) {
         letters.append(character);
       }
@@ -124,14 +101,5 @@ public class NewGameTask extends AsyncTask<Void, Integer, String[]> {
       return;
     }
     activity.newGame(strings[0], strings[1], matches);
-  }
-
-  @Override
-  protected void onProgressUpdate(Integer... values) {
-    MainActivity activity = activityRef.get();
-    if (activity == null) {
-      return;
-    }
-    activity.setRiddleProgress(values[0]);
   }
 }

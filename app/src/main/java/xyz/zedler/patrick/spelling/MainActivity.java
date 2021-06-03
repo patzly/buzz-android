@@ -224,10 +224,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
   private void addLetter(String letter) {
     vibrator.tick();
-    String input = binding.textInput.getText().toString() + letter;
+    String input = binding.textInput.getText().toString().toLowerCase() + letter;
     input = input.replaceAll(center, getStyledCenter());
     if (binding.textInput.getText().length() < 20) {
-      binding.textInput.setText(Html.fromHtml(input), TextView.BufferType.SPANNABLE);
+      binding.textInput.setText(Html.fromHtml(input.toUpperCase()), TextView.BufferType.SPANNABLE);
     } else {
       showMessage(R.string.msg_too_long);
       invalidInput();
@@ -236,12 +236,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
   private void removeLastLetter() {
     vibrator.tick();
-    String input = binding.textInput.getText().toString();
+    String input = binding.textInput.getText().toString().toLowerCase();
     if (input.length() > 0) {
       input = input.substring(0, input.length() - 1);
     }
     input = input.replaceAll(center, getStyledCenter());
-    binding.textInput.setText(Html.fromHtml(input), TextView.BufferType.SPANNABLE);
+    binding.textInput.setText(Html.fromHtml(input.toUpperCase()), TextView.BufferType.SPANNABLE);
   }
 
   private void clearLetters() {
@@ -322,18 +322,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
       animateLetters(0, true);
     }
     new Handler(Looper.getMainLooper()).postDelayed(() -> {
-      binding.textHex1.setText(letters.get(0));
-      binding.textHex2.setText(letters.get(1));
-      binding.textHex3.setText(letters.get(2));
-      binding.textHex4.setText(letters.get(3));
-      binding.textHex5.setText(letters.get(4));
-      binding.textHex6.setText(letters.get(5));
+      binding.textHex1.setText(letters.get(0).toUpperCase());
+      binding.textHex2.setText(letters.get(1).toUpperCase());
+      binding.textHex3.setText(letters.get(2).toUpperCase());
+      binding.textHex4.setText(letters.get(3).toUpperCase());
+      binding.textHex5.setText(letters.get(4).toUpperCase());
+      binding.textHex6.setText(letters.get(5).toUpperCase());
       if (animated) {
         animateLetters(1, true);
       }
     }, animated ? Constants.ANIMATION : 0);
     new Handler(Looper.getMainLooper()).postDelayed(
-        () -> binding.textHexCenter.setText(center),
+        () -> binding.textHexCenter.setText(center.toUpperCase()),
         animated ? Constants.ANIMATION : 0
     );
   }
@@ -342,12 +342,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     letters = getLetters();
     animateLetters(0, false);
     new Handler(Looper.getMainLooper()).postDelayed(() -> {
-      binding.textHex1.setText(letters.get(0));
-      binding.textHex2.setText(letters.get(1));
-      binding.textHex3.setText(letters.get(2));
-      binding.textHex4.setText(letters.get(3));
-      binding.textHex5.setText(letters.get(4));
-      binding.textHex6.setText(letters.get(5));
+      binding.textHex1.setText(letters.get(0).toUpperCase());
+      binding.textHex2.setText(letters.get(1).toUpperCase());
+      binding.textHex3.setText(letters.get(2).toUpperCase());
+      binding.textHex4.setText(letters.get(3).toUpperCase());
+      binding.textHex5.setText(letters.get(4).toUpperCase());
+      binding.textHex6.setText(letters.get(5).toUpperCase());
       animateLetters(1, false);
     }, Constants.ANIMATION);
   }
@@ -371,7 +371,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
   private ArrayList<String> getLetters() {
     String string = sharedPrefs.getString(Constants.PREF.LETTERS, Constants.DEFAULT.LETTERS);
     assert string != null;
-    List<String> letters = new ArrayList<>(Arrays.asList(string.toUpperCase().split("")));
+    List<String> letters = new ArrayList<>(Arrays.asList(string.split("")));
     if (letters.get(0).isEmpty()) {
       letters.remove(0);
     }
@@ -383,11 +383,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
   private String getCenter() {
     String center = sharedPrefs.getString(Constants.PREF.CENTER, Constants.DEFAULT.CENTER);
     assert center != null;
-    return center.toUpperCase();
+    return center;
   }
 
   private void changeFoundCount(int count) {
-    binding.progress.setProgress(count);
+    binding.progress.setProgressCompat(count, true);
     binding.textProgressFound.animate().alpha(0).withEndAction(() -> {
       binding.textProgressFound.setText(String.valueOf(count));
       binding.textProgressFound.animate().alpha(1).setDuration(Constants.ANIMATION).start();
@@ -403,7 +403,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
   }
 
   private boolean isValid() {
-    String input = binding.textInput.getText().toString();
+    String input = binding.textInput.getText().toString().toLowerCase();
     if (input.equals("")) {
       return false;
     } else if (input.length() < 4) {
@@ -419,8 +419,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
   }
 
   public void processInput() {
-    String input = binding.textInput.getText().toString();
-    input = input.toUpperCase();
+    String input = binding.textInput.getText().toString().toLowerCase();
     if (matches.contains(input) && !found.contains(input)) {
       found.add(input);
       changeFoundCount(found.size());
@@ -448,11 +447,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
   private void invalidInput() {
     binding.textInput.startAnimation(AnimationUtils.loadAnimation(this, R.anim.shake));
     new Handler(Looper.getMainLooper()).postDelayed(this::clearLetters, 700);
-  }
-
-  public void setRiddleProgress(int progress) {
-    binding.progress.setMax(568);
-    binding.progress.setProgress(progress);
   }
 
   private void showMessage(@StringRes int resId) {

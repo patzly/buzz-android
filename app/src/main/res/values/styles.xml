@@ -89,6 +89,15 @@
   </style>
 
   <style
+    name="Widget.Spelling.LinearProgressIndicator"
+    parent="@style/Widget.MaterialComponents.LinearProgressIndicator">
+    <item name="android:layout_height">wrap_content</item>
+    <item name="trackColor">@color/secondary_translucent</item>
+    <item name="trackCornerRadius">2dp</item>
+    <item name="indicatorColor">@color/secondary</item>
+  </style>
+
+  <style
     name="TextAppearance.Spelling.BottomSheet.Title"
     parent="TextAppearance.MaterialComponents.Body2">
     <item name="android:textColor">@color/on_background</item>

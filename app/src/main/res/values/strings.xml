@@ -19,7 +19,7 @@
 
 <resources>
 
-  <string name="app_name">Summm</string>
+  <string name="app_name">Summ</string>
 
   <string name="title_missed_words">Entgangene Wörter</string>
   <string name="title_found_words">Gefundene Wörter</string>
@@ -27,6 +27,7 @@
 
   <string name="action_hint">Hinweis</string>
   <string name="action_help">Spielregeln</string>
+  <string name="action_cancel">Beenden</string>
   <string name="action_new_game">Neues Spiel</string>
   <string name="action_found">Gefunden</string>
 

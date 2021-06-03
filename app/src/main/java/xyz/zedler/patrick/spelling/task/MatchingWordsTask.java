@@ -22,7 +22,6 @@ package xyz.zedler.patrick.spelling.task;
 import android.os.AsyncTask;
 import android.util.Log;
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.lang.ref.WeakReference;
@@ -33,10 +32,13 @@ import xyz.zedler.patrick.spelling.util.SpellingUtil;
 public class MatchingWordsTask extends AsyncTask<String[], Integer, ArrayList<String>> {
 
   private final static String TAG = MatchingWordsTask.class.getSimpleName();
-  private final static boolean DEBUG = false;
 
   private final WeakReference<MainActivity> activityRef;
 
+  /**
+   * That's only a shorter version of the NewGameTask, just without the pangram search because it is
+   * already selected at this moment
+   */
   public MatchingWordsTask(MainActivity activity) {
     activityRef = new WeakReference<>(activity);
   }
@@ -47,31 +49,23 @@ public class MatchingWordsTask extends AsyncTask<String[], Integer, ArrayList<St
     if (activity == null) {
       return null;
     }
-
     ArrayList<String> matches = new ArrayList<>();
     try {
-      InputStream inputStream = activity.getAssets().open("filtered.txt");
+      InputStream inputStream = activity.getAssets().open("words_german_valid.txt");
       InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
       BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
       for (String line; (line = bufferedReader.readLine()) != null; ) {
-        if (line.toUpperCase().contains(params[0][1]) // center
+        if (line.contains(params[0][1]) // center
             && SpellingUtil.containsNoOtherLetter(line, params[0][0]) // pangram
-            && !matches.contains(line.toUpperCase())
+            && !matches.contains(line)
         ) {
-          matches.add(line.toUpperCase());
+          matches.add(line);
         }
       }
       inputStream.close();
-    } catch (FileNotFoundException e) {
-      if (DEBUG) {
-        Log.e(TAG, "readFromFile: file not found!");
-      }
     } catch (Exception e) {
-      if (DEBUG) {
-        Log.e(TAG, "readFromFile: " + e.toString());
-      }
+      Log.e(TAG, "readFromFile: ", e);
     }
-
     return matches;
   }
 

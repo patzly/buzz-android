@@ -34,7 +34,6 @@ import xyz.zedler.patrick.spelling.util.ResUtil;
 public class RulesBottomSheetDialogFragment extends BaseBottomSheetDialogFragment {
 
   private final static String TAG = "RulesBottomSheet";
-  private final static boolean DEBUG = false;
 
   private FragmentBottomsheetRulesBinding binding;
 

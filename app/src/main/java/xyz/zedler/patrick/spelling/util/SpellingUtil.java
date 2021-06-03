@@ -39,8 +39,8 @@ public class SpellingUtil {
 
   public static boolean containsNoOtherLetter(String input, String availableChars) {
     for (int i = 0; i < input.length(); i++) {
-      String character = input.substring(i, i + 1).toUpperCase();
-      if (!availableChars.toUpperCase().contains(character)) {
+      String character = input.substring(i, i + 1);
+      if (!availableChars.contains(character)) {
         return false;
       }
     }

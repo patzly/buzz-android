@@ -37,7 +37,6 @@ import xyz.zedler.patrick.spelling.databinding.FragmentBottomsheetFoundBinding;
 public class FoundBottomSheetDialogFragment extends BaseBottomSheetDialogFragment {
 
   private final static String TAG = "FoundBottomSheet";
-  private final static boolean DEBUG = false;
 
   private FragmentBottomsheetFoundBinding binding;
 
@@ -61,10 +60,13 @@ public class FoundBottomSheetDialogFragment extends BaseBottomSheetDialogFragmen
     Bundle bundle = getArguments();
     assert context != null && bundle != null;
 
-    ArrayList<String> missed = bundle.getStringArrayList(Constants.BOTTOM_SHEET.FOUND_WORDS);
-    if (missed != null) {
-      Collections.sort(missed, String.CASE_INSENSITIVE_ORDER);
-      binding.textFound.setText(TextUtils.join("\n", missed));
+    ArrayList<String> found = bundle.getStringArrayList(Constants.BOTTOM_SHEET.FOUND_WORDS);
+    if (found != null) {
+      Collections.sort(found);
+      for (int i = 0; i < found.size(); i++) {
+        found.set(i, found.get(i).toUpperCase());
+      }
+      binding.textFound.setText(TextUtils.join("\n", found));
     }
 
     return binding.getRoot();

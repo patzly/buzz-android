@@ -104,7 +104,7 @@
           android:layout_height="wrap_content"
           android:layout_weight="1"
           android:layout_marginStart="8dp"
-          android:text="@string/action_new_game" />
+          android:text="@string/action_cancel" />
 
       </LinearLayout>
 
@@ -113,7 +113,8 @@
         android:layout_height="wrap_content"
         android:paddingStart="32dp"
         android:paddingEnd="32dp"
-        android:layout_marginTop="4dp">
+        android:layout_marginTop="4dp"
+        android:animateLayoutChanges="true">
 
         <TextView
           android:id="@+id/text_progress_found"
@@ -124,17 +125,14 @@
           android:fontFamily="@font/jost_bold"
           android:textColor="@color/on_background" />
 
-        <ProgressBar
+        <com.google.android.material.progressindicator.LinearProgressIndicator
           android:id="@+id/progress"
-          style="@android:style/Widget.ProgressBar.Horizontal"
+          style="@style/Widget.Spelling.LinearProgressIndicator"
           android:layout_width="0dp"
-          android:layout_height="4dp"
+          android:layout_weight="1"
           android:layout_marginStart="8dp"
           android:layout_marginEnd="8dp"
-          android:layout_weight="1"
-          android:progressDrawable="@drawable/progress_bar"
-          android:layout_marginTop="8dp"
-          android:max="23" />
+          android:layout_marginTop="8dp" />
 
         <TextView
           android:id="@+id/text_progress_all"
