@@ -22,20 +22,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7071ed4c-2bdc-419e-aae5-8027d1a88607" name="Default" comment="Remove local properties">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/jost_bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/jost_book.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/font/roboto_mono_bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/font/roboto_mono_regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-h400dp/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-h400dp/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-h700dp/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-h700dp/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-land/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-land/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_bottomsheet_found.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_bottomsheet_found.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_bottomsheet_new_game.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_bottomsheet_new_game.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_bottomsheet_rules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_bottomsheet_rules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
+    <list default="true" id="7071ed4c-2bdc-419e-aae5-8027d1a88607" name="Default" comment="Replace font">
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -566,7 +553,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622686725134</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Replace font">
+      <created>1622687176475</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1622687176475</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -574,7 +568,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Add version info" />
     <MESSAGE value="Implement auto updating of info text and umbrella icon" />
     <MESSAGE value="Hide location on start" />
     <MESSAGE value="Remove version display" />
@@ -599,7 +592,8 @@
     <MESSAGE value="Add landscape layout" />
     <MESSAGE value="Apply Google code style and copyright header, closes #4" />
     <MESSAGE value="Remove local properties" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove local properties" />
+    <MESSAGE value="Replace font" />
+    <option name="LAST_COMMIT_MESSAGE" value="Replace font" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -611,10 +605,10 @@
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
     <state x="3527" y="349" width="615" height="359" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622686210878" />
-    <state x="3354" y="38" width="961" height="981" key="CommitChangelistDialog2" timestamp="1622686725061">
+    <state x="3354" y="38" width="961" height="981" key="CommitChangelistDialog2" timestamp="1622687176395">
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
-    <state x="3354" y="38" width="961" height="981" key="CommitChangelistDialog2/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622686725061" />
+    <state x="3354" y="38" width="961" height="981" key="CommitChangelistDialog2/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622687176395" />
     <state x="3623" y="284" width="424" height="489" key="FileChooserDialogImpl" timestamp="1622680425314">
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
@@ -623,9 +617,9 @@
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
     <state x="3336" y="161" width="1007" height="735" key="SettingsEditor/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622686195955" />
-    <state x="3435" y="261" width="800" height="536" key="Vcs.Push.Dialog.v2" timestamp="1622686726596">
+    <state x="3435" y="261" width="800" height="536" key="Vcs.Push.Dialog.v2" timestamp="1622687177564">
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
-    <state x="3435" y="261" width="800" height="536" key="Vcs.Push.Dialog.v2/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622686726596" />
+    <state x="3435" y="261" width="800" height="536" key="Vcs.Push.Dialog.v2/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622687177564" />
   </component>
 </project>

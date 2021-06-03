@@ -48,9 +48,9 @@ public class NewGameTask extends AsyncTask<Void, Integer, String[]> {
   protected final String[] doInBackground(Void... params) {
     ArrayList<String> pangrams = new ArrayList<>();
     MainActivity activity = activityRef.get();
-      if (activity == null) {
-          return null;
-      }
+    if (activity == null) {
+      return null;
+    }
     try {
       InputStream inputStream = activity.getAssets().open("filtered.txt");
       InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
@@ -62,19 +62,19 @@ public class NewGameTask extends AsyncTask<Void, Integer, String[]> {
           pangrams.add(line.toUpperCase());
         }
         allWords.add(line);
-          if (allWords.size() % 100 == 0) {
-              publishProgress(allWords.size() / 100);
-          }
+        if (allWords.size() % 100 == 0) {
+          publishProgress(allWords.size() / 100);
+        }
       }
       inputStream.close();
     } catch (FileNotFoundException e) {
-        if (DEBUG) {
-            Log.e(TAG, "readFromFile: file not found!");
-        }
+      if (DEBUG) {
+        Log.e(TAG, "readFromFile: file not found!");
+      }
     } catch (Exception e) {
-        if (DEBUG) {
-            Log.e(TAG, "readFromFile: " + e.toString());
-        }
+      if (DEBUG) {
+        Log.e(TAG, "readFromFile: " + e.toString());
+      }
     }
 
     Random random = new Random();
@@ -97,13 +97,13 @@ public class NewGameTask extends AsyncTask<Void, Integer, String[]> {
       }
       inputStream.close();
     } catch (FileNotFoundException e) {
-        if (DEBUG) {
-            Log.e(TAG, "readFromFile: file not found!");
-        }
+      if (DEBUG) {
+        Log.e(TAG, "readFromFile: file not found!");
+      }
     } catch (Exception e) {
-        if (DEBUG) {
-            Log.e(TAG, "readFromFile: " + e.toString());
-        }
+      if (DEBUG) {
+        Log.e(TAG, "readFromFile: " + e.toString());
+      }
     }
 
     StringBuilder letters = new StringBuilder();
@@ -120,18 +120,18 @@ public class NewGameTask extends AsyncTask<Void, Integer, String[]> {
   @Override
   protected void onPostExecute(String[] strings) {
     MainActivity activity = activityRef.get();
-      if (activity == null) {
-          return;
-      }
+    if (activity == null) {
+      return;
+    }
     activity.newGame(strings[0], strings[1], matches);
   }
 
   @Override
   protected void onProgressUpdate(Integer... values) {
     MainActivity activity = activityRef.get();
-      if (activity == null) {
-          return;
-      }
+    if (activity == null) {
+      return;
+    }
     activity.setRiddleProgress(values[0]);
   }
 }

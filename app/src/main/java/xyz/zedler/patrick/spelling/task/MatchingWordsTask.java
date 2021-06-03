@@ -44,9 +44,9 @@ public class MatchingWordsTask extends AsyncTask<String[], Integer, ArrayList<St
   @Override
   protected final ArrayList<String> doInBackground(String[]... params) {
     MainActivity activity = activityRef.get();
-      if (activity == null) {
-          return null;
-      }
+    if (activity == null) {
+      return null;
+    }
 
     ArrayList<String> matches = new ArrayList<>();
     try {
@@ -63,13 +63,13 @@ public class MatchingWordsTask extends AsyncTask<String[], Integer, ArrayList<St
       }
       inputStream.close();
     } catch (FileNotFoundException e) {
-        if (DEBUG) {
-            Log.e(TAG, "readFromFile: file not found!");
-        }
+      if (DEBUG) {
+        Log.e(TAG, "readFromFile: file not found!");
+      }
     } catch (Exception e) {
-        if (DEBUG) {
-            Log.e(TAG, "readFromFile: " + e.toString());
-        }
+      if (DEBUG) {
+        Log.e(TAG, "readFromFile: " + e.toString());
+      }
     }
 
     return matches;
@@ -78,9 +78,9 @@ public class MatchingWordsTask extends AsyncTask<String[], Integer, ArrayList<St
   @Override
   protected void onPostExecute(ArrayList<String> strings) {
     MainActivity activity = activityRef.get();
-      if (activity == null) {
-          return;
-      }
+    if (activity == null) {
+      return;
+    }
     activity.processMatches(strings, false);
   }
 }

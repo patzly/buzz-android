@@ -42,6 +42,8 @@
     <item name="android:colorEdgeEffect">@color/highlight</item>
 
     <item name="android:fontFamily">@font/jost_book</item>
+    <item name="android:textSize">15.5sp</item>
+    <item name="android:lineSpacingExtra">-1.5sp</item>
   </style>
 
   <style name="Theme.Spelling" parent="Base.Spelling">

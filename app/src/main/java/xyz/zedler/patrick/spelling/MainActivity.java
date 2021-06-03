@@ -87,9 +87,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     clickUtilLogo = new ClickUtil(600);
 
     binding.toolbar.setOnMenuItemClickListener(item -> {
-        if (clickUtil.isDisabled()) {
-            return false;
-        }
+      if (clickUtil.isDisabled()) {
+        return false;
+      }
       int id = item.getItemId();
       if (id == R.id.action_hint) {
         IconUtil.start(item.getIcon());
@@ -155,9 +155,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
   public void onClick(View v) {
     int id = v.getId();
     if (id == R.id.button_found) {
-        if (clickUtil.isDisabled()) {
-            return;
-        }
+      if (clickUtil.isDisabled()) {
+        return;
+      }
       if (found.size() > 0) {
         Bundle bundle = new Bundle();
         bundle.putStringArrayList(Constants.BOTTOM_SHEET.FOUND_WORDS, found);
@@ -168,9 +168,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         showMessage(R.string.msg_not_found_any);
       }
     } else if (id == R.id.button_new_game) {
-        if (clickUtil.isDisabled()) {
-            return;
-        }
+      if (clickUtil.isDisabled()) {
+        return;
+      }
       Snackbar.make(
           binding.getRoot(),
           getString(R.string.msg_new_game),
@@ -211,13 +211,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     } else if (id == R.id.card_main_enter) {
       IconUtil.start(binding.imageEnter);
       vibrator.tick();
-        if (isValid()) {
-            processInput();
-        }
+      if (isValid()) {
+        processInput();
+      }
     } else if (id == R.id.frame_app_bar) {
-        if (clickUtilLogo.isDisabled()) {
-            return;
-        }
+      if (clickUtilLogo.isDisabled()) {
+        return;
+      }
       IconUtil.start(binding.imageLogo);
     }
   }
@@ -237,9 +237,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
   private void removeLastLetter() {
     vibrator.tick();
     String input = binding.textInput.getText().toString();
-      if (input.length() > 0) {
-          input = input.substring(0, input.length() - 1);
-      }
+    if (input.length() > 0) {
+      input = input.substring(0, input.length() - 1);
+    }
     input = input.replaceAll(center, getStyledCenter());
     binding.textInput.setText(Html.fromHtml(input), TextView.BufferType.SPANNABLE);
   }
@@ -312,15 +312,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     hints = sharedPrefs.getInt(Constants.PREF.HINTS, 0);
 
     // LOAD MATCHES
-      if (matchesNeed) {
-          new MatchingWordsTask(this).execute(
-              new String[]{TextUtils.join("", letters) + center, center}
-          );
-      }
+    if (matchesNeed) {
+      new MatchingWordsTask(this).execute(
+          new String[]{TextUtils.join("", letters) + center, center}
+      );
+    }
 
-      if (animated) {
-          animateLetters(0, true);
-      }
+    if (animated) {
+      animateLetters(0, true);
+    }
     new Handler(Looper.getMainLooper()).postDelayed(() -> {
       binding.textHex1.setText(letters.get(0));
       binding.textHex2.setText(letters.get(1));
@@ -328,9 +328,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
       binding.textHex4.setText(letters.get(3));
       binding.textHex5.setText(letters.get(4));
       binding.textHex6.setText(letters.get(5));
-        if (animated) {
-            animateLetters(1, true);
-        }
+      if (animated) {
+        animateLetters(1, true);
+      }
     }, animated ? Constants.ANIMATION : 0);
     new Handler(Looper.getMainLooper()).postDelayed(
         () -> binding.textHexCenter.setText(center),
@@ -360,21 +360,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     binding.textHex4.animate().alpha(alpha).setDuration(duration).start();
     binding.textHex5.animate().alpha(alpha).setDuration(duration).start();
     binding.textHex6.animate().alpha(alpha).setDuration(duration).start();
-      if (animateCenter) {
-          binding.textHexCenter.animate()
-              .alpha(alpha)
-              .setDuration(duration)
-              .start();
-      }
+    if (animateCenter) {
+      binding.textHexCenter.animate()
+          .alpha(alpha)
+          .setDuration(duration)
+          .start();
+    }
   }
 
   private ArrayList<String> getLetters() {
     String string = sharedPrefs.getString(Constants.PREF.LETTERS, Constants.DEFAULT.LETTERS);
     assert string != null;
     List<String> letters = new ArrayList<>(Arrays.asList(string.toUpperCase().split("")));
-      if (letters.get(0).isEmpty()) {
-          letters.remove(0);
-      }
+    if (letters.get(0).isEmpty()) {
+      letters.remove(0);
+    }
     Collections.shuffle(letters);
     return new ArrayList<>(letters);
   }
@@ -438,9 +438,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
   private ArrayList<String> getMissedWords() {
     ArrayList<String> missed = new ArrayList<>();
     for (int i = 0; i < matches.size(); i++) {
-        if (!found.contains(matches.get(i))) {
-            missed.add(matches.get(i));
-        }
+      if (!found.contains(matches.get(i))) {
+        missed.add(matches.get(i));
+      }
     }
     return missed;
   }

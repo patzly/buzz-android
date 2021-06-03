@@ -46,14 +46,14 @@ public class ResUtil {
       text.deleteCharAt(text.length() - 1);
       inputStream.close();
     } catch (FileNotFoundException e) {
-        if (DEBUG) {
-            Log.e(TAG, "readFromFile: \"" + file + "\" not found!");
-        }
+      if (DEBUG) {
+        Log.e(TAG, "readFromFile: \"" + file + "\" not found!");
+      }
       return null;
     } catch (Exception e) {
-        if (DEBUG) {
-            Log.e(TAG, "readFromFile: " + e.toString());
-        }
+      if (DEBUG) {
+        Log.e(TAG, "readFromFile: " + e.toString());
+      }
       return null;
     }
     return text.toString();
@@ -77,13 +77,13 @@ public class ResUtil {
       inputStream.close();
       Collections.sort(words, String.CASE_INSENSITIVE_ORDER);
     } catch (FileNotFoundException e) {
-        if (DEBUG) {
-            Log.e(TAG, "readFromFile: file not found!");
-        }
+      if (DEBUG) {
+        Log.e(TAG, "readFromFile: file not found!");
+      }
     } catch (Exception e) {
-        if (DEBUG) {
-            Log.e(TAG, "readFromFile: " + e.toString());
-        }
+      if (DEBUG) {
+        Log.e(TAG, "readFromFile: " + e.toString());
+      }
     }
     return words;
   }
