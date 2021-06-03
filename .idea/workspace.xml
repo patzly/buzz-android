@@ -22,11 +22,28 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7071ed4c-2bdc-419e-aae5-8027d1a88607" name="Default" comment="Add landscape layout">
+    <list default="true" id="7071ed4c-2bdc-419e-aae5-8027d1a88607" name="Default" comment="Apply Google code style and copyright header, closes #4">
+      <change afterPath="$PROJECT_DIR$/.idea/copyright/Spelling_Bee.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/AnimatedParticle.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/AnimatedParticle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/Particle.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/Particle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/ParticleField.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/ParticleField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/ParticleSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/ParticleSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/initializers/AccelerationInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/initializers/AccelerationInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/initializers/ParticleInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/initializers/ParticleInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/initializers/RotationInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/initializers/RotationInitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/initializers/RotationSpeedInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/initializers/RotationSpeedInitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/initializers/ScaleInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/initializers/ScaleInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/initializers/SpeedByComponentsInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/initializers/SpeedByComponentsInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/initializers/SpeedModuleAndRangeInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/initializers/SpeedModuleAndRangeInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/modifiers/AccelerationModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/modifiers/AccelerationModifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/modifiers/AlphaModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/modifiers/AlphaModifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/modifiers/ParticleModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/modifiers/ParticleModifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/modifiers/ScaleModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/modifiers/ScaleModifier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/MainActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/fragment/BaseBottomSheetDialogFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/fragment/BaseBottomSheetDialogFragment.java" afterDir="false" />
@@ -65,6 +82,7 @@
       <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/splash.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/splash.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-h400dp/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-h400dp/activity_main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-h700dp/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-h700dp/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-land/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-land/activity_main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_bottomsheet_found.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_bottomsheet_found.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_bottomsheet_new_game.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_bottomsheet_new_game.xml" afterDir="false" />
@@ -98,6 +116,11 @@
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -613,7 +636,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622685799477</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Apply Google code style and copyright header, closes #4">
+      <created>1622686508943</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1622686508943</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -621,7 +651,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Improve umbrella icon" />
     <MESSAGE value="Clean up RainData" />
     <MESSAGE value="Add version info" />
     <MESSAGE value="Implement auto updating of info text and umbrella icon" />
@@ -646,7 +675,8 @@
     <MESSAGE value="Update targetSdkVersion and compileSdkVersion to 30" />
     <MESSAGE value="Update dependencies and include leonids lib" />
     <MESSAGE value="Add landscape layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add landscape layout" />
+    <MESSAGE value="Apply Google code style and copyright header, closes #4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Apply Google code style and copyright header, closes #4" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -654,10 +684,14 @@
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
     <state x="3360" y="261" width="950" height="535" key="#PSD/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622680305933" />
-    <state x="3354" y="38" width="961" height="981" key="CommitChangelistDialog2" timestamp="1622685932295">
+    <state x="3527" y="349" width="615" height="359" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1622686210878">
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
-    <state x="3354" y="38" width="961" height="981" key="CommitChangelistDialog2/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622685932295" />
+    <state x="3527" y="349" width="615" height="359" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622686210878" />
+    <state x="3354" y="38" width="961" height="981" key="CommitChangelistDialog2" timestamp="1622686508791">
+      <screen x="2560" y="0" width="2560" height="1080" />
+    </state>
+    <state x="3354" y="38" width="961" height="981" key="CommitChangelistDialog2/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622686508791" />
     <state x="3623" y="284" width="424" height="489" key="FileChooserDialogImpl" timestamp="1622680425314">
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
@@ -666,9 +700,9 @@
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
     <state x="3336" y="161" width="1007" height="735" key="SettingsEditor/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622686195955" />
-    <state x="3435" y="261" width="800" height="536" key="Vcs.Push.Dialog.v2" timestamp="1622685800830">
+    <state x="3435" y="261" width="800" height="536" key="Vcs.Push.Dialog.v2" timestamp="1622686510226">
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
-    <state x="3435" y="261" width="800" height="536" key="Vcs.Push.Dialog.v2/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622685800830" />
+    <state x="3435" y="261" width="800" height="536" key="Vcs.Push.Dialog.v2/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622686510226" />
   </component>
 </project>
