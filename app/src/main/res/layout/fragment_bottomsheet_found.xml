@@ -32,7 +32,7 @@
     android:textAlignment="center"
     android:gravity="center"
     android:text="@string/title_found_words"
-    android:fontFamily="@font/roboto_mono_bold"
+    android:fontFamily="@font/jost_bold"
     android:textAppearance="@style/TextAppearance.Spelling.BottomSheet.Title" />
 
   <View
@@ -54,7 +54,7 @@
       android:textAlignment="center"
       android:gravity="center"
       android:textSize="16sp"
-      android:fontFamily="@font/roboto_mono_regular"
+      android:fontFamily="@font/jost_book"
       android:textColor="@color/on_background" />
 
   </androidx.core.widget.NestedScrollView>

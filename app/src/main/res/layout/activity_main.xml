@@ -53,7 +53,7 @@
         android:textColor="@color/on_primary"
         android:textSize="20dp"
         android:textAlignment="center"
-        android:fontFamily="@font/roboto_mono_bold"
+        android:fontFamily="@font/jost_bold"
         tools:ignore="SpUsage" />
 
       <androidx.appcompat.widget.Toolbar
@@ -121,7 +121,7 @@
           android:layout_height="wrap_content"
           android:layout_gravity="start"
           android:textSize="14sp"
-          android:fontFamily="@font/roboto_mono_bold"
+          android:fontFamily="@font/jost_bold"
           android:textColor="@color/on_background" />
 
         <ProgressBar
@@ -142,7 +142,7 @@
           android:layout_height="wrap_content"
           android:layout_gravity="end"
           android:textSize="14sp"
-          android:fontFamily="@font/roboto_mono_bold"
+          android:fontFamily="@font/jost_bold"
           android:textColor="@color/on_background" />
 
       </LinearLayout>
@@ -165,7 +165,7 @@
           android:textAlignment="center"
           android:textAllCaps="true"
           android:textSize="@dimen/hex_font_size"
-          android:fontFamily="@font/roboto_mono_bold"
+          android:fontFamily="@font/jost_bold"
           android:textColor="@color/on_background" />
 
       </FrameLayout>
@@ -201,7 +201,7 @@
             android:layout_gravity="center"
             android:textAllCaps="true"
             android:textSize="@dimen/hex_font_size"
-            android:fontFamily="@font/roboto_mono_bold"
+            android:fontFamily="@font/jost_bold"
             android:textColor="@color/on_background" />
 
           <ImageView
@@ -230,7 +230,7 @@
             android:layout_gravity="center"
             android:textAllCaps="true"
             android:textSize="@dimen/hex_font_size"
-            android:fontFamily="@font/roboto_mono_bold"
+            android:fontFamily="@font/jost_bold"
             android:textColor="@color/on_background" />
 
           <ImageView
@@ -268,7 +268,7 @@
             android:layout_gravity="center"
             android:textAllCaps="true"
             android:textSize="@dimen/hex_font_size"
-            android:fontFamily="@font/roboto_mono_bold"
+            android:fontFamily="@font/jost_bold"
             android:textColor="@color/on_background" />
 
           <ImageView
@@ -297,7 +297,7 @@
             android:layout_gravity="center"
             android:textAllCaps="true"
             android:textSize="@dimen/hex_font_size"
-            android:fontFamily="@font/roboto_mono_bold"
+            android:fontFamily="@font/jost_bold"
             android:textColor="@color/black" />
 
           <ImageView
@@ -327,7 +327,7 @@
             android:layout_gravity="center"
             android:textAllCaps="true"
             android:textSize="@dimen/hex_font_size"
-            android:fontFamily="@font/roboto_mono_bold"
+            android:fontFamily="@font/jost_bold"
             android:textColor="@color/on_background" />
 
           <ImageView
@@ -366,7 +366,7 @@
             android:layout_gravity="center"
             android:textAllCaps="true"
             android:textSize="@dimen/hex_font_size"
-            android:fontFamily="@font/roboto_mono_bold"
+            android:fontFamily="@font/jost_bold"
             android:textColor="@color/on_background" />
 
           <ImageView
@@ -395,7 +395,7 @@
             android:layout_gravity="center"
             android:textAllCaps="true"
             android:textSize="@dimen/hex_font_size"
-            android:fontFamily="@font/roboto_mono_bold"
+            android:fontFamily="@font/jost_bold"
             android:textColor="@color/on_background" />
 
           <ImageView

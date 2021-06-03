@@ -34,7 +34,7 @@
     android:textAlignment="center"
     android:gravity="center"
     android:text="@string/title_missed_words"
-    android:fontFamily="@font/roboto_mono_bold"
+    android:fontFamily="@font/jost_bold"
     android:textAppearance="@style/TextAppearance.Spelling.BottomSheet.Title" />
 
   <TextView
@@ -50,7 +50,7 @@
     android:gravity="center"
     android:text="@string/msg_hints_used"
     android:textColor="@color/on_background_secondary"
-    android:fontFamily="@font/roboto_mono_regular"
+    android:fontFamily="@font/jost_book"
     android:textSize="15sp" />
 
   <TextView
@@ -64,7 +64,7 @@
     android:textAlignment="center"
     android:gravity="center"
     android:textColor="@color/on_background_secondary"
-    android:fontFamily="@font/roboto_mono_bold"
+    android:fontFamily="@font/jost_bold"
     android:letterSpacing="0.15"
     android:textSize="17sp" />
 
@@ -96,7 +96,7 @@
       android:textAlignment="center"
       android:gravity="center"
       android:textSize="16sp"
-      android:fontFamily="@font/roboto_mono_regular"
+      android:fontFamily="@font/jost_book"
       android:textColor="@color/on_background" />
 
   </androidx.core.widget.NestedScrollView>

@@ -35,8 +35,10 @@
     <item name="rippleColor">@color/highlight_secondary</item>
   </style>
 
-  <style name="Widget.Spelling.Button.TextButton.Snackbar" parent="Widget.MaterialComponents.Button.TextButton.Snackbar">
-    <item name="android:fontFamily">@font/roboto_mono_bold</item>
+  <style
+    name="Widget.Spelling.Button.TextButton.Snackbar"
+    parent="Widget.MaterialComponents.Button.TextButton.Snackbar">
+    <item name="android:fontFamily">@font/jost_bold</item>
     <item name="cornerRadius">6dp</item>
   </style>
 
@@ -52,35 +54,43 @@
     <item name="android:background">@color/stroke_secondary</item>
   </style>
 
-  <style name="Widget.Spelling.Button.TextButton" parent="Widget.MaterialComponents.Button.TextButton">
+  <style
+    name="Widget.Spelling.Button.TextButton"
+    parent="Widget.MaterialComponents.Button.TextButton">
     <item name="rippleColor">@color/highlight</item>
     <item name="android:textColor">@color/on_background_secondary</item>
     <item name="android:textStyle">bold</item>
-    <item name="android:fontFamily">@font/roboto_mono_bold</item>
+    <item name="android:fontFamily">@font/jost_bold</item>
     <item name="cornerRadius">6dp</item>
   </style>
 
-  <style name="Widget.Spelling.Button.OutlinedButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+  <style
+    name="Widget.Spelling.Button.OutlinedButton"
+    parent="Widget.MaterialComponents.Button.OutlinedButton">
     <item name="rippleColor">@color/secondary_translucent</item>
     <item name="iconTint">@color/icon</item>
     <item name="android:textColor">@color/secondary</item>
     <item name="android:textStyle">bold</item>
-    <item name="android:fontFamily">@font/roboto_mono_bold</item>
+    <item name="android:fontFamily">@font/jost_bold</item>
     <item name="strokeColor">@color/stroke_secondary</item>
     <item name="strokeWidth">1dp</item>
     <item name="cornerRadius">6dp</item>
   </style>
 
-  <style name="Widget.Spelling.Button.UnelevatedButton" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+  <style
+    name="Widget.Spelling.Button.UnelevatedButton"
+    parent="Widget.MaterialComponents.Button.UnelevatedButton">
     <item name="rippleColor">@color/highlight_on_secondary</item>
     <item name="android:textColor">@color/on_secondary</item>
     <item name="android:textStyle">bold</item>
-    <item name="android:fontFamily">@font/roboto_mono_bold</item>
+    <item name="android:fontFamily">@font/jost_bold</item>
     <item name="backgroundTint">@color/retro_green_bg_white</item>
     <item name="cornerRadius">6dp</item>
   </style>
 
-  <style name="TextAppearance.Spelling.BottomSheet.Title" parent="TextAppearance.MaterialComponents.Body2">
+  <style
+    name="TextAppearance.Spelling.BottomSheet.Title"
+    parent="TextAppearance.MaterialComponents.Body2">
     <item name="android:textColor">@color/on_background</item>
     <item name="android:textSize">20sp</item>
     <item name="android:textAlignment">viewStart</item>

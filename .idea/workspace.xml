@@ -22,64 +22,12 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7071ed4c-2bdc-419e-aae5-8027d1a88607" name="Default" comment="Apply Google code style and copyright header, closes #4">
-      <change afterPath="$PROJECT_DIR$/.idea/copyright/Spelling_Bee.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="7071ed4c-2bdc-419e-aae5-8027d1a88607" name="Default" comment="Remove local properties">
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/jost_bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/jost_book.ttf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/AnimatedParticle.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/AnimatedParticle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/Particle.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/Particle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/ParticleField.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/ParticleField.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/ParticleSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/ParticleSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/initializers/AccelerationInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/initializers/AccelerationInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/initializers/ParticleInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/initializers/ParticleInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/initializers/RotationInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/initializers/RotationInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/initializers/RotationSpeedInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/initializers/RotationSpeedInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/initializers/ScaleInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/initializers/ScaleInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/initializers/SpeedByComponentsInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/initializers/SpeedByComponentsInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/initializers/SpeedModuleAndRangeInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/initializers/SpeedModuleAndRangeInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/modifiers/AccelerationModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/modifiers/AccelerationModifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/modifiers/AlphaModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/modifiers/AlphaModifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/modifiers/ParticleModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/modifiers/ParticleModifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/modifiers/ScaleModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/plattysoft/leonids/modifiers/ScaleModifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/fragment/BaseBottomSheetDialogFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/fragment/BaseBottomSheetDialogFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/fragment/FoundBottomSheetDialogFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/fragment/FoundBottomSheetDialogFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/fragment/NewGameBottomSheetDialogFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/fragment/NewGameBottomSheetDialogFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/fragment/RulesBottomSheetDialogFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/fragment/RulesBottomSheetDialogFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/task/MatchingWordsTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/task/MatchingWordsTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/task/NewGameTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/task/NewGameTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/task/SaveWordListTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/task/SaveWordListTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/util/ClickUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/util/ClickUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/util/ConfettiUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/util/ConfettiUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/util/IconUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/util/IconUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/util/ResUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/util/ResUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/util/SpellingUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/util/SpellingUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/util/VibratorUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/util/VibratorUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/anim/shake.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/anim/shake.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/animator/card_elevation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/animator/card_elevation.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-night/ic_spelling_bee_anim.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-night/ic_spelling_bee_anim.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_backspace_anim.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_backspace_anim.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_done_anim.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_done_anim.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_help_outline.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_help_outline.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_foreground.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_local_play_anim.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_local_play_anim.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_shuffle_anim.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_shuffle_anim.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_spelling_bee_anim.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_spelling_bee_anim.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_spelling_bee_outline.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_spelling_bee_outline.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/progress_bar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/progress_bar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ripple_hexagon_grey.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ripple_hexagon_grey.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ripple_hexagon_yellow.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ripple_hexagon_yellow.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/shape_bottom_sheet_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/shape_bottom_sheet_background.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/shape_hexagon.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/shape_hexagon.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/shape_hexagon_grey.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/shape_hexagon_grey.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/shape_hexagon_yellow.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/shape_hexagon_yellow.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/shape_pill.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/shape_pill.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/shape_scrollbar_rounded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/shape_scrollbar_rounded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/splash.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/splash.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/font/roboto_mono_bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/font/roboto_mono_regular.ttf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-h400dp/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-h400dp/activity_main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-h700dp/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-h700dp/activity_main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-land/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-land/activity_main.xml" afterDir="false" />
@@ -87,40 +35,8 @@
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_bottomsheet_found.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_bottomsheet_found.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_bottomsheet_new_game.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_bottomsheet_new_game.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_bottomsheet_rules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_bottomsheet_rules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-h400dp/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-h400dp/dimens.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-h700dp/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-h700dp/dimens.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-land-night-v23/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-land-night-v23/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-land-night-v26/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-land-night-v26/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-land-night-v27/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-land-night-v27/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-land-night-v29/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-land-night-v29/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-land-night/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-land-night/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-land-v23/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-land-v23/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-land-v26/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-land-v26/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-land-v27/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-land-v27/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-land-v29/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-land-v29/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-land/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-land/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-night-v23/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-night-v23/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-night-v26/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-night-v26/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-night-v27/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-night-v27/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-night-v28/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-night-v28/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-night/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-night/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-night/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-night/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-v23/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-v23/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-v26/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-v26/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-v27/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-v27/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-v28/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-v28/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -643,7 +559,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622686508943</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Remove local properties">
+      <created>1622686725133</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1622686725134</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -651,7 +574,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Clean up RainData" />
     <MESSAGE value="Add version info" />
     <MESSAGE value="Implement auto updating of info text and umbrella icon" />
     <MESSAGE value="Hide location on start" />
@@ -676,7 +598,8 @@
     <MESSAGE value="Update dependencies and include leonids lib" />
     <MESSAGE value="Add landscape layout" />
     <MESSAGE value="Apply Google code style and copyright header, closes #4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Apply Google code style and copyright header, closes #4" />
+    <MESSAGE value="Remove local properties" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove local properties" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -688,10 +611,10 @@
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
     <state x="3527" y="349" width="615" height="359" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622686210878" />
-    <state x="3354" y="38" width="961" height="981" key="CommitChangelistDialog2" timestamp="1622686508791">
+    <state x="3354" y="38" width="961" height="981" key="CommitChangelistDialog2" timestamp="1622686725061">
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
-    <state x="3354" y="38" width="961" height="981" key="CommitChangelistDialog2/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622686508791" />
+    <state x="3354" y="38" width="961" height="981" key="CommitChangelistDialog2/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622686725061" />
     <state x="3623" y="284" width="424" height="489" key="FileChooserDialogImpl" timestamp="1622680425314">
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
@@ -700,9 +623,9 @@
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
     <state x="3336" y="161" width="1007" height="735" key="SettingsEditor/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622686195955" />
-    <state x="3435" y="261" width="800" height="536" key="Vcs.Push.Dialog.v2" timestamp="1622686510226">
+    <state x="3435" y="261" width="800" height="536" key="Vcs.Push.Dialog.v2" timestamp="1622686726596">
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
-    <state x="3435" y="261" width="800" height="536" key="Vcs.Push.Dialog.v2/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622686510226" />
+    <state x="3435" y="261" width="800" height="536" key="Vcs.Push.Dialog.v2/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622686726596" />
   </component>
 </project>

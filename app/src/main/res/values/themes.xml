@@ -41,7 +41,7 @@
     <item name="android:colorControlHighlight">@color/highlight</item>
     <item name="android:colorEdgeEffect">@color/highlight</item>
 
-    <item name="android:fontFamily">@font/roboto_mono_regular</item>
+    <item name="android:fontFamily">@font/jost_book</item>
   </style>
 
   <style name="Theme.Spelling" parent="Base.Spelling">
@@ -69,7 +69,7 @@
     <item name="android:colorControlHighlight">@color/highlight</item>
     <item name="android:colorEdgeEffect">@color/highlight</item>
 
-    <item name="android:fontFamily">@font/roboto_mono_regular</item>
+    <item name="android:fontFamily">@font/jost_book</item>
 
     <item name="android:statusBarColor">@android:color/transparent</item>
     <item name="android:windowIsFloating">false</item>
