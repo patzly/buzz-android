@@ -19,7 +19,7 @@
 
 <resources>
 
-  <string name="app_name">Spelling Bee</string>
+  <string name="app_name">Summ</string>
 
   <string name="title_missed_words">Entgangene Wörter</string>
   <string name="title_found_words">Gefundene Wörter</string>

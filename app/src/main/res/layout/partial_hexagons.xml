@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ This file is part of Spelling Bee Android.
+  ~
+  ~ Spelling Bee Android is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ Spelling Bee Android is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with Spelling Bee Android. If not, see <http://www.gnu.org/licenses/>.
+  ~
+  ~ Copyright (c) 2020-2021 by Patrick Zedler
+  -->
+
+<FrameLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_gravity="center">
+
+  <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical|start"
+    android:layout_marginEnd="@dimen/hex_translation">
+
+    <FrameLayout
+      android:id="@+id/frame_hex_6"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="@dimen/hex_outline"
+      android:layout_gravity="center"
+      android:clickable="true"
+      android:background="@drawable/ripple_hexagon_grey"
+      android:focusable="true">
+
+      <TextView
+        android:id="@+id/text_hex_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAllCaps="true"
+        android:textSize="@dimen/hex_font_size"
+        android:fontFamily="@font/jost_bold"
+        android:textColor="@color/on_background" />
+
+      <ImageView
+        android:layout_width="@dimen/hex_width"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:visibility="invisible"
+        android:src="@drawable/shape_hexagon"
+        tools:ignore="ContentDescription" />
+
+    </FrameLayout>
+
+    <FrameLayout
+      android:id="@+id/frame_hex_5"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:clickable="true"
+      android:background="@drawable/ripple_hexagon_grey"
+      android:focusable="true">
+
+      <TextView
+        android:id="@+id/text_hex_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAllCaps="true"
+        android:textSize="@dimen/hex_font_size"
+        android:fontFamily="@font/jost_bold"
+        android:textColor="@color/on_background" />
+
+      <ImageView
+        android:layout_width="@dimen/hex_width"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:visibility="invisible"
+        android:src="@drawable/shape_hexagon"
+        tools:ignore="ContentDescription" />
+
+    </FrameLayout>
+
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+    <FrameLayout
+      android:id="@+id/frame_hex_1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="@dimen/hex_outline"
+      android:layout_gravity="center"
+      android:clickable="true"
+      android:background="@drawable/ripple_hexagon_grey"
+      android:focusable="true">
+
+      <TextView
+        android:id="@+id/text_hex_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAllCaps="true"
+        android:textSize="@dimen/hex_font_size"
+        android:fontFamily="@font/jost_bold"
+        android:textColor="@color/on_background" />
+
+      <ImageView
+        android:layout_width="@dimen/hex_width"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:visibility="invisible"
+        android:src="@drawable/shape_hexagon"
+        tools:ignore="ContentDescription" />
+
+    </FrameLayout>
+
+    <FrameLayout
+      android:id="@+id/frame_hex_center"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:clickable="true"
+      android:background="@drawable/ripple_hexagon_yellow"
+      android:focusable="true">
+
+      <TextView
+        android:id="@+id/text_hex_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAllCaps="true"
+        android:textSize="@dimen/hex_font_size"
+        android:fontFamily="@font/jost_bold"
+        android:textColor="@color/black" />
+
+      <ImageView
+        android:layout_width="@dimen/hex_width"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:visibility="invisible"
+        android:src="@drawable/shape_hexagon"
+        tools:ignore="ContentDescription" />
+
+    </FrameLayout>
+
+    <FrameLayout
+      android:id="@+id/frame_hex_4"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/hex_outline"
+      android:layout_gravity="center"
+      android:clickable="true"
+      android:background="@drawable/ripple_hexagon_grey"
+      android:focusable="true">
+
+      <TextView
+        android:id="@+id/text_hex_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAllCaps="true"
+        android:textSize="@dimen/hex_font_size"
+        android:fontFamily="@font/jost_bold"
+        android:textColor="@color/on_background" />
+
+      <ImageView
+        android:layout_width="@dimen/hex_width"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:visibility="invisible"
+        android:src="@drawable/shape_hexagon"
+        tools:ignore="ContentDescription" />
+
+    </FrameLayout>
+
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical|start"
+    android:layout_marginStart="@dimen/hex_translation">
+
+    <FrameLayout
+      android:id="@+id/frame_hex_2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="@dimen/hex_outline"
+      android:layout_gravity="center"
+      android:clickable="true"
+      android:background="@drawable/ripple_hexagon_grey"
+      android:focusable="true">
+
+      <TextView
+        android:id="@+id/text_hex_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAllCaps="true"
+        android:textSize="@dimen/hex_font_size"
+        android:fontFamily="@font/jost_bold"
+        android:textColor="@color/on_background" />
+
+      <ImageView
+        android:layout_width="@dimen/hex_width"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:visibility="invisible"
+        android:src="@drawable/shape_hexagon"
+        tools:ignore="ContentDescription" />
+
+    </FrameLayout>
+
+    <FrameLayout
+      android:id="@+id/frame_hex_3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:clickable="true"
+      android:background="@drawable/ripple_hexagon_grey"
+      android:focusable="true">
+
+      <TextView
+        android:id="@+id/text_hex_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAllCaps="true"
+        android:textSize="@dimen/hex_font_size"
+        android:fontFamily="@font/jost_bold"
+        android:textColor="@color/on_background" />
+
+      <ImageView
+        android:layout_width="@dimen/hex_width"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:visibility="invisible"
+        android:src="@drawable/shape_hexagon"
+        tools:ignore="ContentDescription" />
+
+    </FrameLayout>
+
+  </LinearLayout>
+
+</FrameLayout>

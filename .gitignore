@@ -1,5 +1,6 @@
 # Project exclude paths
 local.properties
 /.gradle/
+/.idea/workspace.xml
 /app/build/
 /app/build/intermediates/javac/debug/classes/

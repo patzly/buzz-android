@@ -107,13 +107,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         binding.frameAppBar,
         binding.buttonFound,
         binding.buttonNewGame,
-        binding.frameHex1,
-        binding.frameHex2,
-        binding.frameHex3,
-        binding.frameHex4,
-        binding.frameHex5,
-        binding.frameHex6,
-        binding.frameHexCenter,
+        binding.frameHexagons.frameHex1,
+        binding.frameHexagons.frameHex2,
+        binding.frameHexagons.frameHex3,
+        binding.frameHexagons.frameHex4,
+        binding.frameHexagons.frameHex5,
+        binding.frameHexagons.frameHex6,
+        binding.frameHexagons.frameHexCenter,
         binding.cardMainClear,
         binding.cardMainShuffle,
         binding.cardMainEnter
@@ -322,18 +322,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
       animateLetters(0, true);
     }
     new Handler(Looper.getMainLooper()).postDelayed(() -> {
-      binding.textHex1.setText(letters.get(0).toUpperCase());
-      binding.textHex2.setText(letters.get(1).toUpperCase());
-      binding.textHex3.setText(letters.get(2).toUpperCase());
-      binding.textHex4.setText(letters.get(3).toUpperCase());
-      binding.textHex5.setText(letters.get(4).toUpperCase());
-      binding.textHex6.setText(letters.get(5).toUpperCase());
+      binding.frameHexagons.textHex1.setText(letters.get(0).toUpperCase());
+      binding.frameHexagons.textHex2.setText(letters.get(1).toUpperCase());
+      binding.frameHexagons.textHex3.setText(letters.get(2).toUpperCase());
+      binding.frameHexagons.textHex4.setText(letters.get(3).toUpperCase());
+      binding.frameHexagons.textHex5.setText(letters.get(4).toUpperCase());
+      binding.frameHexagons.textHex6.setText(letters.get(5).toUpperCase());
       if (animated) {
         animateLetters(1, true);
       }
     }, animated ? Constants.ANIMATION : 0);
     new Handler(Looper.getMainLooper()).postDelayed(
-        () -> binding.textHexCenter.setText(center.toUpperCase()),
+        () -> binding.frameHexagons.textHexCenter.setText(center.toUpperCase()),
         animated ? Constants.ANIMATION : 0
     );
   }
@@ -342,29 +342,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     letters = getLetters();
     animateLetters(0, false);
     new Handler(Looper.getMainLooper()).postDelayed(() -> {
-      binding.textHex1.setText(letters.get(0).toUpperCase());
-      binding.textHex2.setText(letters.get(1).toUpperCase());
-      binding.textHex3.setText(letters.get(2).toUpperCase());
-      binding.textHex4.setText(letters.get(3).toUpperCase());
-      binding.textHex5.setText(letters.get(4).toUpperCase());
-      binding.textHex6.setText(letters.get(5).toUpperCase());
+      binding.frameHexagons.textHex1.setText(letters.get(0).toUpperCase());
+      binding.frameHexagons.textHex2.setText(letters.get(1).toUpperCase());
+      binding.frameHexagons.textHex3.setText(letters.get(2).toUpperCase());
+      binding.frameHexagons.textHex4.setText(letters.get(3).toUpperCase());
+      binding.frameHexagons.textHex5.setText(letters.get(4).toUpperCase());
+      binding.frameHexagons.textHex6.setText(letters.get(5).toUpperCase());
       animateLetters(1, false);
     }, Constants.ANIMATION);
   }
 
   private void animateLetters(float alpha, boolean animateCenter) {
     int duration = Constants.ANIMATION;
-    binding.textHex1.animate().alpha(alpha).setDuration(duration).start();
-    binding.textHex2.animate().alpha(alpha).setDuration(duration).start();
-    binding.textHex3.animate().alpha(alpha).setDuration(duration).start();
-    binding.textHex4.animate().alpha(alpha).setDuration(duration).start();
-    binding.textHex5.animate().alpha(alpha).setDuration(duration).start();
-    binding.textHex6.animate().alpha(alpha).setDuration(duration).start();
+    binding.frameHexagons.textHex1.animate().alpha(alpha).setDuration(duration).start();
+    binding.frameHexagons.textHex2.animate().alpha(alpha).setDuration(duration).start();
+    binding.frameHexagons.textHex3.animate().alpha(alpha).setDuration(duration).start();
+    binding.frameHexagons.textHex4.animate().alpha(alpha).setDuration(duration).start();
+    binding.frameHexagons.textHex5.animate().alpha(alpha).setDuration(duration).start();
+    binding.frameHexagons.textHex6.animate().alpha(alpha).setDuration(duration).start();
     if (animateCenter) {
-      binding.textHexCenter.animate()
-          .alpha(alpha)
-          .setDuration(duration)
-          .start();
+      binding.frameHexagons.textHexCenter.animate().alpha(alpha).setDuration(duration).start();
     }
   }
 

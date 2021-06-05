@@ -3,8 +3,8 @@
   <component name="AndroidLayouts">
     <shared>
       <config>
-        <device id="pixel_4" />
         <device id="pixel_4a" />
+        <device id="pixel_4" />
       </config>
     </shared>
   </component>
@@ -22,30 +22,16 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7071ed4c-2bdc-419e-aae5-8027d1a88607" name="Default" comment="Replace font">
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/words_english_pangrams.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/words_english_valid.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/words_german_pangrams.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/words_german_valid.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/pzedler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/pzedler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+    <list default="true" id="7071ed4c-2bdc-419e-aae5-8027d1a88607" name="Default" comment="Replace word lists and implement multiple improvements">
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/partial_hexagons.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-de/strings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/fragment/FoundBottomSheetDialogFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/fragment/FoundBottomSheetDialogFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/fragment/NewGameBottomSheetDialogFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/fragment/NewGameBottomSheetDialogFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/fragment/RulesBottomSheetDialogFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/fragment/RulesBottomSheetDialogFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/task/MatchingWordsTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/task/MatchingWordsTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/task/NewGameTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/task/NewGameTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/task/SaveWordListTask.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/util/ResUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/util/ResUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/util/SpellingUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/xyz/zedler/patrick/spelling/util/SpellingUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-h400dp/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-h400dp/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-h700dp/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-h700dp/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-h400dp/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-h700dp/activity_main.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-land/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-land/activity_main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +61,7 @@
         <option value="valueResourceFile" />
         <option value="resourceFile" />
         <option value="Class" />
+        <option value="layoutResourceFile" />
       </list>
     </option>
   </component>
@@ -117,7 +104,7 @@
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
     <property name="device.picker.selection" value="Google_Pixel_2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../stiefo-android" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../grocy-android" />
     <property name="multi-representation-preview/home/pzedler/Android/Sdk/sources/android-29/android/view/View.java_selected" value="Custom views" />
     <property name="multi-representation-preview/home/pzedler/AndroidStudioProjects/spelling-android/app/src/main/java/xyz/zedler/patrick/spelling/view/GraphView.java_selected" value="Custom views" />
     <property name="multi-representation-preview/home/pzedler/AndroidStudioProjects/spellingbee-android/app/src/main/java/xyz/zedler/patrick/spelling/view/GraphView.java_selected" value="Custom views" />
@@ -590,7 +577,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622687984187</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Replace word lists and implement multiple improvements">
+      <created>1622763695022</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1622763695022</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -598,7 +592,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Hide location on start" />
     <MESSAGE value="Remove version display" />
     <MESSAGE value="Improve location display" />
     <MESSAGE value="Improve same location message" />
@@ -623,7 +616,8 @@
     <MESSAGE value="Remove local properties" />
     <MESSAGE value="Replace font" />
     <MESSAGE value="Fix code style" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix code style" />
+    <MESSAGE value="Replace word lists and implement multiple improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="Replace word lists and implement multiple improvements" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -639,37 +633,41 @@
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
     <state x="3527" y="349" width="615" height="359" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622686210878" />
-    <state x="3354" y="38" width="961" height="981" key="CommitChangelistDialog2" timestamp="1622687983858">
+    <state x="3423" y="284" width="824" height="489" key="AndroidCreateResourceFileDialog" timestamp="1622863341078">
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
-    <state x="3354" y="38" width="961" height="981" key="CommitChangelistDialog2/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622687983858" />
-    <state x="3623" y="284" width="424" height="489" key="FileChooserDialogImpl" timestamp="1622762493509">
+    <state x="3423" y="284" width="824" height="489" key="AndroidCreateResourceFileDialog/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622863341078" />
+    <state x="3354" y="38" width="961" height="981" key="CommitChangelistDialog2" timestamp="1622863305019">
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
-    <state x="3623" y="284" width="424" height="489" key="FileChooserDialogImpl/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622762493509" />
-    <state width="2508" height="434" key="GridCell.Tab.0.bottom" timestamp="1622761619554">
+    <state x="3354" y="38" width="961" height="981" key="CommitChangelistDialog2/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622863305019" />
+    <state x="3623" y="284" width="424" height="489" key="FileChooserDialogImpl" timestamp="1622857648516">
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
-    <state width="2508" height="434" key="GridCell.Tab.0.bottom/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622761619554" />
-    <state width="2508" height="434" key="GridCell.Tab.0.center" timestamp="1622761619554">
+    <state x="3623" y="284" width="424" height="489" key="FileChooserDialogImpl/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622857648516" />
+    <state width="2508" height="273" key="GridCell.Tab.0.bottom" timestamp="1622864827976">
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
-    <state width="2508" height="434" key="GridCell.Tab.0.center/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622761619554" />
-    <state width="2508" height="434" key="GridCell.Tab.0.left" timestamp="1622761619554">
+    <state width="2508" height="273" key="GridCell.Tab.0.bottom/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622864827976" />
+    <state width="2508" height="273" key="GridCell.Tab.0.center" timestamp="1622864827975">
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
-    <state width="2508" height="434" key="GridCell.Tab.0.left/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622761619554" />
-    <state width="2508" height="434" key="GridCell.Tab.0.right" timestamp="1622761619554">
+    <state width="2508" height="273" key="GridCell.Tab.0.center/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622864827975" />
+    <state width="2508" height="273" key="GridCell.Tab.0.left" timestamp="1622864827975">
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
-    <state width="2508" height="434" key="GridCell.Tab.0.right/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622761619554" />
+    <state width="2508" height="273" key="GridCell.Tab.0.left/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622864827975" />
+    <state width="2508" height="273" key="GridCell.Tab.0.right" timestamp="1622864827976">
+      <screen x="2560" y="0" width="2560" height="1080" />
+    </state>
+    <state width="2508" height="273" key="GridCell.Tab.0.right/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622864827976" />
     <state x="3336" y="161" width="1007" height="735" key="SettingsEditor" timestamp="1622686195955">
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
     <state x="3336" y="161" width="1007" height="735" key="SettingsEditor/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622686195955" />
-    <state x="3435" y="261" width="800" height="536" key="Vcs.Push.Dialog.v2" timestamp="1622687985394">
+    <state x="3435" y="261" width="800" height="536" key="Vcs.Push.Dialog.v2" timestamp="1622763696298">
       <screen x="2560" y="0" width="2560" height="1080" />
     </state>
-    <state x="3435" y="261" width="800" height="536" key="Vcs.Push.Dialog.v2/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622687985394" />
+    <state x="3435" y="261" width="800" height="536" key="Vcs.Push.Dialog.v2/2560.0.2560.1080/0.0.2560.1053@2560.0.2560.1080" timestamp="1622763696298" />
   </component>
 </project>
