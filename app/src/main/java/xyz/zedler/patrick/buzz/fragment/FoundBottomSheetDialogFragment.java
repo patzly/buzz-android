@@ -1,46 +1,49 @@
 /*
- * This file is part of Spelling Bee Android.
+ * This file is part of Buzz Android.
  *
- * Spelling Bee Android is free software: you can redistribute it and/or modify
+ * Buzz Android is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
  *
- * Spelling Bee Android is distributed in the hope that it will be useful,
+ * Buzz Android is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with Spelling Bee Android. If not, see <http://www.gnu.org/licenses/>.
+ * along with Buzz Android. If not, see <http://www.gnu.org/licenses/>.
  *
  * Copyright (c) 2020-2021 by Patrick Zedler
  */
 
-package xyz.zedler.patrick.spelling.fragment;
+package xyz.zedler.patrick.buzz.fragment;
 
 import android.app.Dialog;
 import android.content.Context;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
-import xyz.zedler.patrick.spelling.R;
-import xyz.zedler.patrick.spelling.databinding.FragmentBottomsheetRulesBinding;
-import xyz.zedler.patrick.spelling.util.ResUtil;
+import java.util.ArrayList;
+import java.util.Collections;
+import xyz.zedler.patrick.buzz.Constants;
+import xyz.zedler.patrick.buzz.R;
+import xyz.zedler.patrick.buzz.databinding.FragmentBottomsheetFoundBinding;
 
-public class RulesBottomSheetDialogFragment extends BaseBottomSheetDialogFragment {
+public class FoundBottomSheetDialogFragment extends BaseBottomSheetDialogFragment {
 
-  private final static String TAG = "RulesBottomSheet";
+  private final static String TAG = "FoundBottomSheet";
 
-  private FragmentBottomsheetRulesBinding binding;
+  private FragmentBottomsheetFoundBinding binding;
 
   @NonNull
   @Override
   public Dialog onCreateDialog(Bundle savedInstanceState) {
-    return new BottomSheetDialog(requireContext(), R.style.Theme_Spelling_BottomSheetDialog);
+    return new BottomSheetDialog(requireContext(), R.style.Theme_Buzz_BottomSheetDialog);
   }
 
   @Override
@@ -49,14 +52,22 @@ public class RulesBottomSheetDialogFragment extends BaseBottomSheetDialogFragmen
       ViewGroup container,
       Bundle savedInstanceState
   ) {
-    binding = FragmentBottomsheetRulesBinding.inflate(
+    binding = FragmentBottomsheetFoundBinding.inflate(
         inflater, container, false
     );
 
     Context context = getContext();
-    assert context != null;
+    Bundle bundle = getArguments();
+    assert context != null && bundle != null;
 
-    binding.textRules.setText(ResUtil.readFromFile(context, "rules.txt"));
+    ArrayList<String> found = bundle.getStringArrayList(Constants.BOTTOM_SHEET.FOUND_WORDS);
+    if (found != null) {
+      Collections.sort(found);
+      for (int i = 0; i < found.size(); i++) {
+        found.set(i, found.get(i).toUpperCase());
+      }
+      binding.textFound.setText(TextUtils.join("\n", found));
+    }
 
     return binding.getRoot();
   }

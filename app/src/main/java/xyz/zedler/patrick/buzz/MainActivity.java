@@ -1,23 +1,23 @@
 /*
- * This file is part of Spelling Bee Android.
+ * This file is part of Buzz Android.
  *
- * Spelling Bee Android is free software: you can redistribute it and/or modify
+ * Buzz Android is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
  *
- * Spelling Bee Android is distributed in the hope that it will be useful,
+ * Buzz Android is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with Spelling Bee Android. If not, see <http://www.gnu.org/licenses/>.
+ * along with Buzz Android. If not, see <http://www.gnu.org/licenses/>.
  *
  * Copyright (c) 2020-2021 by Patrick Zedler
  */
 
-package xyz.zedler.patrick.spelling;
+package xyz.zedler.patrick.buzz;
 
 import android.content.SharedPreferences;
 import android.os.Build;
@@ -42,15 +42,15 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;
-import xyz.zedler.patrick.spelling.databinding.ActivityMainBinding;
-import xyz.zedler.patrick.spelling.fragment.FoundBottomSheetDialogFragment;
-import xyz.zedler.patrick.spelling.fragment.NewGameBottomSheetDialogFragment;
-import xyz.zedler.patrick.spelling.fragment.RulesBottomSheetDialogFragment;
-import xyz.zedler.patrick.spelling.task.MatchingWordsTask;
-import xyz.zedler.patrick.spelling.util.ClickUtil;
-import xyz.zedler.patrick.spelling.util.ConfettiUtil;
-import xyz.zedler.patrick.spelling.util.IconUtil;
-import xyz.zedler.patrick.spelling.util.VibratorUtil;
+import xyz.zedler.patrick.buzz.databinding.ActivityMainBinding;
+import xyz.zedler.patrick.buzz.fragment.FoundBottomSheetDialogFragment;
+import xyz.zedler.patrick.buzz.fragment.NewGameBottomSheetDialogFragment;
+import xyz.zedler.patrick.buzz.fragment.RulesBottomSheetDialogFragment;
+import xyz.zedler.patrick.buzz.task.MatchingWordsTask;
+import xyz.zedler.patrick.buzz.util.ClickUtil;
+import xyz.zedler.patrick.buzz.util.ConfettiUtil;
+import xyz.zedler.patrick.buzz.util.IconUtil;
+import xyz.zedler.patrick.buzz.util.VibratorUtil;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 

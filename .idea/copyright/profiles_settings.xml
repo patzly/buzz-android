@@ -1,7 +1,7 @@
 <component name="CopyrightManager">
-  <settings default="Spelling Bee">
+  <settings default="Buzz">
     <module2copyright>
-      <element module="All" copyright="Spelling Bee" />
+      <element module="All" copyright="Buzz" />
     </module2copyright>
   </settings>
 </component>

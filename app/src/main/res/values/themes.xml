@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ This file is part of Spelling Bee Android.
+  ~ This file is part of Buzz Android.
   ~
-  ~ Spelling Bee Android is free software: you can redistribute it and/or modify
+  ~ Buzz Android is free software: you can redistribute it and/or modify
   ~ it under the terms of the GNU General Public License as published by
   ~ the Free Software Foundation, either version 3 of the License, or
   ~ (at your option) any later version.
   ~
-  ~ Spelling Bee Android is distributed in the hope that it will be useful,
+  ~ Buzz Android is distributed in the hope that it will be useful,
   ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
   ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
   ~ GNU General Public License for more details.
   ~
   ~ You should have received a copy of the GNU General Public License
-  ~ along with Spelling Bee Android. If not, see <http://www.gnu.org/licenses/>.
+  ~ along with Buzz Android. If not, see <http://www.gnu.org/licenses/>.
   ~
   ~ Copyright (c) 2020-2021 by Patrick Zedler
   -->
 
 <resources>
 
-  <style name="Base.Spelling" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+  <style name="Base.Buzz" parent="Theme.MaterialComponents.DayNight.NoActionBar">
     <item name="colorPrimary">@color/primary</item>
     <item name="colorPrimaryDark">@color/primary</item>
     <item name="colorOnPrimary">@color/on_primary</item>
@@ -34,7 +34,7 @@
 
     <item name="colorSurface">@color/surface</item>
     <item name="colorOnSurface">@color/on_surface</item>
-    <item name="snackbarButtonStyle">@style/Widget.Spelling.Button.TextButton.Snackbar</item>
+    <item name="snackbarButtonStyle">@style/Widget.Buzz.Button.TextButton.Snackbar</item>
 
     <item name="android:colorControlNormal">@color/on_background</item>
     <item name="android:colorControlActivated">@color/secondary</item>
@@ -46,12 +46,12 @@
     <item name="android:lineSpacingExtra">-1.5sp</item>
   </style>
 
-  <style name="Theme.Spelling" parent="Base.Spelling">
+  <style name="Theme.Buzz" parent="Base.Buzz">
     <item name="android:statusBarColor">@color/status_bar_lollipop</item>
     <item name="android:navigationBarColor">@color/black</item>
   </style>
 
-  <style name="Base.Spelling.BottomSheetDialog" parent="Theme.MaterialComponents.BottomSheetDialog">
+  <style name="Base.Buzz.BottomSheetDialog" parent="Theme.MaterialComponents.BottomSheetDialog">
     <item name="colorPrimary">@color/primary</item>
     <item name="colorPrimaryDark">@color/primary</item>
     <item name="colorOnPrimary">@color/on_primary</item>
@@ -76,10 +76,10 @@
     <item name="android:statusBarColor">@android:color/transparent</item>
     <item name="android:windowIsFloating">false</item>
 
-    <item name="bottomSheetStyle">@style/Shape.Spelling.BottomSheet</item>
+    <item name="bottomSheetStyle">@style/Shape.Buzz.BottomSheet</item>
   </style>
 
-  <style name="Theme.Spelling.BottomSheetDialog" parent="Base.Spelling.BottomSheetDialog">
+  <style name="Theme.Buzz.BottomSheetDialog" parent="Base.Buzz.BottomSheetDialog">
     <item name="android:navigationBarColor">@color/black</item>
   </style>
 

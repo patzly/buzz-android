@@ -1,23 +1,23 @@
 /*
- * This file is part of Spelling Bee Android.
+ * This file is part of Buzz Android.
  *
- * Spelling Bee Android is free software: you can redistribute it and/or modify
+ * Buzz Android is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
  *
- * Spelling Bee Android is distributed in the hope that it will be useful,
+ * Buzz Android is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with Spelling Bee Android. If not, see <http://www.gnu.org/licenses/>.
+ * along with Buzz Android. If not, see <http://www.gnu.org/licenses/>.
  *
  * Copyright (c) 2020-2021 by Patrick Zedler
  */
 
-package xyz.zedler.patrick.spelling.task;
+package xyz.zedler.patrick.buzz.task;
 
 import android.os.AsyncTask;
 import android.util.Log;
@@ -26,8 +26,8 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
-import xyz.zedler.patrick.spelling.MainActivity;
-import xyz.zedler.patrick.spelling.util.SpellingUtil;
+import xyz.zedler.patrick.buzz.MainActivity;
+import xyz.zedler.patrick.buzz.util.SpellingUtil;
 
 public class MatchingWordsTask extends AsyncTask<String[], Integer, ArrayList<String>> {
 

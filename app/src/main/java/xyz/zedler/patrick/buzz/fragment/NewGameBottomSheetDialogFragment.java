@@ -1,23 +1,23 @@
 /*
- * This file is part of Spelling Bee Android.
+ * This file is part of Buzz Android.
  *
- * Spelling Bee Android is free software: you can redistribute it and/or modify
+ * Buzz Android is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
  *
- * Spelling Bee Android is distributed in the hope that it will be useful,
+ * Buzz Android is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with Spelling Bee Android. If not, see <http://www.gnu.org/licenses/>.
+ * along with Buzz Android. If not, see <http://www.gnu.org/licenses/>.
  *
  * Copyright (c) 2020-2021 by Patrick Zedler
  */
 
-package xyz.zedler.patrick.spelling.fragment;
+package xyz.zedler.patrick.buzz.fragment;
 
 import android.app.Dialog;
 import android.os.Bundle;
@@ -31,11 +31,11 @@ import androidx.annotation.NonNull;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import java.util.ArrayList;
 import java.util.Collections;
-import xyz.zedler.patrick.spelling.Constants;
-import xyz.zedler.patrick.spelling.MainActivity;
-import xyz.zedler.patrick.spelling.R;
-import xyz.zedler.patrick.spelling.databinding.FragmentBottomsheetNewGameBinding;
-import xyz.zedler.patrick.spelling.task.NewGameTask;
+import xyz.zedler.patrick.buzz.Constants;
+import xyz.zedler.patrick.buzz.MainActivity;
+import xyz.zedler.patrick.buzz.R;
+import xyz.zedler.patrick.buzz.databinding.FragmentBottomsheetNewGameBinding;
+import xyz.zedler.patrick.buzz.task.NewGameTask;
 
 public class NewGameBottomSheetDialogFragment extends BaseBottomSheetDialogFragment {
 
@@ -46,7 +46,7 @@ public class NewGameBottomSheetDialogFragment extends BaseBottomSheetDialogFragm
   @NonNull
   @Override
   public Dialog onCreateDialog(Bundle savedInstanceState) {
-    return new BottomSheetDialog(requireContext(), R.style.Theme_Spelling_BottomSheetDialog);
+    return new BottomSheetDialog(requireContext(), R.style.Theme_Buzz_BottomSheetDialog);
   }
 
   @Override

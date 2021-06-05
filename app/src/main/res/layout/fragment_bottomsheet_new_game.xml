@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ This file is part of Spelling Bee Android.
+  ~ This file is part of Buzz Android.
   ~
-  ~ Spelling Bee Android is free software: you can redistribute it and/or modify
+  ~ Buzz Android is free software: you can redistribute it and/or modify
   ~ it under the terms of the GNU General Public License as published by
   ~ the Free Software Foundation, either version 3 of the License, or
   ~ (at your option) any later version.
   ~
-  ~ Spelling Bee Android is distributed in the hope that it will be useful,
+  ~ Buzz Android is distributed in the hope that it will be useful,
   ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
   ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
   ~ GNU General Public License for more details.
   ~
   ~ You should have received a copy of the GNU General Public License
-  ~ along with Spelling Bee Android. If not, see <http://www.gnu.org/licenses/>.
+  ~ along with Buzz Android. If not, see <http://www.gnu.org/licenses/>.
   ~
   ~ Copyright (c) 2020-2021 by Patrick Zedler
   -->
@@ -35,7 +35,7 @@
     android:gravity="center"
     android:text="@string/title_missed_words"
     android:fontFamily="@font/jost_bold"
-    android:textAppearance="@style/TextAppearance.Spelling.BottomSheet.Title" />
+    android:textAppearance="@style/TextAppearance.Buzz.BottomSheet.Title" />
 
   <TextView
     android:id="@+id/text_new_game_hints"
@@ -70,7 +70,7 @@
 
   <com.google.android.material.button.MaterialButton
     android:id="@+id/button_new_game"
-    style="@style/Widget.Spelling.Button.UnelevatedButton"
+    style="@style/Widget.Buzz.Button.UnelevatedButton"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_marginBottom="16dp"
@@ -78,7 +78,7 @@
     android:text="@string/action_new_game" />
 
   <View
-    style="@style/Theme.Spelling.Divider"
+    style="@style/Theme.Buzz.Divider"
     android:layout_marginTop="0dp"
     android:layout_marginBottom="0dp" />
 
