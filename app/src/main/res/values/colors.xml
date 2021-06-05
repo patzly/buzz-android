@@ -99,5 +99,6 @@
   <!-- ICONS -->
 
   <color name="icon">@color/grey800</color>
+  <color name="icon_logo_bg">@color/background</color>
 
 </resources>

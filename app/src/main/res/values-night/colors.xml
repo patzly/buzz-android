@@ -56,5 +56,6 @@
   <!-- ICONS -->
 
   <color name="icon">@color/grey400</color>
+  <color name="icon_logo_bg">@color/grey300</color>
 
 </resources>

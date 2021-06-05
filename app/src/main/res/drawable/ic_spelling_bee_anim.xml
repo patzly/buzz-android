@@ -54,7 +54,7 @@
         <path
           android:name="wing_front_bg"
           android:pathData="M 8 5 L 12 5 L 12 9 L 8 9 Z"
-          android:fillColor="@color/background"
+          android:fillColor="@color/icon_logo_bg"
           android:strokeWidth="1" />
         <path
           android:name="wing_front"

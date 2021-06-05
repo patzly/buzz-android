@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ This file is part of Spelling Bee Android.
   ~
   ~ Spelling Bee Android is free software: you can redistribute it and/or modify
@@ -18,21 +17,10 @@
   ~ Copyright (c) 2020-2021 by Patrick Zedler
   -->
 
-<resources>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:shape="oval">
 
-  <dimen name="hex_width">@dimen/hex_width_default</dimen>
-  <dimen name="hex_outline">@dimen/hex_outline_default</dimen>
-  <dimen name="hex_translation">@dimen/hex_translation_default</dimen>
-  <dimen name="hex_font_size">@dimen/hex_font_size_default</dimen>
+  <solid android:color="#000" />
 
-  <dimen name="hex_width_default">90dp</dimen>
-  <dimen name="hex_outline_default">8dp</dimen>
-  <dimen name="hex_translation_default">150dp</dimen>
-  <dimen name="hex_font_size_default">28sp</dimen>
-
-  <dimen name="hex_width_dense">78dp</dimen>
-  <dimen name="hex_outline_dense">6dp</dimen>
-  <dimen name="hex_translation_dense">127dp</dimen>
-  <dimen name="hex_font_size_dense">28sp</dimen>
-
-</resources>
+</shape>
