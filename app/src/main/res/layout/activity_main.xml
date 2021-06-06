@@ -170,6 +170,7 @@
           android:layout_height="24dp"
           android:layout_gravity="center"
           android:src="@drawable/ic_backspace_anim"
+          app:tint="@color/control_icon"
           tools:ignore="ContentDescription" />
 
       </com.google.android.material.card.MaterialCardView>
@@ -187,6 +188,7 @@
           android:layout_height="24dp"
           android:layout_gravity="center"
           android:src="@drawable/ic_shuffle_anim"
+          app:tint="@color/control_icon"
           tools:ignore="ContentDescription" />
 
       </com.google.android.material.card.MaterialCardView>
@@ -203,6 +205,7 @@
           android:layout_height="24dp"
           android:layout_gravity="center"
           android:src="@drawable/ic_done_anim"
+          app:tint="@color/control_icon"
           tools:ignore="ContentDescription" />
 
       </com.google.android.material.card.MaterialCardView>

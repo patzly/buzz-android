@@ -19,7 +19,6 @@
 
 package xyz.zedler.patrick.buzz.util;
 
-import android.app.Activity;
 import android.content.Context;
 import android.os.Build;
 import android.os.VibrationEffect;
@@ -27,29 +26,59 @@ import android.os.Vibrator;
 
 public class VibratorUtil {
 
-  private final static long TICK = 20;
+  private final Vibrator vibrator;
+  private final boolean hasVibrator;
 
-  private Vibrator vibrator;
+  public static final long CLICK = 20;
+  public static final long HEAVY = 50;
 
-  public VibratorUtil(Activity activity) {
-    if (activity != null) {
-      vibrator = (Vibrator) activity.getSystemService(Context.VIBRATOR_SERVICE);
-    }
-  }
-
-  public void tick() {
-    vibrate(TICK);
+  public VibratorUtil(Context context) {
+    vibrator = (Vibrator) context.getSystemService(Context.VIBRATOR_SERVICE);
+    hasVibrator = hasVibrator();
   }
 
   public void vibrate(long duration) {
-    if (vibrator != null) {
-      if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-        vibrator.vibrate(
-            VibrationEffect.createOneShot(duration, VibrationEffect.DEFAULT_AMPLITUDE)
-        );
-      } else {
-        vibrator.vibrate(duration);
-      }
+    if (!hasVibrator) {
+      return;
     }
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+      vibrator.vibrate(VibrationEffect.createOneShot(duration, VibrationEffect.DEFAULT_AMPLITUDE));
+    } else {
+      vibrator.vibrate(duration);
+    }
+  }
+
+  private void vibrate(int effectId) {
+    if (hasVibrator && Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+      vibrator.vibrate(VibrationEffect.createPredefined(effectId));
+    }
+  }
+
+  public void click() {
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+      vibrate(VibrationEffect.EFFECT_CLICK);
+    } else {
+      vibrate(CLICK);
+    }
+  }
+
+  public void doubleClick() {
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+      vibrate(VibrationEffect.EFFECT_DOUBLE_CLICK);
+    } else {
+      vibrate(CLICK);
+    }
+  }
+
+  public void heavyClick() {
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+      vibrate(VibrationEffect.EFFECT_HEAVY_CLICK);
+    } else {
+      vibrate(HEAVY);
+    }
+  }
+
+  public boolean hasVibrator() {
+    return vibrator.hasVibrator();
   }
 }

@@ -45,6 +45,8 @@
 
   <color name="retro_blue">#5a97aa</color>
 
+  <color name="retro_dark">#0a373a</color>
+
   <color name="grey50">#f8f9fa</color>
   <color name="grey100">#f1f3f4</color>
   <color name="grey200">#e8eaed</color>
@@ -97,6 +99,13 @@
   <!-- ICONS -->
 
   <color name="icon">@color/grey800</color>
-  <color name="icon_logo_bg">@color/background</color>
+
+  <!-- OTHERS -->
+
+  <color name="control">@color/retro_dirt</color>
+  <color name="control_stroke">@color/transparent</color>
+  <color name="control_icon">@color/retro_dark</color>
+
+  <color name="logo_bg">@color/background</color>
 
 </resources>

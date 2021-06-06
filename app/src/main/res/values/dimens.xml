@@ -35,4 +35,6 @@
   <dimen name="hex_translation_dense">127dp</dimen>
   <dimen name="hex_font_size_dense">28sp</dimen>
 
+  <dimen name="mtrl_snackbar_background_corner_radius">12dp</dimen>
+
 </resources>

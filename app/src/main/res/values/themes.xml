@@ -35,6 +35,7 @@
     <item name="colorSurface">@color/surface</item>
     <item name="colorOnSurface">@color/on_surface</item>
 
+    <item name="snackbarStyle">@style/Widget.Buzz.Snackbar</item>
     <item name="snackbarButtonStyle">@style/Widget.Buzz.Button.TextButton.Snackbar</item>
 
     <item name="android:colorControlNormal">@color/on_background</item>

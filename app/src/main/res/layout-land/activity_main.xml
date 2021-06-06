@@ -42,7 +42,7 @@
         android:layout_marginStart="16dp"
         android:src="@drawable/ic_spelling_bee_anim"
         android:background="@drawable/shape_logo_background"
-        android:backgroundTint="@color/icon_logo_bg"
+        android:backgroundTint="@color/logo_bg"
         android:layout_gravity="center_vertical|start"
         android:importantForAccessibility="no" />
 

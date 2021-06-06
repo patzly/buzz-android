@@ -21,7 +21,7 @@ package xyz.zedler.patrick.buzz;
 
 public class Constants {
 
-  public static final int ANIMATION = 300;
+  public static final int ANIMATION = 250;
   public static final int HINTS_MAX = 10;
 
   public final static class PREF {

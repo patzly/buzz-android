@@ -24,22 +24,27 @@
     <item name="android:layout_width">0dp</item>
     <item name="android:layout_height">wrap_content</item>
     <item name="android:layout_weight">1</item>
-    <item name="cardBackgroundColor">@color/background</item>
+    <item name="cardBackgroundColor">@color/control</item>
     <item name="cardElevation">0dp</item>
     <item name="cardCornerRadius">12dp</item>
-    <item name="strokeColor">@color/stroke</item>
+    <item name="strokeColor">@color/control_stroke</item>
     <item name="strokeWidth">1dp</item>
-    <item name="android:stateListAnimator">@animator/card_elevation</item>
     <item name="android:clickable">true</item>
     <item name="android:focusable">true</item>
-    <item name="rippleColor">@color/highlight_secondary</item>
+    <item name="rippleColor">@color/highlight</item>
+  </style>
+
+  <style name="Widget.Buzz.Snackbar" parent="Widget.MaterialComponents.Snackbar">
+    <item name="actionTextColorAlpha">0.9</item>
+    <item name="android:layout_margin">16dp</item>
   </style>
 
   <style
     name="Widget.Buzz.Button.TextButton.Snackbar"
     parent="Widget.MaterialComponents.Button.TextButton.Snackbar">
     <item name="android:fontFamily">@font/jost_bold</item>
-    <item name="cornerRadius">6dp</item>
+    <item name="cornerRadius">12dp</item>
+    <item name="android:textColor">@color/retro_green_fg_invert</item>
   </style>
 
   <style name="Shape.Buzz.BottomSheet" parent="">

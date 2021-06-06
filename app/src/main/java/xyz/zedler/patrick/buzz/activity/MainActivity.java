@@ -24,6 +24,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+import android.os.SystemClock;
 import android.preference.PreferenceManager;
 import android.text.Html;
 import android.text.TextUtils;
@@ -68,6 +69,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
   private VibratorUtil vibrator;
   private ClickUtil clickUtil, clickUtilLogo;
   private int hints = 0;
+  private long lastInvalid = 0;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -94,7 +96,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     systemBarBehavior.setContainer(binding.linearContainer);
     systemBarBehavior.setUp();
 
-    new ScrollBehavior(this).setUpScroll(binding.appBarMain, null, false);
+    new ScrollBehavior(this).setUpScroll(binding.appBarMain, null, true);
 
     binding.toolbar.setOnMenuItemClickListener(item -> {
       if (clickUtil.isDisabled()) {
@@ -103,7 +105,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
       int id = item.getItemId();
       if (id == R.id.action_hint) {
         IconUtil.start(item.getIcon());
-        vibrator.tick();
+        vibrator.click();
         newHint();
       } else if (id == R.id.action_help) {
         DialogFragment fragment = new RulesBottomSheetDialogFragment();
@@ -130,7 +132,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     );
 
     binding.cardMainClear.setOnLongClickListener(v -> {
-      vibrator.tick();
+      vibrator.click();
       IconUtil.start(binding.imageClear);
       clearLetters();
       return true;
@@ -185,8 +187,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
           binding.getRoot(),
           getString(R.string.msg_new_game),
           Snackbar.LENGTH_SHORT
-      ).setActionTextColor(
-          ContextCompat.getColor(this, R.color.retro_green_fg_invert)
       ).setAction(getString(R.string.action_new_game), view -> {
         Bundle bundle = new Bundle();
         bundle.putString(Constants.BOTTOM_SHEET.LETTERS, TextUtils.join("", letters));
@@ -216,14 +216,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
       removeLastLetter();
     } else if (id == R.id.card_main_shuffle) {
       IconUtil.start(binding.imageShuffle);
-      vibrator.tick();
+      vibrator.click();
       shuffle();
     } else if (id == R.id.card_main_enter) {
       IconUtil.start(binding.imageEnter);
-      vibrator.tick();
-      if (isValid()) {
-        processInput();
-      }
+      processInput();
     } else if (id == R.id.frame_app_bar_main) {
       if (clickUtilLogo.isDisabled()) {
         return;
@@ -233,19 +230,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
   }
 
   private void addLetter(String letter) {
-    vibrator.tick();
+    vibrator.click();
     String input = binding.textInput.getText().toString().toLowerCase() + letter;
     input = input.replaceAll(center, getStyledCenter());
     if (binding.textInput.getText().length() < 20) {
       binding.textInput.setText(Html.fromHtml(input.toUpperCase()), TextView.BufferType.SPANNABLE);
-    } else {
+    } else if (!wasInvalidCalledAlready()) {
       showMessage(R.string.msg_too_long);
       invalidInput();
     }
   }
 
   private void removeLastLetter() {
-    vibrator.tick();
+    vibrator.click();
     String input = binding.textInput.getText().toString().toLowerCase();
     if (input.length() > 0) {
       input = input.substring(0, input.length() - 1);
@@ -409,28 +406,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }).setDuration(Constants.ANIMATION).start();*/
   }
 
-  private boolean isValid() {
-    String input = binding.textInput.getText().toString().toLowerCase();
-    if (input.equals("")) {
-      return false;
-    } else if (input.length() < 4) {
-      showMessage(R.string.msg_too_short);
-      invalidInput();
-      return false;
-    } else if (!input.contains(center)) {
-      showMessage(R.string.msg_missing_center_letter);
-      invalidInput();
-      return false;
-    }
-    return true;
-  }
-
   public void processInput() {
     String input = binding.textInput.getText().toString().toLowerCase();
-    if (matches.contains(input) && !found.contains(input)) {
+    if (input.equals("")) {
+      vibrator.doubleClick();
+    } else if (input.length() < 4 && wasInvalidCalledAlready()) {
+      showMessage(R.string.msg_too_short);
+      invalidInput();
+    } else if (!input.contains(center) && !wasInvalidCalledAlready()) {
+      showMessage(R.string.msg_missing_center_letter);
+      invalidInput();
+    } else if (matches.contains(input) && !found.contains(input)) {
       found.add(input);
       changeFoundCount(found.size());
       showMessage(R.string.msg_good);
+      vibrator.click();
       new Handler(Looper.getMainLooper()).postDelayed(this::clearLetters, 200);
     } else if (found.contains(input)) {
       showMessage(R.string.msg_already_found);
@@ -452,8 +442,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
   }
 
   private void invalidInput() {
+    vibrator.doubleClick();
     binding.textInput.startAnimation(AnimationUtils.loadAnimation(this, R.anim.shake));
-    new Handler(Looper.getMainLooper()).postDelayed(this::clearLetters, 700);
+    new Handler(Looper.getMainLooper()).postDelayed(this::clearLetters, 500);
+  }
+
+  private boolean wasInvalidCalledAlready() {
+    if (SystemClock.elapsedRealtime() - lastInvalid < 800) {
+      return true;
+    }
+    lastInvalid = SystemClock.elapsedRealtime();
+    return false;
   }
 
   private void showMessage(@StringRes int resId) {
