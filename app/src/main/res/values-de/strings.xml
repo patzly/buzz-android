@@ -21,7 +21,7 @@
 
   <string name="app_name">Summ</string>
 
-  <string name="title_missed_words">Entgangene Wörter</string>
+  <string name="title_missed_words">Entgangene Wörter: %1$d</string>
   <string name="title_found_words">Gefundene Wörter</string>
   <string name="title_rules">Spielregeln</string>
 
@@ -41,5 +41,12 @@
   <string name="msg_all_hints_used">Alle Hinweise aufgebraucht!</string>
   <string name="msg_hints">Noch %1$d Hinweise verfügbar!</string>
   <string name="msg_hints_used">%1$d Hinweise genutzt</string>
+
+  <string-array name="reactions">
+    <item>Sehr gut!</item>
+    <item>Großartig!</item>
+    <item>Exzellent!</item>
+    <item>Unglaublich!</item>
+  </string-array>
 
 </resources>

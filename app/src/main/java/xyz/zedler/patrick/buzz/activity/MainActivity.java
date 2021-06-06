@@ -70,6 +70,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
   private ClickUtil clickUtil;
   private int hints = 0;
   private long lastInvalid = 0;
+  private String[] reactions;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -135,6 +136,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
       clearLetters();
       return true;
     });
+
+    reactions = getResources().getStringArray(R.array.reactions);
 
     fillWithLetters(false, true);
   }
@@ -412,7 +415,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     } else if (matches.contains(input) && !found.contains(input)) {
       found.add(input);
       changeFoundCount(found.size());
-      showMessage(R.string.msg_good);
+      showReaction(input.length());
       vibrator.click();
       IconUtil.start(binding.imageMainLogo);
       new Handler(Looper.getMainLooper()).postDelayed(this::clearLetters, 250);
@@ -423,6 +426,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
       showMessage(R.string.msg_not_in_word_list);
       invalidInput();
     }
+  }
+
+  private void showReaction(int length) {
+    int reaction = 0;
+    if (length > 6 && length < 9) {
+      reaction = 1;
+    } else if (length > 9 && length < 12) {
+      reaction = 2;
+    } else if (length > 12) {
+      reaction = 3;
+    }
+    Snackbar.make(binding.getRoot(), reactions[reaction], Snackbar.LENGTH_SHORT).show();
   }
 
   private ArrayList<String> getMissedWords() {

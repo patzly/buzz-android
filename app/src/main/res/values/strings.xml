@@ -21,7 +21,7 @@
 
   <string name="app_name">Buzz</string>
 
-  <string name="title_missed_words">Missed words</string>
+  <string name="title_missed_words">Missed words: %1$d</string>
   <string name="title_found_words">Found words</string>
   <string name="title_rules">Rules</string>
 
@@ -41,6 +41,12 @@
   <string name="msg_all_hints_used">All hints used</string>
   <string name="msg_hints">%1$d more hints available</string>
   <string name="msg_hints_used">%1$d hints used</string>
-  <string name="msg_good">Good!</string>
+
+  <string-array name="reactions">
+    <item>Good!</item>
+    <item>Great!</item>
+    <item>Excellent!</item>
+    <item>Unbelievable!</item>
+  </string-array>
 
 </resources>

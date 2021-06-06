@@ -42,7 +42,7 @@ public class Constants {
 
     public final static String MISSED_WORDS = "missed_words";
     public final static String FOUND_WORDS = "found_words";
-    public final static String HINTS_USED = "found_words";
+    public final static String HINTS_USED = "hints_used";
     public final static String LETTERS = "letters";
     public final static String CENTER = "center";
   }

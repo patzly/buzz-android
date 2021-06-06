@@ -25,6 +25,7 @@
   android:orientation="vertical">
 
   <TextView
+    android:id="@+id/text_new_game_title"
     style="@style/Widget.Buzz.TextView.Title.BottomSheet"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"

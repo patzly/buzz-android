@@ -64,6 +64,12 @@ public class NewGameBottomSheetDialogFragment extends BaseBottomSheetDialogFragm
     Bundle bundle = getArguments();
     assert bundle != null;
 
+    ArrayList<String> missed = bundle.getStringArrayList(Constants.BOTTOM_SHEET.MISSED_WORDS);
+
+    if (missed != null) {
+      binding.textNewGameTitle.setText(getString(R.string.title_missed_words, missed.size()));
+    }
+
     binding.textNewGameHints.setText(
         getString(
             R.string.msg_hints_used,
@@ -85,7 +91,6 @@ public class NewGameBottomSheetDialogFragment extends BaseBottomSheetDialogFragm
       dismiss();
     });
 
-    ArrayList<String> missed = bundle.getStringArrayList(Constants.BOTTOM_SHEET.MISSED_WORDS);
     if (missed != null) {
       Collections.sort(missed);
       for (int i = 0; i < missed.size(); i++) {
