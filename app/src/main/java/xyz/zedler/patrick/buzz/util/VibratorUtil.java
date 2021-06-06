@@ -20,25 +20,31 @@
 package xyz.zedler.patrick.buzz.util;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.VibrationEffect;
 import android.os.Vibrator;
+import androidx.preference.PreferenceManager;
+import xyz.zedler.patrick.buzz.Constants.DEF;
+import xyz.zedler.patrick.buzz.Constants.PREF;
 
 public class VibratorUtil {
 
+  private final SharedPreferences sharedPrefs;
   private final Vibrator vibrator;
-  private final boolean hasVibrator;
+  private boolean enabled;
 
   public static final long CLICK = 20;
   public static final long HEAVY = 50;
 
   public VibratorUtil(Context context) {
     vibrator = (Vibrator) context.getSystemService(Context.VIBRATOR_SERVICE);
-    hasVibrator = hasVibrator();
+    sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
+    enabled = hasVibrator();
   }
 
   public void vibrate(long duration) {
-    if (!hasVibrator) {
+    if (!enabled) {
       return;
     }
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
@@ -49,7 +55,7 @@ public class VibratorUtil {
   }
 
   private void vibrate(int effectId) {
-    if (hasVibrator && Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+    if (enabled && Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
       vibrator.vibrate(VibrationEffect.createPredefined(effectId));
     }
   }
@@ -76,6 +82,14 @@ public class VibratorUtil {
     } else {
       vibrate(HEAVY);
     }
+  }
+
+  public void onResume() {
+    enabled = sharedPrefs.getBoolean(PREF.HAPTIC, DEF.HAPTIC) && hasVibrator();
+  }
+
+  public void setEnabled(boolean enabled) {
+    this.enabled = enabled && hasVibrator();
   }
 
   public boolean hasVibrator() {

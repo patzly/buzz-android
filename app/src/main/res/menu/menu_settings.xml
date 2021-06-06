@@ -19,30 +19,17 @@
   -->
 
 <menu
-  xmlns:tools="http://schemas.android.com/tools"
   xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto">
 
   <item
-    android:id="@+id/action_hint"
-    android:title="@string/action_hint"
-    android:icon="@drawable/ic_local_play_anim"
-    app:showAsAction="always"
-    tools:ignore="AlwaysShowAction" />
-
-  <item
-    android:id="@+id/action_howto"
-    android:title="@string/action_howto"
-    app:showAsAction="never" />
-
-  <item
-    android:id="@+id/action_settings"
-    android:title="@string/title_settings"
-    app:showAsAction="never" />
-
-  <item
     android:id="@+id/action_about"
     android:title="@string/title_about"
+    app:showAsAction="never" />
+
+  <item
+    android:id="@+id/action_feedback"
+    android:title="@string/action_send_feedback"
     app:showAsAction="never" />
 
 </menu>

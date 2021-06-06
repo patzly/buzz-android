@@ -19,6 +19,8 @@
 
 package xyz.zedler.patrick.buzz.activity;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
@@ -28,13 +30,12 @@ import android.os.SystemClock;
 import android.preference.PreferenceManager;
 import android.text.Html;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.StringRes;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.app.AppCompatDelegate;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.DialogFragment;
 import com.google.android.material.snackbar.Snackbar;
@@ -44,20 +45,20 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 import xyz.zedler.patrick.buzz.Constants;
+import xyz.zedler.patrick.buzz.Constants.DEF;
 import xyz.zedler.patrick.buzz.Constants.EXTRA;
+import xyz.zedler.patrick.buzz.Constants.PREF;
 import xyz.zedler.patrick.buzz.R;
 import xyz.zedler.patrick.buzz.behavior.ScrollBehavior;
 import xyz.zedler.patrick.buzz.behavior.SystemBarBehavior;
 import xyz.zedler.patrick.buzz.databinding.ActivityMainBinding;
 import xyz.zedler.patrick.buzz.fragment.FoundBottomSheetDialogFragment;
 import xyz.zedler.patrick.buzz.fragment.NewGameBottomSheetDialogFragment;
-import xyz.zedler.patrick.buzz.fragment.RulesBottomSheetDialogFragment;
 import xyz.zedler.patrick.buzz.task.MatchingWordsTask;
 import xyz.zedler.patrick.buzz.util.ClickUtil;
 import xyz.zedler.patrick.buzz.util.IconUtil;
-import xyz.zedler.patrick.buzz.util.VibratorUtil;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends BaseActivity implements View.OnClickListener {
 
   private static final String TAG = MainActivity.class.getSimpleName();
 
@@ -67,17 +68,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
   private ArrayList<String> matches;
   private ArrayList<String> found;
   private String center;
-  private VibratorUtil vibrator;
   private ClickUtil clickUtil;
   private int hints = 0;
   private long lastInvalid = 0;
   private String[] reactions;
+  private boolean isEnglish;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
 
-    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM);
     binding = ActivityMainBinding.inflate(getLayoutInflater());
     setContentView(binding.getRoot());
 
@@ -89,7 +89,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     );
 
     sharedPrefs = PreferenceManager.getDefaultSharedPreferences(this);
-    vibrator = new VibratorUtil(this);
     clickUtil = new ClickUtil();
 
     SystemBarBehavior systemBarBehavior = new SystemBarBehavior(this);
@@ -99,19 +98,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     new ScrollBehavior(this).setUpScroll(binding.appBarMain, null, false);
 
+    isEnglish = isEnglish();
+
     binding.toolbarMain.setOnMenuItemClickListener(item -> {
-      if (clickUtil.isDisabled()) {
-        return false;
-      }
+      performHapticClick();
       int id = item.getItemId();
-      if (id == R.id.action_hint) {
+      if (id == R.id.action_hint && clickUtil.isEnabled()) {
         IconUtil.start(item.getIcon());
-        vibrator.click();
         newHint();
-      } else if (id == R.id.action_help) {
+      } else if (id == R.id.action_settings && clickUtil.isEnabled()) {
+        startActivity(new Intent(this, SettingsActivity.class));
+      } else if (id == R.id.action_about && clickUtil.isEnabled()) {
+        startActivity(new Intent(this, AboutActivity.class));
+      } /*else if (id == R.id.action_help) {
         DialogFragment fragment = new RulesBottomSheetDialogFragment();
         fragment.show(getSupportFragmentManager(), fragment.toString());
-      }
+      }*/
       return true;
     });
 
@@ -132,7 +134,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     );
 
     binding.cardMainClear.setOnLongClickListener(v -> {
-      vibrator.click();
+      performHapticClick();
       IconUtil.start(binding.imageMainClear);
       clearLetters();
       return true;
@@ -154,13 +156,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     super.onPause();
     if (found == null || found.isEmpty()) {
       sharedPrefs.edit()
-          .remove(Constants.PREF.FOUND)
-          .putInt(Constants.PREF.HINTS, hints)
+          .remove(isEnglish ? PREF.EN.FOUND : PREF.DE.FOUND)
+          .putInt(isEnglish ? PREF.EN.HINTS : PREF.DE.HINTS, hints)
           .apply();
     } else {
       sharedPrefs.edit()
-          .putString(Constants.PREF.FOUND, TextUtils.join("\n", found))
-          .putInt(Constants.PREF.HINTS, hints)
+          .putString(isEnglish ? PREF.EN.FOUND : PREF.DE.FOUND, TextUtils.join("\n", found))
+          .putInt(isEnglish ? PREF.EN.HINTS : PREF.DE.HINTS, hints)
           .apply();
     }
   }
@@ -232,7 +234,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
       removeLastLetter();
     } else if (id == R.id.card_main_shuffle) {
       IconUtil.start(binding.imageMainShuffle);
-      vibrator.click();
+      performHapticClick();
       shuffle();
     } else if (id == R.id.card_main_enter) {
       IconUtil.start(binding.imageMainEnter);
@@ -241,7 +243,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
   }
 
   private void addLetter(String letter) {
-    vibrator.click();
+    performHapticClick();
     String input = binding.textMainInput.getText().toString().toLowerCase() + letter;
     input = input.replaceAll(center, getStyledCenter());
     if (binding.textMainInput.getText().length() <= 24) {
@@ -257,7 +259,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
   }
 
   private void removeLastLetter() {
-    vibrator.click();
+    performHapticClick();
     String input = binding.textMainInput.getText().toString().toLowerCase();
     if (input.length() > 0) {
       input = input.substring(0, input.length() - 1);
@@ -277,10 +279,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
   public void newGame(String letters, String center, ArrayList<String> matches) {
     sharedPrefs.edit()
-        .putString(Constants.PREF.LETTERS, letters)
-        .putString(Constants.PREF.CENTER, center)
-        .putString(Constants.PREF.FOUND, null)
-        .putInt(Constants.PREF.HINTS, 0)
+        .putString(isEnglish ? PREF.EN.LETTERS : PREF.DE.LETTERS, letters)
+        .putString(isEnglish ? PREF.EN.CENTER : PREF.DE.CENTER, center)
+        .putString(isEnglish ? PREF.EN.FOUND : PREF.DE.FOUND, null)
+        .putInt(isEnglish ? PREF.EN.HINTS : PREF.DE.HINTS, 0)
         .apply();
     fillWithLetters(true, false);
     clearLetters();
@@ -311,7 +313,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
   public void processMatches(ArrayList<String> matches, boolean animated) {
     this.matches = matches;
 
-    String foundString = sharedPrefs.getString(Constants.PREF.FOUND, null);
+    String foundString = sharedPrefs.getString(
+        isEnglish ? PREF.EN.FOUND : PREF.DE.FOUND, null
+    );
     if (foundString == null || foundString.isEmpty()) {
       found = new ArrayList<>();
     } else {
@@ -333,7 +337,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     letters = getLetters();
     center = getCenter();
 
-    hints = sharedPrefs.getInt(Constants.PREF.HINTS, 0);
+    hints = sharedPrefs.getInt(isEnglish ? PREF.EN.HINTS : PREF.DE.HINTS, 0);
 
     // LOAD MATCHES
     if (matchesNeed) {
@@ -390,7 +394,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
   }
 
   private ArrayList<String> getLetters() {
-    String string = sharedPrefs.getString(Constants.PREF.LETTERS, Constants.DEFAULT.LETTERS);
+    String string = sharedPrefs.getString(
+        isEnglish ? PREF.EN.LETTERS : PREF.DE.LETTERS, isEnglish ? DEF.EN.LETTERS : DEF.DE.LETTERS
+    );
+    Log.i(TAG, "getLetters: " + isEnglish + ", " + PREF.EN.LETTERS);
     assert string != null;
     List<String> letters = new ArrayList<>(Arrays.asList(string.split("")));
     if (letters.get(0).isEmpty()) {
@@ -402,7 +409,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
   @NonNull
   private String getCenter() {
-    String center = sharedPrefs.getString(Constants.PREF.CENTER, Constants.DEFAULT.CENTER);
+    String center = sharedPrefs.getString(
+        isEnglish ? PREF.EN.CENTER : PREF.DE.CENTER, isEnglish ? DEF.EN.CENTER : DEF.DE.CENTER
+    );
     assert center != null;
     return center;
   }
@@ -426,7 +435,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
   public void processInput() {
     String input = binding.textMainInput.getText().toString().toLowerCase();
     if (input.equals("")) {
-      vibrator.doubleClick();
+      performHapticDoubleClick();
     } else if (input.length() < 4 && wasInvalidCalledAlready()) {
       showMessage(R.string.msg_too_short);
       invalidInput();
@@ -437,7 +446,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
       found.add(input);
       changeFoundCount(found.size());
       showReaction(input.length());
-      vibrator.click();
+      performHapticClick();
       IconUtil.start(binding.imageMainLogo);
       new Handler(Looper.getMainLooper()).postDelayed(this::clearLetters, 250);
     } else if (found.contains(input)) {
@@ -458,7 +467,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     } else if (length > 12) {
       reaction = 3;
     }
-    Snackbar.make(binding.getRoot(), reactions[reaction], Snackbar.LENGTH_SHORT).show();
+    Snackbar.make(binding.getRoot(), reactions[reaction], 750).show();
   }
 
   private ArrayList<String> getMissedWords() {
@@ -472,9 +481,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
   }
 
   private void invalidInput() {
-    vibrator.doubleClick();
+    performHapticDoubleClick();
     binding.textMainInput.startAnimation(AnimationUtils.loadAnimation(this, R.anim.shake));
-    new Handler(Looper.getMainLooper()).postDelayed(this::clearLetters, 500);
+    new Handler(Looper.getMainLooper()).postDelayed(this::clearLetters, 750);
   }
 
   private boolean wasInvalidCalledAlready() {
@@ -485,8 +494,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     return false;
   }
 
+  @SuppressLint("ShowToast")
   private void showMessage(@StringRes int resId) {
-    Snackbar.make(binding.getRoot(), getString(resId), Snackbar.LENGTH_SHORT).show();
+    Snackbar.make(binding.getRoot(), getString(resId), 750).show();
   }
 
   private String getStyledCenter() {

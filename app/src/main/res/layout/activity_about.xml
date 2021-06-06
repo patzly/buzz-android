@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of Buzz Android.
+  ~
+  ~ Buzz Android is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ Buzz Android is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with Buzz Android. If not, see <http://www.gnu.org/licenses/>.
+  ~
+  ~ Copyright (c) 2020-2021 by Patrick Zedler
+  -->
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <com.google.android.material.appbar.AppBarLayout
+    android:id="@+id/app_bar_about"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="?android:actionBarSize"
+      android:gravity="center_vertical"
+      android:orientation="horizontal">
+
+      <FrameLayout
+        android:id="@+id/frame_about_close"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="20dp"
+        android:background="?attr/actionBarItemBackground"
+        android:gravity="center"
+        android:contentDescription="@string/action_close"
+        android:tooltipText="@string/action_close"
+        tools:targetApi="o">
+
+        <ImageView
+          android:layout_width="24dp"
+          android:layout_height="24dp"
+          android:layout_gravity="center"
+          android:importantForAccessibility="no"
+          android:src="@drawable/ic_round_close" />
+
+      </FrameLayout>
+
+      <TextView
+        style="@style/Widget.Buzz.TextView.Toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/title_about" />
+
+    </LinearLayout>
+
+  </com.google.android.material.appbar.AppBarLayout>
+
+  <androidx.core.widget.NestedScrollView
+    android:id="@+id/scroll_about"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?android:actionBarSize">
+
+    <LinearLayout
+      android:id="@+id/linear_about_container"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:paddingTop="16dp"
+      android:paddingBottom="8dp"
+      android:orientation="vertical">
+
+      <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        app:contentPadding="16dp"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="12dp"
+        app:cardBackgroundColor="@color/on_background_tertiary">
+
+        <TextView
+          style="@style/Widget.Buzz.TextView.Paragraph"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/info_disclaimer" />
+
+      </com.google.android.material.card.MaterialCardView>
+
+      <LinearLayout style="@style/Widget.Buzz.LinearLayout.ListItem.TwoLine">
+
+        <ImageView
+          android:id="@+id/image_version"
+          style="@style/Widget.Buzz.ImageView.ListItem.Icon"
+          android:src="@drawable/ic_round_info_outline_anim"
+          tools:ignore="ContentDescription" />
+
+        <LinearLayout style="@style/Widget.Buzz.LinearLayout.ListItem.TextBox">
+
+          <TextView
+            style="@style/Widget.Buzz.TextView.ListItem.OverLine"
+            android:text="@string/info_version" />
+
+          <TextView
+            style="@style/Widget.Buzz.TextView.ListItem.Title"
+            android:text="@string/versionName" />
+
+        </LinearLayout>
+
+      </LinearLayout>
+
+      <LinearLayout
+        android:id="@+id/linear_changelog"
+        style="@style/Widget.Buzz.LinearLayout.ListItem.TwoLine.Clickable">
+
+        <ImageView
+          android:id="@+id/image_changelog"
+          style="@style/Widget.Buzz.ImageView.ListItem.Icon"
+          android:src="@drawable/ic_round_history_anim"
+          tools:ignore="ContentDescription" />
+
+        <LinearLayout style="@style/Widget.Buzz.LinearLayout.ListItem.TextBox">
+
+          <TextView
+            style="@style/Widget.Buzz.TextView.ListItem.Title"
+            android:text="@string/info_changelog" />
+
+          <TextView
+            style="@style/Widget.Buzz.TextView.ListItem.Description"
+            android:text="@string/info_changelog_description" />
+
+        </LinearLayout>
+
+      </LinearLayout>
+
+      <LinearLayout
+        android:id="@+id/linear_developer"
+        style="@style/Widget.Buzz.LinearLayout.ListItem.TwoLine.Clickable">
+
+        <ImageView
+          android:id="@+id/image_developer"
+          style="@style/Widget.Buzz.ImageView.ListItem.Icon"
+          android:src="@drawable/ic_round_person_anim"
+          tools:ignore="ContentDescription" />
+
+        <LinearLayout style="@style/Widget.Buzz.LinearLayout.ListItem.TextBox">
+
+          <TextView
+            style="@style/Widget.Buzz.TextView.ListItem.OverLine"
+            android:text="@string/info_developer" />
+
+          <TextView
+            style="@style/Widget.Buzz.TextView.ListItem.Title"
+            android:text="@string/app_developer" />
+
+        </LinearLayout>
+
+      </LinearLayout>
+
+      <TextView
+        style="@style/Widget.Buzz.TextView.Category"
+        android:text="@string/category_licenses" />
+
+      <LinearLayout
+        android:id="@+id/linear_license_material_components"
+        style="@style/Widget.Buzz.LinearLayout.ListItem.TwoLine.Clickable">
+
+        <ImageView
+          android:id="@+id/image_license_material_components"
+          style="@style/Widget.Buzz.ImageView.ListItem.Icon"
+          android:src="@drawable/ic_round_copyright_anim"
+          tools:ignore="ContentDescription" />
+
+        <LinearLayout style="@style/Widget.Buzz.LinearLayout.ListItem.TextBox">
+
+          <TextView
+            style="@style/Widget.Buzz.TextView.ListItem.Title"
+            android:text="@string/license_material_components" />
+
+          <TextView
+            style="@style/Widget.Buzz.TextView.ListItem.Description"
+            android:text="@string/license_author_google" />
+
+        </LinearLayout>
+
+      </LinearLayout>
+
+      <LinearLayout
+        android:id="@+id/linear_license_material_icons"
+        style="@style/Widget.Buzz.LinearLayout.ListItem.TwoLine.Clickable">
+
+        <ImageView
+          android:id="@+id/image_license_material_icons"
+          style="@style/Widget.Buzz.ImageView.ListItem.Icon"
+          android:src="@drawable/ic_round_copyright_anim"
+          tools:ignore="ContentDescription" />
+
+        <LinearLayout style="@style/Widget.Buzz.LinearLayout.ListItem.TextBox">
+
+          <TextView
+            style="@style/Widget.Buzz.TextView.ListItem.Title"
+            android:text="@string/license_material_icons" />
+
+          <TextView
+            style="@style/Widget.Buzz.TextView.ListItem.Description"
+            android:text="@string/license_author_google" />
+
+        </LinearLayout>
+
+      </LinearLayout>
+
+      <LinearLayout
+        android:id="@+id/linear_license_jost"
+        style="@style/Widget.Buzz.LinearLayout.ListItem.TwoLine.Clickable">
+
+        <ImageView
+          android:id="@+id/image_license_jost"
+          style="@style/Widget.Buzz.ImageView.ListItem.Icon"
+          android:src="@drawable/ic_round_copyright_anim"
+          tools:ignore="ContentDescription" />
+
+        <LinearLayout style="@style/Widget.Buzz.LinearLayout.ListItem.TextBox">
+
+          <TextView
+            style="@style/Widget.Buzz.TextView.ListItem.Title"
+            android:text="@string/license_jost" />
+
+          <TextView
+            style="@style/Widget.Buzz.TextView.ListItem.Description"
+            android:text="@string/license_jost_author" />
+
+        </LinearLayout>
+
+      </LinearLayout>
+
+    </LinearLayout>
+
+  </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

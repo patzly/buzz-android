@@ -48,7 +48,7 @@
     <item name="rippleColor">@color/highlight</item>
   </style>
 
-  <style name="Theme.Buzz.Divider" parent="">
+  <style name="Widget.Buzz.Divider" parent="">
     <item name="android:layout_width">match_parent</item>
     <item name="android:layout_height">1dp</item>
     <item name="android:layout_marginTop">8dp</item>
@@ -98,6 +98,14 @@
     parent="Widget.Buzz.Button.UnelevatedButton">
     <item name="android:textSize">@dimen/font_size_game</item>
     <item name="android:singleLine">true</item>
+  </style>
+
+  <style name="Widget.Buzz.Switch" parent="Widget.MaterialComponents.CompoundButton.Switch">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_marginStart">16dp</item>
+    <item name="android:minWidth">0dp</item>
+    <item name="android:minHeight">0dp</item>
   </style>
 
   <style

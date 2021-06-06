@@ -34,6 +34,7 @@ public class MatchingWordsTask extends AsyncTask<String[], Integer, ArrayList<St
   private final static String TAG = MatchingWordsTask.class.getSimpleName();
 
   private final WeakReference<MainActivity> activityRef;
+  private final boolean isEnglish;
 
   /**
    * That's only a shorter version of the NewGameTask, just without the pangram search because it is
@@ -41,6 +42,7 @@ public class MatchingWordsTask extends AsyncTask<String[], Integer, ArrayList<St
    */
   public MatchingWordsTask(MainActivity activity) {
     activityRef = new WeakReference<>(activity);
+    isEnglish = activity.isEnglish();
   }
 
   @Override
@@ -51,7 +53,9 @@ public class MatchingWordsTask extends AsyncTask<String[], Integer, ArrayList<St
     }
     ArrayList<String> matches = new ArrayList<>();
     try {
-      InputStream inputStream = activity.getAssets().open("words_de_valid.txt");
+      InputStream inputStream = activity.getAssets().open(
+          isEnglish ? "words_en_valid.txt" : "words_de_valid.txt"
+      );
       InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
       BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
       for (String line; (line = bufferedReader.readLine()) != null; ) {

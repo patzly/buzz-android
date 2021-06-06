@@ -21,6 +21,7 @@ package xyz.zedler.patrick.buzz.util;
 
 import android.os.SystemClock;
 import android.view.View;
+import android.widget.CompoundButton;
 
 public class ClickUtil {
 
@@ -55,6 +56,15 @@ public class ClickUtil {
   public static void setOnClickListeners(View.OnClickListener listener, View... views) {
     for (View view : views) {
       view.setOnClickListener(listener);
+    }
+  }
+
+  public static void setOnCheckedChangeListeners(
+      CompoundButton.OnCheckedChangeListener listener,
+      CompoundButton... compoundButtons
+  ) {
+    for (CompoundButton view : compoundButtons) {
+      view.setOnCheckedChangeListener(listener);
     }
   }
 }

@@ -30,8 +30,7 @@
     android:layout_height="wrap_content"
     android:padding="16dp"
     android:textAlignment="center"
-    android:gravity="center_horizontal"
-    android:text="@string/title_rules" />
+    android:text="@string/info_changelog" />
 
   <View
     style="@style/Widget.Buzz.Divider"
@@ -44,8 +43,8 @@
     android:scrollbars="none">
 
     <TextView
-      android:id="@+id/text_rules"
-      style="@style/Widget.Buzz.TextView.Paragraph"
+      android:id="@+id/text_changelog"
+      style="@style/Widget.Buzz.TextView"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:padding="16dp" />

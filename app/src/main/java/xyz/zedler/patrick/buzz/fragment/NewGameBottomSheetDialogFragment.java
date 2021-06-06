@@ -65,10 +65,8 @@ public class NewGameBottomSheetDialogFragment extends BaseBottomSheetDialogFragm
         )
     );
 
-    String letters = bundle.getString(
-        Constants.BOTTOM_SHEET.LETTERS, Constants.DEFAULT.LETTERS
-    );
-    String center = bundle.getString(Constants.BOTTOM_SHEET.CENTER, Constants.DEFAULT.CENTER);
+    String letters = bundle.getString(Constants.BOTTOM_SHEET.LETTERS);
+    String center = bundle.getString(Constants.BOTTOM_SHEET.CENTER);
     String all = "<font color='#deb853'>" + center + "</font>" + letters;
     binding.textNewGameLetters.setText(
         Html.fromHtml(all.toUpperCase()), TextView.BufferType.SPANNABLE

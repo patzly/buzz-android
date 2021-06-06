@@ -35,10 +35,12 @@ public class NewGameTask extends AsyncTask<Void, Integer, String[]> {
   private final static String TAG = NewGameTask.class.getSimpleName();
 
   private final WeakReference<MainActivity> activityRef;
+  private final boolean isEnglish;
   private final ArrayList<String> matches = new ArrayList<>();
 
   public NewGameTask(MainActivity activity) {
     activityRef = new WeakReference<>(activity);
+    isEnglish = activity.isEnglish();
   }
 
   @Override
@@ -49,7 +51,9 @@ public class NewGameTask extends AsyncTask<Void, Integer, String[]> {
     }
     ArrayList<String> pangrams = new ArrayList<>();
     try {
-      InputStream inputStream = activity.getAssets().open("words_de_pangrams.txt");
+      InputStream inputStream = activity.getAssets().open(
+          isEnglish ? "words_en_pangrams.txt" : "words_de_pangrams.txt"
+      );
       InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
       BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
       for (String line; (line = bufferedReader.readLine()) != null; ) {
@@ -67,7 +71,9 @@ public class NewGameTask extends AsyncTask<Void, Integer, String[]> {
     String center = pangram.substring(randomLetter, randomLetter + 1);
 
     try {
-      InputStream inputStream = activity.getAssets().open("words_de_valid.txt");
+      InputStream inputStream = activity.getAssets().open(
+          isEnglish ? "words_en_valid.txt" : "words_de_valid.txt"
+      );
       InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
       BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
       for (String line; (line = bufferedReader.readLine()) != null; ) {

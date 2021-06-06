@@ -24,14 +24,39 @@
   android:layout_height="wrap_content"
   android:orientation="vertical">
 
-  <TextView
-    style="@style/Widget.Buzz.TextView.Title.BottomSheet"
+  <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="16dp"
-    android:textAlignment="center"
-    android:gravity="center_horizontal"
-    android:text="@string/title_rules" />
+    android:orientation="horizontal"
+    android:paddingStart="0dp"
+    android:paddingEnd="4dp">
+
+    <TextView
+      android:id="@+id/text_license_title"
+      style="@style/Widget.Buzz.TextView.Title.BottomSheet"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:padding="16dp"
+      android:layout_weight="1" />
+
+    <FrameLayout
+      android:id="@+id/frame_license_open_link"
+      android:layout_width="48dp"
+      android:layout_height="48dp"
+      android:background="?attr/actionBarItemBackground"
+      android:layout_gravity="end|center_vertical">
+
+      <ImageView
+        android:id="@+id/image_license_open_link"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center"
+        android:importantForAccessibility="no"
+        android:src="@drawable/ic_round_open_in_browser_anim" />
+
+    </FrameLayout>
+
+  </LinearLayout>
 
   <View
     style="@style/Widget.Buzz.Divider"
@@ -44,10 +69,11 @@
     android:scrollbars="none">
 
     <TextView
-      android:id="@+id/text_rules"
+      android:id="@+id/text_license"
       style="@style/Widget.Buzz.TextView.Paragraph"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
+      android:textSize="14.5sp"
       android:padding="16dp" />
 
   </androidx.core.widget.NestedScrollView>

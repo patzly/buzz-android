@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of Buzz Android.
+  ~
+  ~ Buzz Android is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ Buzz Android is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with Buzz Android. If not, see <http://www.gnu.org/licenses/>.
+  ~
+  ~ Copyright (c) 2020-2021 by Patrick Zedler
+  -->
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <com.google.android.material.appbar.AppBarLayout
+    android:id="@+id/app_bar_settings"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="?android:actionBarSize"
+      android:gravity="center_vertical"
+      android:orientation="horizontal">
+
+      <FrameLayout
+        android:id="@+id/frame_settings_back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="20dp"
+        android:background="?attr/actionBarItemBackground"
+        android:gravity="center"
+        android:contentDescription="@string/action_back"
+        android:tooltipText="@string/action_back"
+        tools:targetApi="o">
+
+        <ImageView
+          android:layout_width="24dp"
+          android:layout_height="24dp"
+          android:layout_gravity="center"
+          android:importantForAccessibility="no"
+          android:src="@drawable/ic_round_arrow_back" />
+
+      </FrameLayout>
+
+      <TextView
+        style="@style/Widget.Buzz.TextView.Toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1"
+        android:text="@string/title_settings" />
+
+      <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/menu_settings" />
+
+    </LinearLayout>
+
+  </com.google.android.material.appbar.AppBarLayout>
+
+  <androidx.core.widget.NestedScrollView
+    android:id="@+id/scroll_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?android:actionBarSize">
+
+    <LinearLayout
+      android:id="@+id/linear_settings_container"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:paddingTop="8dp"
+      android:paddingBottom="8dp"
+      android:orientation="vertical">
+
+      <LinearLayout
+        android:id="@+id/linear_settings_language"
+        style="@style/Widget.Buzz.LinearLayout.ListItem.TwoLine"
+        android:paddingBottom="0dp">
+
+        <ImageView
+          android:id="@+id/image_settings_language"
+          style="@style/Widget.Buzz.ImageView.ListItem.Icon"
+          android:src="@drawable/ic_round_language_anim"
+          tools:ignore="ContentDescription" />
+
+        <LinearLayout style="@style/Widget.Buzz.LinearLayout.ListItem.TextBox.Stretch">
+
+          <TextView
+            style="@style/Widget.Buzz.TextView.ListItem.Title"
+            android:text="@string/setting_language" />
+
+          <TextView
+            style="@style/Widget.Buzz.TextView.ListItem.Description"
+            android:text="@string/setting_language_description" />
+
+          <RadioGroup
+            android:id="@+id/radio_group_settings_language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <RadioButton
+              android:id="@+id/radio_settings_en"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:minHeight="44dp"
+              android:textSize="15.5sp"
+              android:text="@string/setting_language_en"/>
+
+            <RadioButton
+              android:id="@+id/radio_settings_de"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:minHeight="44dp"
+              android:textSize="15.5sp"
+              android:text="@string/setting_language_de"/>
+
+          </RadioGroup>
+
+        </LinearLayout>
+
+      </LinearLayout>
+
+      <LinearLayout
+        android:id="@+id/linear_setting_dark_mode"
+        style="@style/Widget.Buzz.LinearLayout.ListItem.TwoLine.Clickable">
+
+        <ImageView
+          android:id="@+id/image_setting_dark_mode"
+          style="@style/Widget.Buzz.ImageView.ListItem.Icon"
+          tools:ignore="ContentDescription" />
+
+        <LinearLayout style="@style/Widget.Buzz.LinearLayout.ListItem.TextBox.Stretch">
+
+          <TextView
+            style="@style/Widget.Buzz.TextView.ListItem.Title"
+            android:text="@string/setting_dark_mode" />
+
+          <TextView
+            style="@style/Widget.Buzz.TextView.ListItem.Description"
+            android:text="@string/setting_dark_mode_description" />
+
+        </LinearLayout>
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+          android:id="@+id/switch_setting_dark_mode"
+          style="@style/Widget.Buzz.Switch" />
+
+      </LinearLayout>
+
+      <LinearLayout
+        android:id="@+id/linear_setting_haptic"
+        style="@style/Widget.Buzz.LinearLayout.ListItem.TwoLine.Clickable">
+
+        <ImageView
+          android:id="@+id/image_setting_haptic"
+          style="@style/Widget.Buzz.ImageView.ListItem.Icon"
+          android:src="@drawable/ic_round_vibration_anim"
+          tools:ignore="ContentDescription" />
+
+        <LinearLayout style="@style/Widget.Buzz.LinearLayout.ListItem.TextBox.Stretch">
+
+          <TextView
+            style="@style/Widget.Buzz.TextView.ListItem.Title"
+            android:text="@string/setting_haptic" />
+
+          <TextView
+            style="@style/Widget.Buzz.TextView.ListItem.Description"
+            android:text="@string/setting_haptic_description" />
+
+        </LinearLayout>
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+          android:id="@+id/switch_setting_haptic"
+          style="@style/Widget.Buzz.Switch" />
+
+      </LinearLayout>
+
+    </LinearLayout>
+
+  </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
