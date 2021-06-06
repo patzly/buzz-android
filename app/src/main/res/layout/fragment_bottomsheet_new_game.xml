@@ -25,36 +25,32 @@
   android:orientation="vertical">
 
   <TextView
+    style="@style/Widget.Buzz.TextView.Title.BottomSheet"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:paddingTop="16dp"
     android:paddingStart="16dp"
     android:paddingEnd="16dp"
-    android:singleLine="true"
     android:textAlignment="center"
     android:gravity="center"
-    android:text="@string/title_missed_words"
-    android:fontFamily="@font/jost_bold"
-    android:textAppearance="@style/TextAppearance.Buzz.BottomSheet.Title" />
+    android:text="@string/title_missed_words" />
 
   <TextView
     android:id="@+id/text_new_game_hints"
+    style="@style/Widget.Buzz.TextView.ListItem.Description"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:paddingTop="8dp"
     android:paddingBottom="8dp"
     android:paddingStart="16dp"
     android:paddingEnd="16dp"
-    android:singleLine="true"
     android:textAlignment="center"
     android:gravity="center"
-    android:text="@string/msg_hints_used"
-    android:textColor="@color/on_background_secondary"
-    android:fontFamily="@font/jost_book"
-    android:textSize="15sp" />
+    android:text="@string/msg_hints_used" />
 
   <TextView
     android:id="@+id/text_new_game_letters"
+    style="@style/Widget.Buzz.TextView"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:paddingBottom="8dp"
@@ -63,13 +59,12 @@
     android:singleLine="true"
     android:textAlignment="center"
     android:gravity="center"
-    android:textColor="@color/on_background_secondary"
     android:fontFamily="@font/jost_bold"
     android:letterSpacing="0.15"
     android:textSize="17sp" />
 
   <com.google.android.material.button.MaterialButton
-    android:id="@+id/button_new_game"
+    android:id="@+id/button_new_game_new"
     style="@style/Widget.Buzz.Button.UnelevatedButton"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -90,14 +85,12 @@
 
     <TextView
       android:id="@+id/text_new_game_missed"
+      style="@style/Widget.Buzz.TextView"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:padding="16dp"
       android:textAlignment="center"
-      android:gravity="center"
-      android:textSize="16sp"
-      android:fontFamily="@font/jost_book"
-      android:textColor="@color/on_background" />
+      android:gravity="center" />
 
   </androidx.core.widget.NestedScrollView>
 

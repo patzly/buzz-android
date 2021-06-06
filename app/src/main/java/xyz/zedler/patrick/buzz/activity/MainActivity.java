@@ -92,12 +92,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     SystemBarBehavior systemBarBehavior = new SystemBarBehavior(this);
     systemBarBehavior.setAppBar(binding.appBarMain);
-    systemBarBehavior.setContainer(binding.linearContainer);
+    systemBarBehavior.setContainer(binding.linearMainContainer);
     systemBarBehavior.setUp();
 
     new ScrollBehavior(this).setUpScroll(binding.appBarMain, null, false);
 
-    binding.toolbar.setOnMenuItemClickListener(item -> {
+    binding.toolbarMain.setOnMenuItemClickListener(item -> {
       if (clickUtil.isDisabled()) {
         return false;
       }
@@ -115,15 +115,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     ClickUtil.setOnClickListeners(
         this,
-        binding.buttonFound,
-        binding.buttonNewGame,
-        binding.frameHexagons.frameHex1,
-        binding.frameHexagons.frameHex2,
-        binding.frameHexagons.frameHex3,
-        binding.frameHexagons.frameHex4,
-        binding.frameHexagons.frameHex5,
-        binding.frameHexagons.frameHex6,
-        binding.frameHexagons.frameHexCenter,
+        binding.buttonMainFound,
+        binding.buttonMainNewGame,
+        binding.frameMainHexagons.frameHex1,
+        binding.frameMainHexagons.frameHex2,
+        binding.frameMainHexagons.frameHex3,
+        binding.frameMainHexagons.frameHex4,
+        binding.frameMainHexagons.frameHex5,
+        binding.frameMainHexagons.frameHex6,
+        binding.frameMainHexagons.frameHexCenter,
         binding.cardMainClear,
         binding.cardMainShuffle,
         binding.cardMainEnter
@@ -131,7 +131,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     binding.cardMainClear.setOnLongClickListener(v -> {
       vibrator.click();
-      IconUtil.start(binding.imageClear);
+      IconUtil.start(binding.imageMainClear);
       clearLetters();
       return true;
     });
@@ -164,7 +164,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
   @Override
   public void onClick(View v) {
     int id = v.getId();
-    if (id == R.id.button_found && clickUtil.isEnabled()) {
+    if (id == R.id.button_main_found && clickUtil.isEnabled()) {
       if (found.size() > 0) {
         Bundle bundle = new Bundle();
         bundle.putStringArrayList(Constants.BOTTOM_SHEET.FOUND_WORDS, found);
@@ -172,9 +172,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         fragment.setArguments(bundle);
         fragment.show(getSupportFragmentManager(), fragment.toString());
       } else {
-        showMessage(R.string.msg_not_found_any);
+        showMessage(R.string.msg_nothing_found);
       }
-    } else if (id == R.id.button_new_game && clickUtil.isEnabled()) {
+    } else if (id == R.id.button_main_new_game && clickUtil.isEnabled()) {
       Snackbar.make(
           binding.getRoot(),
           getString(R.string.msg_new_game),
@@ -204,24 +204,28 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     } else if (id == R.id.frame_hex_center) {
       addLetter(center);
     } else if (id == R.id.card_main_clear) {
-      IconUtil.start(binding.imageClear);
+      IconUtil.start(binding.imageMainClear);
       removeLastLetter();
     } else if (id == R.id.card_main_shuffle) {
-      IconUtil.start(binding.imageShuffle);
+      IconUtil.start(binding.imageMainShuffle);
       vibrator.click();
       shuffle();
     } else if (id == R.id.card_main_enter) {
-      IconUtil.start(binding.imageEnter);
+      IconUtil.start(binding.imageMainEnter);
       processInput();
     }
   }
 
   private void addLetter(String letter) {
     vibrator.click();
-    String input = binding.textInput.getText().toString().toLowerCase() + letter;
+    String input = binding.textMainInput.getText().toString().toLowerCase() + letter;
     input = input.replaceAll(center, getStyledCenter());
-    if (binding.textInput.getText().length() < 20) {
-      binding.textInput.setText(Html.fromHtml(input.toUpperCase()), TextView.BufferType.SPANNABLE);
+    if (binding.textMainInput.getText().length() <= 24) {
+      // The longest German word in the list has 24 letters
+      // 17 for English
+      binding.textMainInput.setText(
+          Html.fromHtml(input.toUpperCase()), TextView.BufferType.SPANNABLE
+      );
     } else if (!wasInvalidCalledAlready()) {
       showMessage(R.string.msg_too_long);
       invalidInput();
@@ -230,18 +234,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
   private void removeLastLetter() {
     vibrator.click();
-    String input = binding.textInput.getText().toString().toLowerCase();
+    String input = binding.textMainInput.getText().toString().toLowerCase();
     if (input.length() > 0) {
       input = input.substring(0, input.length() - 1);
     }
     input = input.replaceAll(center, getStyledCenter());
-    binding.textInput.setText(Html.fromHtml(input.toUpperCase()), TextView.BufferType.SPANNABLE);
+    binding.textMainInput.setText(
+        Html.fromHtml(input.toUpperCase()), TextView.BufferType.SPANNABLE
+    );
   }
 
   private void clearLetters() {
-    binding.textInput.animate().alpha(0).withEndAction(() -> {
-      binding.textInput.setText(null);
-      binding.textInput.setAlpha(1);
+    binding.textMainInput.animate().alpha(0).withEndAction(() -> {
+      binding.textMainInput.setText(null);
+      binding.textMainInput.setAlpha(1);
     }).setDuration(Constants.ANIMATION).start();
   }
 
@@ -262,7 +268,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
       ArrayList<String> notFound = getMissedWords();
       String hint = notFound.get(new Random().nextInt(notFound.size())).substring(0, 3);
       hint = hint.replaceAll(center, getStyledCenter());
-      binding.textInput.setText(Html.fromHtml(hint), TextView.BufferType.SPANNABLE);
+      binding.textMainInput.setText(Html.fromHtml(hint), TextView.BufferType.SPANNABLE);
       hints++;
       if (hints < Constants.HINTS_MAX) {
         Snackbar.make(
@@ -292,8 +298,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
       changeAllCount(matches.size());
       changeFoundCount(found.size());
     } else {
-      binding.progress.setMax(matches.size());
-      binding.progress.setProgress(found.size());
+      binding.progressMain.setMax(matches.size());
+      binding.progressMain.setProgress(found.size());
       /*binding.textProgressAll.setText(String.valueOf(matches.size()));
       binding.textProgressFound.setText(String.valueOf(found.size()));*/
     }
@@ -316,18 +322,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
       animateLetters(0, true);
     }
     new Handler(Looper.getMainLooper()).postDelayed(() -> {
-      binding.frameHexagons.textHex1.setText(letters.get(0).toUpperCase());
-      binding.frameHexagons.textHex2.setText(letters.get(1).toUpperCase());
-      binding.frameHexagons.textHex3.setText(letters.get(2).toUpperCase());
-      binding.frameHexagons.textHex4.setText(letters.get(3).toUpperCase());
-      binding.frameHexagons.textHex5.setText(letters.get(4).toUpperCase());
-      binding.frameHexagons.textHex6.setText(letters.get(5).toUpperCase());
+      binding.frameMainHexagons.textHex1.setText(letters.get(0).toUpperCase());
+      binding.frameMainHexagons.textHex2.setText(letters.get(1).toUpperCase());
+      binding.frameMainHexagons.textHex3.setText(letters.get(2).toUpperCase());
+      binding.frameMainHexagons.textHex4.setText(letters.get(3).toUpperCase());
+      binding.frameMainHexagons.textHex5.setText(letters.get(4).toUpperCase());
+      binding.frameMainHexagons.textHex6.setText(letters.get(5).toUpperCase());
       if (animated) {
         animateLetters(1, true);
       }
     }, animated ? Constants.ANIMATION : 0);
     new Handler(Looper.getMainLooper()).postDelayed(
-        () -> binding.frameHexagons.textHexCenter.setText(center.toUpperCase()),
+        () -> binding.frameMainHexagons.textHexCenter.setText(center.toUpperCase()),
         animated ? Constants.ANIMATION : 0
     );
   }
@@ -336,26 +342,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     letters = getLetters();
     animateLetters(0, false);
     new Handler(Looper.getMainLooper()).postDelayed(() -> {
-      binding.frameHexagons.textHex1.setText(letters.get(0).toUpperCase());
-      binding.frameHexagons.textHex2.setText(letters.get(1).toUpperCase());
-      binding.frameHexagons.textHex3.setText(letters.get(2).toUpperCase());
-      binding.frameHexagons.textHex4.setText(letters.get(3).toUpperCase());
-      binding.frameHexagons.textHex5.setText(letters.get(4).toUpperCase());
-      binding.frameHexagons.textHex6.setText(letters.get(5).toUpperCase());
+      binding.frameMainHexagons.textHex1.setText(letters.get(0).toUpperCase());
+      binding.frameMainHexagons.textHex2.setText(letters.get(1).toUpperCase());
+      binding.frameMainHexagons.textHex3.setText(letters.get(2).toUpperCase());
+      binding.frameMainHexagons.textHex4.setText(letters.get(3).toUpperCase());
+      binding.frameMainHexagons.textHex5.setText(letters.get(4).toUpperCase());
+      binding.frameMainHexagons.textHex6.setText(letters.get(5).toUpperCase());
       animateLetters(1, false);
     }, Constants.ANIMATION);
   }
 
   private void animateLetters(float alpha, boolean animateCenter) {
     int duration = Constants.ANIMATION;
-    binding.frameHexagons.textHex1.animate().alpha(alpha).setDuration(duration).start();
-    binding.frameHexagons.textHex2.animate().alpha(alpha).setDuration(duration).start();
-    binding.frameHexagons.textHex3.animate().alpha(alpha).setDuration(duration).start();
-    binding.frameHexagons.textHex4.animate().alpha(alpha).setDuration(duration).start();
-    binding.frameHexagons.textHex5.animate().alpha(alpha).setDuration(duration).start();
-    binding.frameHexagons.textHex6.animate().alpha(alpha).setDuration(duration).start();
+    binding.frameMainHexagons.textHex1.animate().alpha(alpha).setDuration(duration).start();
+    binding.frameMainHexagons.textHex2.animate().alpha(alpha).setDuration(duration).start();
+    binding.frameMainHexagons.textHex3.animate().alpha(alpha).setDuration(duration).start();
+    binding.frameMainHexagons.textHex4.animate().alpha(alpha).setDuration(duration).start();
+    binding.frameMainHexagons.textHex5.animate().alpha(alpha).setDuration(duration).start();
+    binding.frameMainHexagons.textHex6.animate().alpha(alpha).setDuration(duration).start();
     if (animateCenter) {
-      binding.frameHexagons.textHexCenter.animate().alpha(alpha).setDuration(duration).start();
+      binding.frameMainHexagons.textHexCenter.animate().alpha(alpha).setDuration(duration).start();
     }
   }
 
@@ -378,7 +384,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
   }
 
   private void changeFoundCount(int count) {
-    binding.progress.setProgressCompat(count, true);
+    binding.progressMain.setProgressCompat(count, true);
     /*binding.textProgressFound.animate().alpha(0).withEndAction(() -> {
       binding.textProgressFound.setText(String.valueOf(count));
       binding.textProgressFound.animate().alpha(1).setDuration(Constants.ANIMATION).start();
@@ -386,7 +392,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
   }
 
   private void changeAllCount(int count) {
-    binding.progress.setMax(count);
+    binding.progressMain.setMax(count);
     /*binding.textProgressAll.animate().alpha(0).withEndAction(() -> {
       binding.textProgressAll.setText(String.valueOf(count));
       binding.textProgressAll.animate().alpha(1).setDuration(Constants.ANIMATION).start();
@@ -394,7 +400,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
   }
 
   public void processInput() {
-    String input = binding.textInput.getText().toString().toLowerCase();
+    String input = binding.textMainInput.getText().toString().toLowerCase();
     if (input.equals("")) {
       vibrator.doubleClick();
     } else if (input.length() < 4 && wasInvalidCalledAlready()) {
@@ -408,13 +414,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
       changeFoundCount(found.size());
       showMessage(R.string.msg_good);
       vibrator.click();
-      IconUtil.start(binding.imageLogo);
+      IconUtil.start(binding.imageMainLogo);
       new Handler(Looper.getMainLooper()).postDelayed(this::clearLetters, 250);
     } else if (found.contains(input)) {
       showMessage(R.string.msg_already_found);
       invalidInput();
     } else if (!matches.contains(input)) {
-      showMessage(R.string.msg_not_on_word_list);
+      showMessage(R.string.msg_not_in_word_list);
       invalidInput();
     }
   }
@@ -431,7 +437,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
   private void invalidInput() {
     vibrator.doubleClick();
-    binding.textInput.startAnimation(AnimationUtils.loadAnimation(this, R.anim.shake));
+    binding.textMainInput.startAnimation(AnimationUtils.loadAnimation(this, R.anim.shake));
     new Handler(Looper.getMainLooper()).postDelayed(this::clearLetters, 500);
   }
 

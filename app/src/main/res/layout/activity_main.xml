@@ -35,7 +35,7 @@
       android:layout_height="?android:actionBarSize">
 
       <ImageView
-        android:id="@+id/image_logo"
+        android:id="@+id/image_main_logo"
         android:layout_width="32dp"
         android:layout_height="32dp"
         android:layout_marginStart="16dp"
@@ -45,19 +45,14 @@
         android:importantForAccessibility="no" />
 
       <TextView
+        style="@style/Widget.Buzz.TextView.Toolbar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:singleLine="true"
-        android:text="@string/app_name"
-        android:textColor="@color/on_background"
-        android:textSize="20dp"
-        android:textAlignment="center"
-        android:fontFamily="@font/jost_bold"
-        tools:ignore="SpUsage" />
+        android:text="@string/app_name" />
 
       <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
+        android:id="@+id/toolbar_main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical|end"
@@ -68,7 +63,7 @@
   </com.google.android.material.appbar.AppBarLayout>
 
   <LinearLayout
-    android:id="@+id/linear_container"
+    android:id="@+id/linear_main_container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -90,7 +85,7 @@
         android:orientation="horizontal">
 
         <com.google.android.material.button.MaterialButton
-          android:id="@+id/button_found"
+          android:id="@+id/button_main_found"
           style="@style/Widget.Buzz.Button.UnelevatedButton"
           android:layout_width="0dp"
           android:layout_height="wrap_content"
@@ -99,7 +94,7 @@
           android:text="@string/action_found" />
 
         <com.google.android.material.button.MaterialButton
-          android:id="@+id/button_new_game"
+          android:id="@+id/button_main_new_game"
           style="@style/Widget.Buzz.Button.UnelevatedButton"
           android:layout_width="0dp"
           android:layout_height="wrap_content"
@@ -110,7 +105,7 @@
       </LinearLayout>
 
       <com.google.android.material.progressindicator.LinearProgressIndicator
-        android:id="@+id/progress"
+        android:id="@+id/progress_main"
         style="@style/Widget.Buzz.LinearProgressIndicator"
         android:layout_width="match_parent"
         android:layout_marginStart="16dp"
@@ -124,26 +119,27 @@
         tools:ignore="NestedWeights">
 
         <TextView
-          android:id="@+id/text_input"
+          android:id="@+id/text_main_input"
+          style="@style/Widget.Buzz.TextView"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          android:paddingStart="32dp"
-          android:paddingEnd="32dp"
+          android:paddingStart="16dp"
+          android:paddingEnd="16dp"
           android:layout_marginBottom="4dp"
-          android:layout_gravity="center"
+          android:layout_gravity="center_vertical"
           android:gravity="center"
           android:textAlignment="center"
+          android:lineSpacingExtra="-8sp"
           android:textAllCaps="true"
           android:textSize="@dimen/hex_font_size"
-          android:fontFamily="@font/jost_bold"
-          android:textColor="@color/on_background" />
+          android:fontFamily="@font/jost_bold" />
 
       </FrameLayout>
 
     </LinearLayout>
 
     <include
-      android:id="@+id/frame_hexagons"
+      android:id="@+id/frame_main_hexagons"
       layout="@layout/partial_hexagons"/>
 
     <LinearLayout
@@ -159,14 +155,14 @@
 
       <com.google.android.material.card.MaterialCardView
         android:id="@+id/card_main_clear"
-        style="@style/Widget.Buzz.Card"
+        style="@style/Widget.Buzz.Card.Control"
         android:layout_height="90dp"
         android:layout_marginEnd="4dp">
 
         <ImageView
-          android:id="@+id/image_clear"
-          android:layout_width="34dp"
-          android:layout_height="24dp"
+          android:id="@+id/image_main_clear"
+          android:layout_width="42.5dp"
+          android:layout_height="30dp"
           android:layout_gravity="center"
           android:src="@drawable/ic_backspace_anim"
           app:tint="@color/control_icon"
@@ -176,15 +172,15 @@
 
       <com.google.android.material.card.MaterialCardView
         android:id="@+id/card_main_shuffle"
-        style="@style/Widget.Buzz.Card"
+        style="@style/Widget.Buzz.Card.Control"
         android:layout_height="90dp"
         android:layout_marginStart="4dp"
         android:layout_marginEnd="4dp">
 
         <ImageView
-          android:id="@+id/image_shuffle"
-          android:layout_width="24dp"
-          android:layout_height="24dp"
+          android:id="@+id/image_main_shuffle"
+          android:layout_width="30dp"
+          android:layout_height="30dp"
           android:layout_gravity="center"
           android:src="@drawable/ic_shuffle_anim"
           app:tint="@color/control_icon"
@@ -194,14 +190,14 @@
 
       <com.google.android.material.card.MaterialCardView
         android:id="@+id/card_main_enter"
-        style="@style/Widget.Buzz.Card"
+        style="@style/Widget.Buzz.Card.Control"
         android:layout_height="90dp"
         android:layout_marginStart="4dp">
 
         <ImageView
-          android:id="@+id/image_enter"
-          android:layout_width="24dp"
-          android:layout_height="24dp"
+          android:id="@+id/image_main_enter"
+          android:layout_width="30dp"
+          android:layout_height="30dp"
           android:layout_gravity="center"
           android:src="@drawable/ic_done_anim"
           app:tint="@color/control_icon"

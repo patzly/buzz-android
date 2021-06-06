@@ -25,37 +25,37 @@
 
   <translate
     android:fromXDelta="0%"
-    android:toXDelta="2.5%"
+    android:toXDelta="2%"
     android:duration="100" />
 
   <translate
     android:startOffset="100"
     android:fromXDelta="0%"
-    android:toXDelta="-5%"
+    android:toXDelta="-4%"
     android:duration="100" />
 
   <translate
     android:startOffset="200"
     android:fromXDelta="0%"
-    android:toXDelta="7.5%"
+    android:toXDelta="5.5%"
     android:duration="100" />
 
   <translate
     android:startOffset="300"
     android:fromXDelta="0%"
-    android:toXDelta="-7.5%"
+    android:toXDelta="-5.5%"
     android:duration="100" />
 
   <translate
     android:startOffset="400"
     android:fromXDelta="0%"
-    android:toXDelta="5%"
+    android:toXDelta="4%"
     android:duration="100" />
 
   <translate
     android:startOffset="500"
     android:fromXDelta="0%"
-    android:toXDelta="-5%"
+    android:toXDelta="-4%"
     android:duration="100" />
 
   <translate

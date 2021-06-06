@@ -80,7 +80,7 @@ public class NewGameBottomSheetDialogFragment extends BaseBottomSheetDialogFragm
         Html.fromHtml(all.toUpperCase()), TextView.BufferType.SPANNABLE
     );
 
-    binding.buttonNewGame.setOnClickListener(v -> {
+    binding.buttonNewGameNew.setOnClickListener(v -> {
       new NewGameTask((MainActivity) getActivity()).execute();
       dismiss();
     });

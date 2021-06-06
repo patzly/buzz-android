@@ -21,26 +21,26 @@
 
   <string name="app_name">Buzz</string>
 
-  <string name="title_missed_words">Entgangene Wörter</string>
-  <string name="title_found_words">Gefundene Wörter</string>
-  <string name="title_rules">Spielregeln</string>
+  <string name="title_missed_words">Missed words</string>
+  <string name="title_found_words">Found words</string>
+  <string name="title_rules">Rules</string>
 
-  <string name="action_hint">Hinweis</string>
-  <string name="action_help">Spielregeln</string>
+  <string name="action_hint">Hint</string>
+  <string name="action_help">Rules</string>
   <string name="action_cancel">Beenden</string>
-  <string name="action_new_game">Neues Spiel</string>
-  <string name="action_found">Gefunden</string>
+  <string name="action_new_game">New game</string>
+  <string name="action_found">Found</string>
 
   <string name="msg_new_game">Runde beenden?</string>
   <string name="msg_too_long">Eingabe zu lang!</string>
   <string name="msg_too_short">Eingabe zu kurz!</string>
-  <string name="msg_not_on_word_list">Nicht auf Wortliste!</string>
-  <string name="msg_missing_center_letter">Mittlerer Buchstabe fehlt!</string>
-  <string name="msg_already_found">Schon gefunden!</string>
-  <string name="msg_not_found_any">Noch nichts gefunden!</string>
-  <string name="msg_all_hints_used">Alle Hinweise aufgebraucht!</string>
-  <string name="msg_hints">Noch %1$d Hinweise verfügbar!</string>
-  <string name="msg_hints_used">%1$d Hinweise genutzt</string>
+  <string name="msg_not_in_word_list">Not in word list</string>
+  <string name="msg_missing_center_letter">Missing center letter</string>
+  <string name="msg_already_found">Already found</string>
+  <string name="msg_nothing_found">Nothing found yet</string>
+  <string name="msg_all_hints_used">All hints used</string>
+  <string name="msg_hints">%1$d more hints available</string>
+  <string name="msg_hints_used">%1$d hints used</string>
   <string name="msg_good">Good!</string>
 
 </resources>
