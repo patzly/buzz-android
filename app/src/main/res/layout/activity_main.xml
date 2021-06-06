@@ -41,8 +41,7 @@
         android:layout_height="32dp"
         android:layout_marginStart="16dp"
         android:src="@drawable/ic_spelling_bee_anim"
-        android:background="@drawable/shape_circle"
-        android:backgroundTint="@color/icon_logo_bg"
+        android:background="@drawable/shape_logo_background"
         android:layout_gravity="center_vertical|start"
         android:importantForAccessibility="no" />
 

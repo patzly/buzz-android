@@ -28,7 +28,7 @@ android {
 
     defaultConfig {
         applicationId "xyz.zedler.patrick.buzz"
-        minSdkVersion 21
+        minSdkVersion 23
         targetSdkVersion 30
         versionCode 1
         versionName "1.0.0"
