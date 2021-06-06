@@ -17,7 +17,7 @@ Buzz Android is an unofficial open-source Android game based on the official Spe
 
 ## Compatibility
 
-Buzz Android requires at least Android 5.0 Lollipop on your device.
+Buzz Android requires at least Android 6 Marshmallow on your device.
 
 ## License
 
