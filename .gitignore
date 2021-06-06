@@ -2,5 +2,6 @@
 local.properties
 /.gradle/
 /.idea/workspace.xml
+/.idea/assetWizardSettings.xml
 /app/build/
 /app/build/intermediates/javac/debug/classes/
