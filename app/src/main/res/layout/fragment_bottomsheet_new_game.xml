@@ -54,7 +54,7 @@
     style="@style/Widget.Buzz.TextView"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingBottom="8dp"
+    android:paddingBottom="16dp"
     android:paddingStart="16dp"
     android:paddingEnd="16dp"
     android:singleLine="true"
@@ -62,16 +62,7 @@
     android:gravity="center"
     android:fontFamily="@font/jost_bold"
     android:letterSpacing="0.15"
-    android:textSize="@dimen/font_size_game" />
-
-  <com.google.android.material.button.MaterialButton
-    android:id="@+id/button_new_game_new"
-    style="@style/Widget.Buzz.Button.UnelevatedButton.Game"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginBottom="16dp"
-    android:layout_gravity="center_horizontal"
-    android:text="@string/action_new_game" />
+    android:textSize="22sp" />
 
   <View
     style="@style/Theme.Buzz.Divider"

@@ -19,7 +19,6 @@
 
 package xyz.zedler.patrick.buzz.fragment;
 
-import android.app.Dialog;
 import android.content.Context;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -27,11 +26,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
-import com.google.android.material.bottomsheet.BottomSheetDialog;
 import java.util.ArrayList;
 import java.util.Collections;
 import xyz.zedler.patrick.buzz.Constants;
-import xyz.zedler.patrick.buzz.R;
 import xyz.zedler.patrick.buzz.databinding.FragmentBottomsheetFoundBinding;
 
 public class FoundBottomSheetDialogFragment extends BaseBottomSheetDialogFragment {
@@ -40,21 +37,13 @@ public class FoundBottomSheetDialogFragment extends BaseBottomSheetDialogFragmen
 
   private FragmentBottomsheetFoundBinding binding;
 
-  @NonNull
-  @Override
-  public Dialog onCreateDialog(Bundle savedInstanceState) {
-    return new BottomSheetDialog(requireContext(), R.style.Theme_Buzz_BottomSheetDialog);
-  }
-
   @Override
   public View onCreateView(
       @NonNull LayoutInflater inflater,
       ViewGroup container,
       Bundle savedInstanceState
   ) {
-    binding = FragmentBottomsheetFoundBinding.inflate(
-        inflater, container, false
-    );
+    binding = FragmentBottomsheetFoundBinding.inflate(inflater, container, false);
 
     Context context = getContext();
     Bundle bundle = getArguments();

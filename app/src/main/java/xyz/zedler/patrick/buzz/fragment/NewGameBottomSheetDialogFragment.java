@@ -19,7 +19,6 @@
 
 package xyz.zedler.patrick.buzz.fragment;
 
-import android.app.Dialog;
 import android.os.Bundle;
 import android.text.Html;
 import android.text.TextUtils;
@@ -28,7 +27,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
-import com.google.android.material.bottomsheet.BottomSheetDialog;
 import java.util.ArrayList;
 import java.util.Collections;
 import xyz.zedler.patrick.buzz.Constants;
@@ -43,23 +41,13 @@ public class NewGameBottomSheetDialogFragment extends BaseBottomSheetDialogFragm
 
   private FragmentBottomsheetNewGameBinding binding;
 
-  @NonNull
-  @Override
-  public Dialog onCreateDialog(Bundle savedInstanceState) {
-    return new BottomSheetDialog(requireContext(), R.style.Theme_Buzz_BottomSheetDialog);
-  }
-
   @Override
   public View onCreateView(
       @NonNull LayoutInflater inflater,
       ViewGroup container,
       Bundle savedInstanceState
   ) {
-    binding = FragmentBottomsheetNewGameBinding.inflate(
-        inflater, container, false
-    );
-
-    setCancelable(false);
+    binding = FragmentBottomsheetNewGameBinding.inflate(inflater, container, false);
 
     Bundle bundle = getArguments();
     assert bundle != null;
@@ -86,11 +74,6 @@ public class NewGameBottomSheetDialogFragment extends BaseBottomSheetDialogFragm
         Html.fromHtml(all.toUpperCase()), TextView.BufferType.SPANNABLE
     );
 
-    binding.buttonNewGameNew.setOnClickListener(v -> {
-      new NewGameTask((MainActivity) getActivity()).execute();
-      dismiss();
-    });
-
     if (missed != null) {
       Collections.sort(missed);
       for (int i = 0; i < missed.size(); i++) {
@@ -98,6 +81,9 @@ public class NewGameBottomSheetDialogFragment extends BaseBottomSheetDialogFragm
       }
       binding.textNewGameMissed.setText(TextUtils.join("\n", missed));
     }
+
+    // Already fill with new game
+    new NewGameTask((MainActivity) getActivity()).execute();
 
     return binding.getRoot();
   }

@@ -38,6 +38,11 @@ public class Constants {
     public final static String CENTER = "E";
   }
 
+  public final static class EXTRA {
+
+    public final static String INPUT = "input";
+  }
+
   public final static class BOTTOM_SHEET {
 
     public final static String MISSED_WORDS = "missed_words";

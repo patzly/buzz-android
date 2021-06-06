@@ -49,7 +49,7 @@ public class NewGameTask extends AsyncTask<Void, Integer, String[]> {
     }
     ArrayList<String> pangrams = new ArrayList<>();
     try {
-      InputStream inputStream = activity.getAssets().open("words_german_pangrams.txt");
+      InputStream inputStream = activity.getAssets().open("words_de_pangrams.txt");
       InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
       BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
       for (String line; (line = bufferedReader.readLine()) != null; ) {
@@ -67,7 +67,7 @@ public class NewGameTask extends AsyncTask<Void, Integer, String[]> {
     String center = pangram.substring(randomLetter, randomLetter + 1);
 
     try {
-      InputStream inputStream = activity.getAssets().open("words_german_valid.txt");
+      InputStream inputStream = activity.getAssets().open("words_de_valid.txt");
       InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
       BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
       for (String line; (line = bufferedReader.readLine()) != null; ) {

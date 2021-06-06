@@ -51,7 +51,7 @@ public class MatchingWordsTask extends AsyncTask<String[], Integer, ArrayList<St
     }
     ArrayList<String> matches = new ArrayList<>();
     try {
-      InputStream inputStream = activity.getAssets().open("words_german_valid.txt");
+      InputStream inputStream = activity.getAssets().open("words_de_valid.txt");
       InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
       BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
       for (String line; (line = bufferedReader.readLine()) != null; ) {

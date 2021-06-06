@@ -97,6 +97,7 @@
     name="Widget.Buzz.Button.UnelevatedButton.Game"
     parent="Widget.Buzz.Button.UnelevatedButton">
     <item name="android:textSize">@dimen/font_size_game</item>
+    <item name="android:singleLine">true</item>
   </style>
 
   <style

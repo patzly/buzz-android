@@ -44,6 +44,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 import xyz.zedler.patrick.buzz.Constants;
+import xyz.zedler.patrick.buzz.Constants.EXTRA;
 import xyz.zedler.patrick.buzz.R;
 import xyz.zedler.patrick.buzz.behavior.ScrollBehavior;
 import xyz.zedler.patrick.buzz.behavior.SystemBarBehavior;
@@ -161,6 +162,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
           .putString(Constants.PREF.FOUND, TextUtils.join("\n", found))
           .putInt(Constants.PREF.HINTS, hints)
           .apply();
+    }
+  }
+
+  @Override
+  protected void onSaveInstanceState(@NonNull Bundle outState) {
+    super.onSaveInstanceState(outState);
+
+    outState.putString(EXTRA.INPUT, binding.textMainInput.getText().toString());
+  }
+
+  @Override
+  protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
+    super.onRestoreInstanceState(savedInstanceState);
+
+    String input = savedInstanceState.getString(EXTRA.INPUT);
+    if (input != null) {
+      input = input.toLowerCase().replaceAll(center, getStyledCenter());
+      binding.textMainInput.setText(
+          Html.fromHtml(input.toUpperCase()), TextView.BufferType.SPANNABLE
+      );
     }
   }
 
