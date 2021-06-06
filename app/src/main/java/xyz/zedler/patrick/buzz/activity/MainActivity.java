@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
   private ArrayList<String> found;
   private String center;
   private VibratorUtil vibrator;
-  private ClickUtil clickUtil, clickUtilLogo;
+  private ClickUtil clickUtil;
   private int hints = 0;
   private long lastInvalid = 0;
 
@@ -89,14 +89,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     sharedPrefs = PreferenceManager.getDefaultSharedPreferences(this);
     vibrator = new VibratorUtil(this);
     clickUtil = new ClickUtil();
-    clickUtilLogo = new ClickUtil(600);
 
     SystemBarBehavior systemBarBehavior = new SystemBarBehavior(this);
     systemBarBehavior.setAppBar(binding.appBarMain);
     systemBarBehavior.setContainer(binding.linearContainer);
     systemBarBehavior.setUp();
 
-    new ScrollBehavior(this).setUpScroll(binding.appBarMain, null, true);
+    new ScrollBehavior(this).setUpScroll(binding.appBarMain, null, false);
 
     binding.toolbar.setOnMenuItemClickListener(item -> {
       if (clickUtil.isDisabled()) {
@@ -116,7 +115,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     ClickUtil.setOnClickListeners(
         this,
-        binding.frameAppBarMain,
         binding.buttonFound,
         binding.buttonNewGame,
         binding.frameHexagons.frameHex1,
@@ -166,10 +164,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
   @Override
   public void onClick(View v) {
     int id = v.getId();
-    if (id == R.id.button_found) {
-      if (clickUtil.isDisabled()) {
-        return;
-      }
+    if (id == R.id.button_found && clickUtil.isEnabled()) {
       if (found.size() > 0) {
         Bundle bundle = new Bundle();
         bundle.putStringArrayList(Constants.BOTTOM_SHEET.FOUND_WORDS, found);
@@ -179,10 +174,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
       } else {
         showMessage(R.string.msg_not_found_any);
       }
-    } else if (id == R.id.button_new_game) {
-      if (clickUtil.isDisabled()) {
-        return;
-      }
+    } else if (id == R.id.button_new_game && clickUtil.isEnabled()) {
       Snackbar.make(
           binding.getRoot(),
           getString(R.string.msg_new_game),
@@ -221,11 +213,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     } else if (id == R.id.card_main_enter) {
       IconUtil.start(binding.imageEnter);
       processInput();
-    } else if (id == R.id.frame_app_bar_main) {
-      if (clickUtilLogo.isDisabled()) {
-        return;
-      }
-      IconUtil.start(binding.imageLogo);
     }
   }
 
@@ -421,7 +408,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
       changeFoundCount(found.size());
       showMessage(R.string.msg_good);
       vibrator.click();
-      new Handler(Looper.getMainLooper()).postDelayed(this::clearLetters, 200);
+      IconUtil.start(binding.imageLogo);
+      new Handler(Looper.getMainLooper()).postDelayed(this::clearLetters, 250);
     } else if (found.contains(input)) {
       showMessage(R.string.msg_already_found);
       invalidInput();

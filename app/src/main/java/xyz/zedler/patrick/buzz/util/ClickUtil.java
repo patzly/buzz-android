@@ -48,6 +48,10 @@ public class ClickUtil {
     return false;
   }
 
+  public boolean isEnabled() {
+    return !isDisabled();
+  }
+
   public static void setOnClickListeners(View.OnClickListener listener, View... views) {
     for (View view : views) {
       view.setOnClickListener(listener);
