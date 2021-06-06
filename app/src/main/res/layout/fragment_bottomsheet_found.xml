@@ -25,7 +25,7 @@
   android:orientation="vertical">
 
   <TextView
-    style="@style/Widget.Buzz.TextView.Title.BottomSheet"
+    style="@style/Widget.Buzz.TextView.Toolbar"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="16dp"
@@ -51,6 +51,7 @@
       android:layout_height="wrap_content"
       android:padding="16dp"
       android:textAlignment="center"
+      android:textSize="@dimen/font_size_game"
       android:gravity="center" />
 
   </androidx.core.widget.NestedScrollView>

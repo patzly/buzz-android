@@ -34,7 +34,7 @@
   <string name="msg_new_game">Runde beenden?</string>
   <string name="msg_too_long">Eingabe zu lang!</string>
   <string name="msg_too_short">Eingabe zu kurz!</string>
-  <string name="msg_not_in_word_list">Not in word list</string>
+  <string name="msg_not_on_list">Not on word list</string>
   <string name="msg_missing_center_letter">Missing center letter</string>
   <string name="msg_already_found">Already found</string>
   <string name="msg_nothing_found">Nothing found yet</string>

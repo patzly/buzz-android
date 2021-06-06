@@ -23,6 +23,5 @@
   <dimen name="hex_width">90dp</dimen>
   <dimen name="hex_outline">8dp</dimen>
   <dimen name="hex_translation">150dp</dimen>
-  <dimen name="hex_font_size">28sp</dimen>
 
 </resources>

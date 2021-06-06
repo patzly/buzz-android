@@ -43,13 +43,7 @@
 
       <TextView
         android:id="@+id/text_hex_6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:textAllCaps="true"
-        android:textSize="@dimen/hex_font_size"
-        android:fontFamily="@font/jost_bold"
-        android:textColor="@color/on_background" />
+        style="@style/Widget.Buzz.TextView.Hex" />
 
       <ImageView
         android:layout_width="@dimen/hex_width"
@@ -72,13 +66,7 @@
 
       <TextView
         android:id="@+id/text_hex_5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:textAllCaps="true"
-        android:textSize="@dimen/hex_font_size"
-        android:fontFamily="@font/jost_bold"
-        android:textColor="@color/on_background" />
+        style="@style/Widget.Buzz.TextView.Hex" />
 
       <ImageView
         android:layout_width="@dimen/hex_width"
@@ -110,13 +98,7 @@
 
       <TextView
         android:id="@+id/text_hex_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:textAllCaps="true"
-        android:textSize="@dimen/hex_font_size"
-        android:fontFamily="@font/jost_bold"
-        android:textColor="@color/on_background" />
+        style="@style/Widget.Buzz.TextView.Hex" />
 
       <ImageView
         android:layout_width="@dimen/hex_width"
@@ -139,12 +121,7 @@
 
       <TextView
         android:id="@+id/text_hex_center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:textAllCaps="true"
-        android:textSize="@dimen/hex_font_size"
-        android:fontFamily="@font/jost_bold"
+        style="@style/Widget.Buzz.TextView.Hex"
         android:textColor="@color/black" />
 
       <ImageView
@@ -169,13 +146,7 @@
 
       <TextView
         android:id="@+id/text_hex_4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:textAllCaps="true"
-        android:textSize="@dimen/hex_font_size"
-        android:fontFamily="@font/jost_bold"
-        android:textColor="@color/on_background" />
+        style="@style/Widget.Buzz.TextView.Hex" />
 
       <ImageView
         android:layout_width="@dimen/hex_width"
@@ -208,13 +179,7 @@
 
       <TextView
         android:id="@+id/text_hex_2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:textAllCaps="true"
-        android:textSize="@dimen/hex_font_size"
-        android:fontFamily="@font/jost_bold"
-        android:textColor="@color/on_background" />
+        style="@style/Widget.Buzz.TextView.Hex" />
 
       <ImageView
         android:layout_width="@dimen/hex_width"
@@ -237,13 +202,7 @@
 
       <TextView
         android:id="@+id/text_hex_3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:textAllCaps="true"
-        android:textSize="@dimen/hex_font_size"
-        android:fontFamily="@font/jost_bold"
-        android:textColor="@color/on_background" />
+        style="@style/Widget.Buzz.TextView.Hex" />
 
       <ImageView
         android:layout_width="@dimen/hex_width"

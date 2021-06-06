@@ -86,7 +86,7 @@
 
         <com.google.android.material.button.MaterialButton
           android:id="@+id/button_main_found"
-          style="@style/Widget.Buzz.Button.UnelevatedButton"
+          style="@style/Widget.Buzz.Button.UnelevatedButton.Game"
           android:layout_width="0dp"
           android:layout_height="wrap_content"
           android:layout_weight="1"
@@ -95,7 +95,7 @@
 
         <com.google.android.material.button.MaterialButton
           android:id="@+id/button_main_new_game"
-          style="@style/Widget.Buzz.Button.UnelevatedButton"
+          style="@style/Widget.Buzz.Button.UnelevatedButton.Game"
           android:layout_width="0dp"
           android:layout_height="wrap_content"
           android:layout_weight="1"
@@ -131,7 +131,7 @@
           android:textAlignment="center"
           android:lineSpacingExtra="-8sp"
           android:textAllCaps="true"
-          android:textSize="@dimen/hex_font_size"
+          android:textSize="@dimen/font_size_letters"
           android:fontFamily="@font/jost_bold" />
 
       </FrameLayout>

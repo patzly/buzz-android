@@ -31,6 +31,7 @@
     <item name="android:fontFamily">@font/jost_bold</item>
     <item name="cornerRadius">12dp</item>
     <item name="android:textColor">@color/retro_green_fg_invert</item>
+    <item name="android:textSize">@dimen/font_size_game</item>
   </style>
 
   <style name="Widget.Buzz.Card.Control" parent="Widget.MaterialComponents.CardView">
@@ -90,6 +91,12 @@
     <item name="backgroundTint">@color/retro_green_bg_white</item>
     <item name="cornerRadius">12dp</item>
     <item name="android:textSize">14.5sp</item>
+  </style>
+
+  <style
+    name="Widget.Buzz.Button.UnelevatedButton.Game"
+    parent="Widget.Buzz.Button.UnelevatedButton">
+    <item name="android:textSize">@dimen/font_size_game</item>
   </style>
 
   <style
@@ -227,6 +234,20 @@
     <item name="android:fontFamily">@font/jost_bold</item>
     <item name="android:textSize">14.5sp</item>
     <item name="android:textColor">@color/secondary</item>
+  </style>
+
+  <style name="Widget.Buzz.TextView.Hex" parent="Widget.Buzz.TextView">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textSize">@dimen/font_size_letters</item>
+    <item name="android:fontFamily">@font/jost_bold</item>
+    <item name="android:singleLine">true</item>
+    <item name="android:textAllCaps">true</item>
+    <item name="android:layout_gravity">center</item>
+  </style>
+
+  <style name="Widget.Buzz.TextView.Snackbar" parent="Widget.MaterialComponents.Snackbar.TextView">
+    <item name="android:textSize">@dimen/font_size_game</item>
   </style>
 
   <style name="Widget.Buzz.TextView.ListItem.OverLine" parent="Widget.Buzz.TextView">

@@ -22,7 +22,6 @@
 
   <dimen name="hex_width">@dimen/hex_width_dense</dimen>
   <dimen name="hex_outline">@dimen/hex_outline_dense</dimen>
-  <dimen name="hex_translation">@dimen/hex_translation_dense</dimen>
-  <dimen name="hex_font_size">@dimen/hex_font_size_dense</dimen>
+  <dimen name="hex_translation">@dimen/hex_offset_dense</dimen>
 
 </resources>

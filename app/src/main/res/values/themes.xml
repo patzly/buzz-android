@@ -36,6 +36,7 @@
     <item name="colorOnSurface">@color/on_surface</item>
 
     <item name="snackbarStyle">@style/Widget.Buzz.Snackbar</item>
+    <item name="snackbarTextViewStyle">@style/Widget.Buzz.TextView.Snackbar</item>
     <item name="snackbarButtonStyle">@style/Widget.Buzz.Button.TextButton.Snackbar</item>
 
     <item name="android:colorControlNormal">@color/on_background</item>
@@ -44,6 +45,7 @@
     <item name="android:colorEdgeEffect">@color/highlight</item>
 
     <item name="android:fontFamily">@font/jost_book</item>
+    <item name="android:textViewStyle">@style/Widget.Buzz.TextView</item>
   </style>
 
   <style name="Theme.Buzz.Splash" parent="Theme.Buzz">

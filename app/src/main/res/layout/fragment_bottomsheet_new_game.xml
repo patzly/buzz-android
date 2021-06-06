@@ -26,7 +26,7 @@
 
   <TextView
     android:id="@+id/text_new_game_title"
-    style="@style/Widget.Buzz.TextView.Title.BottomSheet"
+    style="@style/Widget.Buzz.TextView.Toolbar"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:paddingTop="16dp"
@@ -62,11 +62,11 @@
     android:gravity="center"
     android:fontFamily="@font/jost_bold"
     android:letterSpacing="0.15"
-    android:textSize="17sp" />
+    android:textSize="@dimen/font_size_game" />
 
   <com.google.android.material.button.MaterialButton
     android:id="@+id/button_new_game_new"
-    style="@style/Widget.Buzz.Button.UnelevatedButton"
+    style="@style/Widget.Buzz.Button.UnelevatedButton.Game"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_marginBottom="16dp"
@@ -91,7 +91,8 @@
       android:layout_height="wrap_content"
       android:padding="16dp"
       android:textAlignment="center"
-      android:gravity="center" />
+      android:gravity="center"
+      android:textSize="@dimen/font_size_game"/>
 
   </androidx.core.widget.NestedScrollView>
 

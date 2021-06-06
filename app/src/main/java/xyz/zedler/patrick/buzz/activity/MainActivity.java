@@ -423,7 +423,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
       showMessage(R.string.msg_already_found);
       invalidInput();
     } else if (!matches.contains(input)) {
-      showMessage(R.string.msg_not_in_word_list);
+      showMessage(R.string.msg_not_on_list);
       invalidInput();
     }
   }
