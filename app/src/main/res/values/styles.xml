@@ -85,14 +85,14 @@
     <item name="android:textStyle">bold</item>
     <item name="android:fontFamily">@font/jost_bold</item>
     <item name="backgroundTint">@color/retro_green_bg_white</item>
-    <item name="cornerRadius">6dp</item>
+    <item name="cornerRadius">12dp</item>
   </style>
 
   <style
     name="Widget.Buzz.LinearProgressIndicator"
     parent="@style/Widget.MaterialComponents.LinearProgressIndicator">
     <item name="android:layout_height">wrap_content</item>
-    <item name="trackColor">@color/secondary_translucent</item>
+    <item name="trackColor">@color/on_background_tertiary</item>
     <item name="trackThickness">8dp</item>
     <item name="trackCornerRadius">4dp</item>
     <item name="indicatorColor">@color/secondary</item>
