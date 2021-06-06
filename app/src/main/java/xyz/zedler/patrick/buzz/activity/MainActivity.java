@@ -17,7 +17,7 @@
  * Copyright (c) 2020-2021 by Patrick Zedler
  */
 
-package xyz.zedler.patrick.buzz;
+package xyz.zedler.patrick.buzz.activity;
 
 import android.content.SharedPreferences;
 import android.os.Build;
@@ -42,13 +42,16 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;
+import xyz.zedler.patrick.buzz.Constants;
+import xyz.zedler.patrick.buzz.R;
+import xyz.zedler.patrick.buzz.behavior.ScrollBehavior;
+import xyz.zedler.patrick.buzz.behavior.SystemBarBehavior;
 import xyz.zedler.patrick.buzz.databinding.ActivityMainBinding;
 import xyz.zedler.patrick.buzz.fragment.FoundBottomSheetDialogFragment;
 import xyz.zedler.patrick.buzz.fragment.NewGameBottomSheetDialogFragment;
 import xyz.zedler.patrick.buzz.fragment.RulesBottomSheetDialogFragment;
 import xyz.zedler.patrick.buzz.task.MatchingWordsTask;
 import xyz.zedler.patrick.buzz.util.ClickUtil;
-import xyz.zedler.patrick.buzz.util.ConfettiUtil;
 import xyz.zedler.patrick.buzz.util.IconUtil;
 import xyz.zedler.patrick.buzz.util.VibratorUtil;
 
@@ -86,6 +89,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     clickUtil = new ClickUtil();
     clickUtilLogo = new ClickUtil(600);
 
+    SystemBarBehavior systemBarBehavior = new SystemBarBehavior(this);
+    systemBarBehavior.setAppBar(binding.appBarMain);
+    systemBarBehavior.setContainer(binding.linearContainer);
+    systemBarBehavior.setUp();
+
+    new ScrollBehavior(this).setUpScroll(binding.appBarMain, null, false);
+
     binding.toolbar.setOnMenuItemClickListener(item -> {
       if (clickUtil.isDisabled()) {
         return false;
@@ -104,7 +114,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     ClickUtil.setOnClickListeners(
         this,
-        binding.frameAppBar,
+        binding.frameAppBarMain,
         binding.buttonFound,
         binding.buttonNewGame,
         binding.frameHexagons.frameHex1,
@@ -214,7 +224,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
       if (isValid()) {
         processInput();
       }
-    } else if (id == R.id.frame_app_bar) {
+    } else if (id == R.id.frame_app_bar_main) {
       if (clickUtilLogo.isDisabled()) {
         return;
       }
@@ -300,8 +310,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     } else {
       binding.progress.setMax(matches.size());
       binding.progress.setProgress(found.size());
-      binding.textProgressAll.setText(String.valueOf(matches.size()));
-      binding.textProgressFound.setText(String.valueOf(found.size()));
+      /*binding.textProgressAll.setText(String.valueOf(matches.size()));
+      binding.textProgressFound.setText(String.valueOf(found.size()));*/
     }
   }
 
@@ -385,18 +395,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
   private void changeFoundCount(int count) {
     binding.progress.setProgressCompat(count, true);
-    binding.textProgressFound.animate().alpha(0).withEndAction(() -> {
+    /*binding.textProgressFound.animate().alpha(0).withEndAction(() -> {
       binding.textProgressFound.setText(String.valueOf(count));
       binding.textProgressFound.animate().alpha(1).setDuration(Constants.ANIMATION).start();
-    }).setDuration(Constants.ANIMATION).start();
+    }).setDuration(Constants.ANIMATION).start();*/
   }
 
   private void changeAllCount(int count) {
     binding.progress.setMax(count);
-    binding.textProgressAll.animate().alpha(0).withEndAction(() -> {
+    /*binding.textProgressAll.animate().alpha(0).withEndAction(() -> {
       binding.textProgressAll.setText(String.valueOf(count));
       binding.textProgressAll.animate().alpha(1).setDuration(Constants.ANIMATION).start();
-    }).setDuration(Constants.ANIMATION).start();
+    }).setDuration(Constants.ANIMATION).start();*/
   }
 
   private boolean isValid() {
@@ -420,7 +430,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     if (matches.contains(input) && !found.contains(input)) {
       found.add(input);
       changeFoundCount(found.size());
-      ConfettiUtil.explode(binding.frameContainer, binding.cardMainShuffle);
+      showMessage(R.string.msg_good);
       new Handler(Looper.getMainLooper()).postDelayed(this::clearLetters, 200);
     } else if (found.contains(input)) {
       showMessage(R.string.msg_already_found);

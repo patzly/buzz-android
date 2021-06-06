@@ -27,7 +27,7 @@ import java.io.InputStreamReader;
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.Random;
-import xyz.zedler.patrick.buzz.MainActivity;
+import xyz.zedler.patrick.buzz.activity.MainActivity;
 import xyz.zedler.patrick.buzz.util.SpellingUtil;
 
 public class NewGameTask extends AsyncTask<Void, Integer, String[]> {

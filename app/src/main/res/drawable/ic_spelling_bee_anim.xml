@@ -42,10 +42,13 @@
         android:pivotX="12.5"
         android:pivotY="9.5">
         <path
+          android:name="wing_back_bg"
+          android:pathData="M 14.951 5 C 14.429 5.013 13.933 5.229 13.568 5.603 C 13.204 5.976 13 6.478 13 7 C 13 7.016 13 7.033 13 7.049 L 13 9 L 15 9 C 15.53 9 16.039 8.789 16.414 8.414 C 16.789 8.039 17 7.53 17 7 C 17 6.47 16.789 5.961 16.414 5.586 C 16.039 5.211 15.53 5 15 5 C 14.984 5 14.967 5 14.951 5 Z"
+          android:fillColor="#fff" />
+        <path
           android:name="wing_back"
           android:pathData="M 15.051 4 C 16.688 4.028 18 5.363 18 7 C 18 8.657 16.657 10 15 10 L 12 10 L 12 7 C 12 5.343 13.343 4 15 4 C 15.017 4 15.034 4 15.051 4 Z M 15.049 5 C 15.033 5 15.016 5 15 5 C 13.895 5 13 5.895 13 7 L 13 9 L 15 9 C 16.105 9 17 8.105 17 7 C 17 5.914 16.134 5.027 15.049 5 Z"
-          android:fillColor="#000000"
-          android:strokeWidth="1" />
+          android:fillColor="#000" />
       </group>
       <group
         android:name="group_wing_front"
@@ -54,13 +57,12 @@
         <path
           android:name="wing_front_bg"
           android:pathData="M 8 5 L 12 5 L 12 9 L 8 9 Z"
-          android:fillColor="@color/icon_logo_bg"
+          android:fillColor="#fff"
           android:strokeWidth="1" />
         <path
           android:name="wing_front"
           android:pathData="M 9.949 4 C 8.312 4.028 7 5.363 7 7 C 7 8.657 8.343 10 10 10 L 13 10 L 13 7 C 13 5.343 11.657 4 10 4 C 9.983 4 9.966 4 9.949 4 Z M 9.951 5 C 9.967 5 9.984 5 10 5 C 11.105 5 12 5.895 12 7 L 12 9 L 10 9 C 8.895 9 8 8.105 8 7 C 8 5.914 8.866 5.027 9.951 5 Z"
-          android:fillColor="#000000"
-          android:strokeWidth="1" />
+          android:fillColor="#000" />
       </group>
     </vector>
   </aapt:attr>

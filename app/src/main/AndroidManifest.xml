@@ -33,7 +33,7 @@
     android:theme="@style/Theme.Buzz"
     tools:ignore="AllowBackup">
 
-    <activity android:name=".MainActivity">
+    <activity android:name=".activity.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

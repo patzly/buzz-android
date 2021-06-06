@@ -61,7 +61,6 @@
   <!-- PRIMARY -->
 
   <color name="primary">@color/white</color>
-  <color name="on_primary">#000</color>
 
   <!-- SECONDARY -->
 
@@ -93,8 +92,7 @@
 
   <!-- STROKES -->
 
-  <color name="stroke_primary">@color/grey400</color>
-  <color name="stroke_secondary">@color/grey200</color>
+  <color name="stroke">@color/grey200</color>
 
   <!-- ICONS -->
 

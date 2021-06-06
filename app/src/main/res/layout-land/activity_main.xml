@@ -26,14 +26,14 @@
   android:layout_height="match_parent">
 
   <com.google.android.material.appbar.AppBarLayout
+    android:id="@+id/app_bar_main"
     android:layout_width="match_parent"
-    android:layout_height="?android:actionBarSize">
+    android:layout_height="wrap_content">
 
     <FrameLayout
-      android:id="@+id/frame_app_bar"
+      android:id="@+id/frame_app_bar_main"
       android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      android:background="@color/primary">
+      android:layout_height="?android:actionBarSize">
 
       <ImageView
         android:id="@+id/image_logo"
@@ -52,7 +52,7 @@
         android:layout_gravity="center"
         android:singleLine="true"
         android:text="@string/app_name"
-        android:textColor="@color/on_primary"
+        android:textColor="@color/on_background"
         android:textSize="20dp"
         android:textAlignment="center"
         android:fontFamily="@font/jost_bold"
@@ -70,6 +70,7 @@
   </com.google.android.material.appbar.AppBarLayout>
 
   <LinearLayout
+    android:id="@+id/linear_container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
@@ -248,10 +249,5 @@
     </LinearLayout>
 
   </LinearLayout>
-
-  <FrameLayout
-    android:id="@+id/frame_container"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

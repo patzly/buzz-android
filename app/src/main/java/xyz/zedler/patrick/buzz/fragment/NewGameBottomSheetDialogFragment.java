@@ -32,8 +32,8 @@ import com.google.android.material.bottomsheet.BottomSheetDialog;
 import java.util.ArrayList;
 import java.util.Collections;
 import xyz.zedler.patrick.buzz.Constants;
-import xyz.zedler.patrick.buzz.MainActivity;
 import xyz.zedler.patrick.buzz.R;
+import xyz.zedler.patrick.buzz.activity.MainActivity;
 import xyz.zedler.patrick.buzz.databinding.FragmentBottomsheetNewGameBinding;
 import xyz.zedler.patrick.buzz.task.NewGameTask;
 

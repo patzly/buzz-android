@@ -27,7 +27,7 @@
     <item name="cardBackgroundColor">@color/background</item>
     <item name="cardElevation">0dp</item>
     <item name="cardCornerRadius">12dp</item>
-    <item name="strokeColor">@color/stroke_secondary</item>
+    <item name="strokeColor">@color/stroke</item>
     <item name="strokeWidth">1dp</item>
     <item name="android:stateListAnimator">@animator/card_elevation</item>
     <item name="android:clickable">true</item>
@@ -51,7 +51,7 @@
     <item name="android:layout_height">1dp</item>
     <item name="android:layout_marginTop">8dp</item>
     <item name="android:layout_marginBottom">8dp</item>
-    <item name="android:background">@color/stroke_secondary</item>
+    <item name="android:background">@color/stroke</item>
   </style>
 
   <style
@@ -72,9 +72,9 @@
     <item name="android:textColor">@color/secondary</item>
     <item name="android:textStyle">bold</item>
     <item name="android:fontFamily">@font/jost_bold</item>
-    <item name="strokeColor">@color/stroke_secondary</item>
+    <item name="strokeColor">@color/stroke</item>
     <item name="strokeWidth">1dp</item>
-    <item name="cornerRadius">6dp</item>
+    <item name="cornerRadius">12dp</item>
   </style>
 
   <style
@@ -93,7 +93,8 @@
     parent="@style/Widget.MaterialComponents.LinearProgressIndicator">
     <item name="android:layout_height">wrap_content</item>
     <item name="trackColor">@color/secondary_translucent</item>
-    <item name="trackCornerRadius">2dp</item>
+    <item name="trackThickness">8dp</item>
+    <item name="trackCornerRadius">4dp</item>
     <item name="indicatorColor">@color/secondary</item>
   </style>
 

@@ -29,7 +29,6 @@
   <!-- PRIMARY -->
 
   <color name="primary">#313235</color>
-  <color name="on_primary">#ddd</color>
 
   <!-- BACKGROUND -->
 
@@ -50,12 +49,11 @@
 
   <!-- STROKES -->
 
-  <color name="stroke_primary">@color/grey600</color>
-  <color name="stroke_secondary">#3a3b3e</color>
+  <color name="stroke">#3a3b3e</color>
 
   <!-- ICONS -->
 
   <color name="icon">@color/grey400</color>
-  <color name="icon_logo_bg">@color/grey300</color>
+  <color name="icon_logo_bg">@color/grey700</color>
 
 </resources>

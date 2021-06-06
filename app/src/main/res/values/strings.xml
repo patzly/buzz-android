@@ -41,5 +41,6 @@
   <string name="msg_all_hints_used">Alle Hinweise aufgebraucht!</string>
   <string name="msg_hints">Noch %1$d Hinweise verfügbar!</string>
   <string name="msg_hints_used">%1$d Hinweise genutzt</string>
+  <string name="msg_good">Good!</string>
 
 </resources>

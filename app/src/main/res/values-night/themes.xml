@@ -20,13 +20,8 @@
 
 <resources>
 
-  <style name="Theme.Buzz" parent="Base.Buzz">
+  <style name="Theme.Buzz.Splash" parent="Theme.Buzz">
     <item name="android:navigationBarColor">@color/background</item>
-    <item name="android:statusBarColor">@color/background</item>
-  </style>
-
-  <style name="Theme.Buzz.BottomSheetDialog" parent="Base.Buzz.BottomSheetDialog">
-    <item name="android:navigationBarColor">@color/surface</item>
   </style>
 
 </resources>

@@ -26,7 +26,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
-import xyz.zedler.patrick.buzz.MainActivity;
+import xyz.zedler.patrick.buzz.activity.MainActivity;
 import xyz.zedler.patrick.buzz.util.SpellingUtil;
 
 public class MatchingWordsTask extends AsyncTask<String[], Integer, ArrayList<String>> {

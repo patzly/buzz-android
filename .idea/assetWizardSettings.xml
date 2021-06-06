@@ -329,8 +329,8 @@
                         <option name="values">
                           <map>
                             <entry key="assetSourceType" value="FILE" />
-                            <entry key="outputName" value="shape_hexagon_round" />
-                            <entry key="sourceFile" value="$USER_HOME$/Downloads/hexagon icon round (1).svg" />
+                            <entry key="outputName" value="ic_hex__2_" />
+                            <entry key="sourceFile" value="$USER_HOME$/Downloads/hex (2).svg" />
                           </map>
                         </option>
                       </PersistentState>
