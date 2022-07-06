@@ -1,6 +1,6 @@
 # Buzz Android
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) [![Release](https://img.shields.io/github/v/release/patzly/buzz-android?label=Release&logo=github)](https://github.com/patzly/buzz-android/releases)  [![APK Downloads](https://img.shields.io/github/downloads/patzly/buzz-android/total.svg?label=APK%20Downloads&logo=github)](https://github.com/patzly/buzz-android/releases)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) [![Release](https://img.shields.io/github/v/release/patzly/buzz-android?label=Release)](https://github.com/patzly/buzz-android/releases)  [![APK Downloads](https://img.shields.io/github/downloads/patzly/buzz-android/total.svg?label=APK%20Downloads)](https://github.com/patzly/buzz-android/releases)
 
 Buzz Android is an unofficial open-source Android game based on the official Spelling Bee by The New York Times.
 
