@@ -4,6 +4,8 @@
 
 Buzz Android is an unofficial open-source Android game based on the official Spelling Bee by The New York Times.
 
+> ⚠️ Because word lists with every real word are very hard to make, especially in German where every noun can be combined with every other noun, I will no longer maintain this project.
+
 ## Download
 
 <a href='https://github.com/patzly/spelling-android/releases'><img alt='Get it on GitHub' height="80" src='assets/badge_github.png'/></a>
